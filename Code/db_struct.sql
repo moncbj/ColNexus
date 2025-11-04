@@ -63,3 +63,17 @@ CREATE TABLE UXResponse (
   fecha_respuesta TIMESTAMP NOT NULL,
   respuestas_json TEXT NOT NULL
 );
+
+CREATE TABLE UXItem (
+  item_id SERIAL PRIMARY KEY,
+  instrument_id INTEGER NOT NULL REFERENCES UXInstrument(instrument_id),
+  texto_pregunta TEXT NOT NULL,
+  dimension VARCHAR(100)
+);
+
+CREATE TABLE UXResponseItem (
+  response_id INTEGER NOT NULL REFERENCES UXResponse(response_id),
+  item_id INTEGER NOT NULL REFERENCES UXItem(item_id),
+  valor_likert INTEGER NOT NULL CHECK (valor_likert BETWEEN 1 AND 7),
+  PRIMARY KEY (response_id, item_id)
+);

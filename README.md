@@ -28,6 +28,7 @@ Este directorio contiene los componentes para la creación del esquema y la carg
 * **`db_struct.sql`**: Script **DDL (Data Definition Language)** para la limpieza y creación de todas las tablas, claves primarias, claves foráneas y restricciones.
 * **`loader_script.cxx`**: Script (C++) que implementa el proceso de **Transformación y Validación** de los logs TSV. Genera `data_loader.sql`.
 * **`data_loader.sql`**: Archivo SQL generado que contiene las sentencias `INSERT` para cargar los datos de telemetría transformados en las tablas *core* de la base de datos.
+* **`ux_instrument_pens.sql`**: Archivo SQL que inserta el instrumento PENS (Player Experiencie of Need Satisfaction) en la base de datos.
 
 ### Directorio `Data`
 
@@ -76,6 +77,33 @@ Se recomienda utilizar **PostgreSQL** para la implementación.
     psql -U [su_usuario] -d [nombre_de_db] -f Code/data_loader.sql
     ```
 
+3.  **Cargar el Instrumento PENS**
+    ```bash
+    # Ejecute el script generado para insertar el instrumento PENS:
+    psql -U [su_usuario] -d [nombre_de_db] -f Code/ux_instrument_pens.sql
+    ```
+
+
+---
+
+## Instrumento UX - PENS
+
+Este proyecto incorpora el instrumento PENS (Player Experience of Need Satisfacction) como instrumento de evaluación de la experiencia del usuario de los jugadores en Chocolate DooM.
+El cuestionario fue descargado desde su fuente original y posteriormente traducido y adaptado al español para el contexto de este proyecto.
+
+###Estructura 
+
+El cuestionario se encuentra dividido en cinco dimensiones, cada una medida en ítems en escala de Likert de 1 a 7 (donde 1 = Totalmente en desacuerdo y 7 = Totalmente de acuerdo).
+
+| Dimensión | Descripción | Ejemplo de Ítem |
+| :--- | :--- | :--- |
+| **Competencia** | Evalúa la percepción del jugador sobre su eficacia y dominio de los desafíos. | “Me siento competente en el juego.” |
+| **Autonomía** | Mide la sensación de libertad y control dentro del juego. | “Sentí mucha libertad dentro del juego.” |
+| **Relación (Relatedness)** | Evalúa el sentido de conexión con otros jugadores o personajes. | “Las relaciones que formo en el juego me resultan satisfactorias.” |
+| **Presencia / Inmersión** | Mide el grado de absorción emocional y cognitiva en el entorno virtual. | “Al jugar, siento que me transporto a otro tiempo y lugar.” |
+
+En total, para el proyecto se implementan 21 ítems (preguntas) almacenados en UXItem.
+
 ---
 
 ## Tareas y Entregables Clave
@@ -85,6 +113,11 @@ Se recomienda utilizar **PostgreSQL** para la implementación.
 | **A** (Conceptual y Lógico)  | Requisitos, ER, Normalización (3NF), Diccionario de Datos. | `Documents/Analisis_y_Diseno_ColNexus.pdf` |
 | **B** (Implementación & Ingestión) | DDL, Creación de Tablas Staging, Ingestión ETL, Carga de datos de UX. | `Code/db_struct.sql`, `Code/loader_script.cxx`, `Code/salida_datos.sql` |
 | **C** (Consultas y Optimización) | Implementación de 8+ Consultas Analíticas, 3+ Índices con evaluación `EXPLAIN (ANALYZE)`, Vistas y Vistas Materializadas. | Código SQL de las consultas (posiblemente en un archivo `analytics.sql`) y la evaluación en el informe. |
+
+---
+
+## Referencias
+- Ryan, R. M., Rigby, C. S., & Przybylski, A. K. (2006). *Motivational pull of video games: A self-determination theory approach*. Motivation and Emotion. Disponible en: [https://selfdeterminationtheory.org/player-experience-of-needs-satisfaction-pens/?utm_source=chatgpt.com](https://selfdeterminationtheory.org/player-experience-of-needs-satisfaction-pens/)
 
 ---
 
