@@ -81,7 +81,6 @@ int main() {
     while (getline(fin, line)) all.push_back(line);
     fin.close();
 
-    // 1) Extraer la línea When: ... Episode: ... Map: ...
     string when_ts;
     int episodio = 0;
     int mapa = 0;
@@ -100,8 +99,6 @@ int main() {
         return 1;
     }
 
-    // 2) Buscar todas las filas de telemetría en todo el archivo (no depender de cabecera)
-    // Regex que captura: datetime, tic, x, y  (acepta múltiples espacios/tabs)
     regex rowRe(R"(^\s*([0-9]{4}-[0-9]{2}-[0-9]{2}\s+[0-9]{2}:[0-9]{2}:[0-9]{2})\s+(-?\d+)\s+(-?\d+)\s+(-?\d+))");
     vector<TelemetryEvent> telemetry;
     for (const auto &L : all) {
@@ -121,7 +118,6 @@ int main() {
         return 1;
     }
 
-    // 3) calcular fecha_fin y duracion_seconds
     string first_ts = telemetry.front().datetime;
     string last_ts  = telemetry.back().datetime;
     time_t tfirst = parseTimestamp(first_ts);
@@ -129,12 +125,10 @@ int main() {
     long dur_seconds = 0;
     if (tfirst != 0 && tlast != 0) dur_seconds = (long)difftime(tlast, tfirst);
 
-    // 4) nombre_oficial del mapa
     string nombre_oficial = "Doom Map " + to_string(mapa);
     auto it = DOOM1_MAP_NAMES.find(mapa);
     if (it != DOOM1_MAP_NAMES.end()) nombre_oficial = it->second;
 
-    // 5) generar salida SQL (append)
     string outname = "data_loader.sql";
     ofstream out(outname, ios::app);
     if (!out.is_open()) {
@@ -160,15 +154,12 @@ int main() {
     out << "INSERT INTO \"User\" (nombre_completo, genero, carrera)\n";
     out << "VALUES ('" << esc(nombreCompleto) << "', '" << esc(genero) << "', '" << esc(carrera) << "');\n\n";
 
-    // Player (usa username proporcionado)
     out << "INSERT INTO Player (user_id, alias)\n";
     out << "VALUES (currval(pg_get_serial_sequence('\"User\"','user_id')), '" << esc(username) << "');\n\n";
 
-    // Map
     out << "INSERT INTO Map (codigo_map, nombre_oficial)\n";
     out << "VALUES ('" << mapa << "', '" << esc(nombre_oficial) << "');\n\n";
 
-    // Game (sin version_software, con episodio)
     out << "INSERT INTO Game (player_id, map_id, fecha_inicio, fecha_fin, duracion_seconds, episodio)\n";
     out << "VALUES (\n";
     out << "  currval(pg_get_serial_sequence('Player','player_id')),\n";
@@ -179,13 +170,9 @@ int main() {
     out << "  " << episodio << "\n";
     out << ");\n\n";
 
-    // Sector placeholder (tu esquema requiere sector por mapa)
     out << "INSERT INTO Sector (map_id, nombre_sector)\n";
     out << "VALUES (currval(pg_get_serial_sequence('Map','map_id')), 'unknown');\n\n";
 
-    // TelemetryEvent (sin tipo_evento ni resultados)
-    // NOTA: tu esquema original tenía TelemetryEvent REFERENCES Game(player_id) (anómalo).
-    // Aquí asumimos referencia normal a Game(game_id). Si tu DB exige otra cosa, coméntalo.
     for (const auto &ev : telemetry) {
         out << "INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)\n";
         out << "VALUES (\n";
@@ -196,7 +183,6 @@ int main() {
     }
     out << "\n";
 
-    // UXInstrument and UXResponse (defaults)
     out << "INSERT INTO UXInstrument (nombre, tipo) VALUES ('unknown', 'unknown');\n\n";
 
     out << "INSERT INTO UXResponse (user_id, instrument_id, fecha_respuesta, respuestas_json)\n";
@@ -210,7 +196,7 @@ int main() {
     out << "-- Fin de inserciones generadas\n\n";
     out.close();
 
-    cout << "✅ Archivo SQL generado: " << outname << "  (se añadió en modo append)\n";
+    cout << "\tArchivo SQL generado: " << outname << "  (se añadió en modo append)\n";
     cout << "Filas de telemetría detectadas: " << telemetry.size() << "\n";
     cout << "Fecha inicio: " << when_ts << "  Fecha fin: " << last_ts << "  Duración(s): " << dur_seconds << "\n";
 
