@@ -52,6 +52,11 @@ Contiene la documentación formal del proyecto:
 
 Se recomienda utilizar **PostgreSQL** para la implementación.
 
+1. **Generación del archivo de telemetria.txt**
+   ```bash
+   # Ejecute este comando modificando la ruta a DOOM.WAD además de darle nombre correcto al documento de salida (Cambiando el nombre del jugador y ID de la partida):
+   src/chocolate-doom -iwad /ruta/a/DOOM.WAD > [Nombre_Jugador]_[ID_Partida].txt
+   ```
 1.  **Configurar la Base de Datos (Estructura)**
     ```bash
     # Ejecute este script para limpiar y recrear el esquema de la DB:
@@ -62,13 +67,13 @@ Se recomienda utilizar **PostgreSQL** para la implementación.
     ```bash
     # (Opcional) Coloque los logs TSV en la carpeta Data/
     # Compile y ejecute el script de transformación sobre los datos:
-    ./Code/loader_script.cxx [Ruta_a_Log_TSV] > Code/salida_datos.sql
+    ./Code/loader_script.cxx [Ruta_a_Log_TSV] > Code/data_loader.sql
     ```
 
 3.  **Cargar los Datos (Inserciones)**
     ```bash
     # Ejecute el script generado para insertar datos validados en las tablas core:
-    psql -U [su_usuario] -d [nombre_de_db] -f Code/salida_datos.sql
+    psql -U [su_usuario] -d [nombre_de_db] -f Code/data_loader.sql
     ```
 
 ---
