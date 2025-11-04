@@ -1,5 +1,5 @@
 # ColNexus
-# Proyecto: Analisis de patrones de comportamiento de jugadores en Chocolate-Doom
+# Proyecto: Análisis de patrones de comportamiento de jugadores en Chocolate-Doom
 
 ## Descripción del Proyecto
 
