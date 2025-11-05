@@ -58,26 +58,26 @@ Se recomienda utilizar **PostgreSQL** para la implementación.
    # Ejecute este comando modificando la ruta a DOOM.WAD además de darle nombre correcto al documento de salida (Cambiando el nombre del jugador y ID de la partida):
    src/chocolate-doom -iwad /ruta/a/DOOM.WAD > [Nombre_Jugador]_[ID_Partida].txt
    ```
-1.  **Configurar la Base de Datos (Estructura)**
+2.  **Configurar la Base de Datos (Estructura)**
     ```bash
     # Ejecute este script para limpiar y recrear el esquema de la DB:
     psql -U [su_usuario] -d [nombre_de_db] -f Code/db_struct.sql
     ```
 
-2.  **Preparar y Transformar los Datos (ETL)**
+3.  **Preparar y Transformar los Datos (ETL)**
     ```bash
     # (Opcional) Coloque los logs TSV en la carpeta Data/
     # Compile y ejecute el script de transformación sobre los datos:
     ./Code/loader_script.cxx [Ruta_a_Log_TSV] > Code/data_loader.sql
     ```
 
-3.  **Cargar los Datos (Inserciones)**
+4.  **Cargar los Datos (Inserciones)**
     ```bash
     # Ejecute el script generado para insertar datos validados en las tablas core:
     psql -U [su_usuario] -d [nombre_de_db] -f Code/data_loader.sql
     ```
 
-3.  **Cargar el Instrumento PENS**
+5.  **Cargar el Instrumento PENS**
     ```bash
     # Ejecute el script generado para insertar el instrumento PENS:
     psql -U [su_usuario] -d [nombre_de_db] -f Code/ux_instrument_pens.sql
@@ -110,8 +110,8 @@ En total, para el proyecto se implementan 21 ítems (preguntas) almacenados en U
 
 | Parte | Enfoque | Entregables del Repositorio |
 | :--- | :--- | :--- |
-| **A** (Conceptual y Lógico)  | Requisitos, ER, Normalización (3NF), Diccionario de Datos. | `Documents/Analisis_y_Diseno_ColNexus.pdf` |
-| **B** (Implementación & Ingestión) | DDL, Creación de Tablas Staging, Ingestión ETL, Carga de datos de UX. | `Code/db_struct.sql`, `Code/loader_script.cxx`, `Code/salida_datos.sql` |
+| **A** (Conceptual y Lógico)  | Requisitos, ER, Normalización (3NF), Diccionario de Datos. | `Documents/Proyecto Bases de Datos.pdf` |
+| **B** (Implementación & Ingestión) | DDL, Creación de Tablas Staging, Ingestión ETL, Carga de datos de UX. | `Code/db_struct.sql`, `Code/loader_script.cxx`, `Code/data_loader.sql` |
 | **C** (Consultas y Optimización) | Implementación de 8+ Consultas Analíticas, 3+ Índices con evaluación `EXPLAIN (ANALYZE)`, Vistas y Vistas Materializadas. | Código SQL de las consultas (posiblemente en un archivo `analytics.sql`) y la evaluación en el informe. |
 
 ---
