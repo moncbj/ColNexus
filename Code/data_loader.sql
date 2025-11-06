@@ -46553,3 +46553,25752 @@ VALUES (
 
 -- Fin de inserciones generadas
 
+-- ============================
+-- Inserción generada desde: /Users/danielduarte/Desktop/University/Bases_de_datos/Proyecto/Data/joseContreras_partida6.txt
+-- When (fecha_inicio): 2025-11-05 20:37:32  episodio: 1  map: 3
+-- Telemetrias: 1320 filas. Fecha fin: 2025-11-05 21:01:56 Dur(s): 1459
+-- ============================
+
+INSERT INTO "User" (nombre_completo, genero, carrera)
+VALUES ('Jose Alejandro Contreras Obregon', 'M', 'Ciencia de datos');
+
+INSERT INTO Player (user_id, alias)
+VALUES (currval(pg_get_serial_sequence('"User"','user_id')), 'mysticfriday');
+
+INSERT INTO Map (codigo_map, nombre_oficial)
+VALUES ('3', 'E1M3: Toxin Refinery');
+
+INSERT INTO Game (player_id, map_id, fecha_inicio, fecha_fin, duracion_seconds, episodio)
+VALUES (
+  currval(pg_get_serial_sequence('Player','player_id')),
+  currval(pg_get_serial_sequence('Map','map_id')),
+  '2025-11-05 20:37:32',
+  '2025-11-05 21:01:56',
+  1459,
+  1
+);
+
+INSERT INTO Sector (map_id, nombre_sector)
+VALUES (currval(pg_get_serial_sequence('Map','map_id')), 'unknown');
+
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:37:37',
+  -1472, -3344
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:37:38',
+  -1494, -3245
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:37:39',
+  -1361, -3305
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:37:40',
+  -1425, -3331
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:37:41',
+  -1648, -3362
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:37:42',
+  -1607, -3279
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:37:43',
+  -1566, -3253
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:37:44',
+  -1513, -3191
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:37:45',
+  -1487, -3176
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:37:46',
+  -1722, -3067
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:37:47',
+  -1814, -3041
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:37:48',
+  -1809, -3084
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:37:49',
+  -1812, -2962
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:37:50',
+  -1837, -2848
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:37:51',
+  -1850, -2758
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:37:52',
+  -1811, -2685
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:37:53',
+  -1756, -2564
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:37:54',
+  -1678, -2540
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:37:55',
+  -1678, -2566
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:37:56',
+  -1698, -2604
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:37:57',
+  -1681, -2482
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:37:58',
+  -1752, -2538
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:37:59',
+  -1868, -2778
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:38:00',
+  -1797, -3047
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:38:01',
+  -1580, -3110
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:38:02',
+  -1594, -3118
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:38:03',
+  -1577, -3031
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:38:04',
+  -1572, -3023
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:38:05',
+  -1674, -3105
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:38:06',
+  -1450, -2987
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:38:07',
+  -1395, -3076
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:38:08',
+  -1183, -3019
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:38:09',
+  -1090, -2832
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:38:10',
+  -1056, -2820
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:38:11',
+  -1073, -2828
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:38:12',
+  -1153, -2594
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:38:13',
+  -1340, -2508
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:38:14',
+  -1363, -2608
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:38:15',
+  -1301, -2589
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:38:16',
+  -1119, -2693
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:38:17',
+  -1200, -3024
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:38:18',
+  -1250, -3037
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:38:19',
+  -1288, -3063
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:38:20',
+  -1562, -3077
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:38:21',
+  -1808, -3025
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:38:22',
+  -1877, -2819
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:38:23',
+  -1867, -2561
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:38:24',
+  -1888, -2517
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:38:25',
+  -1869, -2500
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:38:27',
+  -1930, -2460
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:38:28',
+  -1925, -2538
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:38:29',
+  -1905, -2518
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:38:30',
+  -1891, -2570
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:38:31',
+  -1855, -2646
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:38:32',
+  -1903, -2522
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:38:33',
+  -1949, -2413
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:38:34',
+  -2090, -2410
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:38:35',
+  -2160, -2473
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:38:36',
+  -2151, -2606
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:38:37',
+  -2138, -2612
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:38:38',
+  -1928, -2473
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:38:39',
+  -1859, -2371
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:38:40',
+  -1959, -2323
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:38:41',
+  -1961, -2365
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:38:42',
+  -1884, -2303
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:38:43',
+  -1838, -2037
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:38:44',
+  -1851, -1953
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:38:45',
+  -1803, -1942
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:38:46',
+  -1794, -1952
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:38:47',
+  -1827, -2024
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:38:48',
+  -1904, -2015
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:38:49',
+  -2095, -1990
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:38:50',
+  -2176, -2120
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:38:51',
+  -2164, -2122
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:38:52',
+  -2153, -2140
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:38:53',
+  -2177, -2120
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:38:54',
+  -2014, -2195
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:38:55',
+  -1921, -2186
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:38:56',
+  -1952, -2100
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:38:57',
+  -1996, -2105
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:39:01',
+  -1473, -3338
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:39:02',
+  -1421, -3239
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:39:03',
+  -1411, -3284
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:39:04',
+  -1419, -3284
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:39:05',
+  -1625, -3295
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:39:06',
+  -1590, -3251
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:39:07',
+  -1512, -3223
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:39:08',
+  -1535, -3223
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:39:09',
+  -1601, -3068
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:39:10',
+  -1767, -3025
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:39:11',
+  -1823, -3010
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:39:12',
+  -1823, -3058
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:39:13',
+  -1821, -3014
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:39:14',
+  -1818, -2943
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:39:15',
+  -1828, -2875
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:39:16',
+  -1830, -2792
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:39:17',
+  -1842, -2633
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:39:18',
+  -1672, -2529
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:39:19',
+  -1649, -2607
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:39:20',
+  -1711, -2585
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:39:21',
+  -1934, -2686
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:39:22',
+  -1914, -2813
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:39:23',
+  -1796, -3065
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:39:24',
+  -1708, -3125
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:39:25',
+  -1697, -3108
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:39:26',
+  -1482, -3090
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:39:27',
+  -1202, -3062
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:39:28',
+  -1145, -2814
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:39:29',
+  -1187, -2589
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:39:30',
+  -1142, -2607
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:39:31',
+  -1369, -2556
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:39:32',
+  -1285, -2551
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:39:33',
+  -1110, -2679
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:39:34',
+  -1149, -2954
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:39:35',
+  -1200, -3021
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:39:36',
+  -1378, -3105
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:39:37',
+  -1732, -3025
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:39:38',
+  -1869, -2972
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:39:39',
+  -1881, -2705
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:39:41',
+  -1916, -2604
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:39:42',
+  -1900, -2692
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:39:43',
+  -1907, -2665
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:39:44',
+  -1898, -2540
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:39:45',
+  -1930, -2656
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:39:46',
+  -1933, -2668
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:39:47',
+  -1864, -2506
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:39:48',
+  -1817, -2511
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:39:49',
+  -1942, -2540
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:39:50',
+  -2157, -2453
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:39:51',
+  -2160, -2506
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:39:52',
+  -2154, -2628
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:39:53',
+  -2057, -2400
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:39:54',
+  -1936, -2273
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:39:55',
+  -1912, -2270
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:39:56',
+  -1872, -2236
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:39:57',
+  -1874, -2026
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:39:58',
+  -2092, -1971
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:39:59',
+  -2177, -2020
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:40:00',
+  -2152, -2065
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:40:01',
+  -2200, -2026
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:40:02',
+  -2178, -2089
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:40:03',
+  -2149, -2148
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:40:04',
+  -2140, -2157
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:40:05',
+  -2115, -2182
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:40:06',
+  -2053, -2138
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:40:07',
+  -2036, -2129
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:40:08',
+  -2020, -2149
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:40:09',
+  -2125, -2127
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:40:10',
+  -2135, -1860
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:40:12',
+  -2128, -1745
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:40:13',
+  -2107, -1745
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:40:14',
+  -2190, -1760
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:40:15',
+  -2223, -1764
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:40:16',
+  -2222, -1694
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:40:17',
+  -2105, -1609
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:40:18',
+  -2018, -1539
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:40:19',
+  -2173, -1686
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:40:20',
+  -2177, -1649
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:40:21',
+  -2140, -1613
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:40:22',
+  -2128, -1489
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:40:23',
+  -2130, -1633
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:40:24',
+  -2158, -1776
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:40:25',
+  -2190, -1916
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:40:26',
+  -2074, -2016
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:40:27',
+  -1826, -1980
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:40:28',
+  -1839, -1859
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:40:29',
+  -1799, -1861
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:40:30',
+  -1818, -1878
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:40:31',
+  -1968, -1749
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:40:32',
+  -1907, -1694
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:40:33',
+  -1876, -1647
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:40:34',
+  -1867, -1650
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:40:35',
+  -1844, -1393
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:40:36',
+  -1813, -1153
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:40:37',
+  -1795, -1010
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:40:38',
+  -1714, -764
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:40:39',
+  -1541, -721
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:40:40',
+  -1263, -673
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:40:41',
+  -1091, -653
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:40:42',
+  -1153, -646
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:40:43',
+  -1106, -652
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:40:44',
+  -1054, -661
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:40:45',
+  -797, -747
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:40:46',
+  -538, -874
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:40:47',
+  -474, -894
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:40:48',
+  -453, -847
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:40:49',
+  -467, -813
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:40:50',
+  -456, -921
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:40:55',
+  -1472, -3344
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:40:57',
+  -1452, -3222
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:40:58',
+  -1391, -3223
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:40:59',
+  -1583, -3346
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:41:00',
+  -1633, -3376
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:41:01',
+  -1574, -3221
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:41:02',
+  -1523, -3207
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:41:03',
+  -1701, -3072
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:41:04',
+  -1824, -3017
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:41:05',
+  -1821, -2983
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:41:06',
+  -1820, -2881
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:41:07',
+  -1825, -2799
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:41:08',
+  -1822, -2771
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:41:09',
+  -1868, -2610
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:41:10',
+  -1805, -2516
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:41:11',
+  -1628, -2603
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:41:12',
+  -1689, -2585
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:41:13',
+  -1845, -2667
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:41:14',
+  -1809, -3008
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:41:15',
+  -1643, -3049
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:41:16',
+  -1516, -3047
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:41:17',
+  -1256, -3066
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:41:18',
+  -1151, -2839
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:41:19',
+  -1110, -2643
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:41:20',
+  -1108, -2652
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:41:21',
+  -1113, -2449
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:41:22',
+  -1157, -2511
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:41:23',
+  -1327, -2608
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:41:24',
+  -1324, -2501
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:41:25',
+  -1249, -2544
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:41:26',
+  -1098, -2735
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:41:27',
+  -1200, -3023
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:41:28',
+  -1275, -3054
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:41:29',
+  -1608, -3095
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:41:30',
+  -1859, -2971
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:41:31',
+  -1887, -2682
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:41:32',
+  -1834, -2602
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:41:33',
+  -1856, -2585
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:41:34',
+  -1859, -2559
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:41:35',
+  -1839, -2596
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:41:36',
+  -1883, -2500
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:41:37',
+  -1880, -2552
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:41:38',
+  -1893, -2576
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:41:39',
+  -1901, -2611
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:41:40',
+  -1896, -2581
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:41:41',
+  -1902, -2626
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:41:42',
+  -1909, -2637
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:41:43',
+  -1898, -2546
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:41:44',
+  -1902, -2307
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:41:45',
+  -1833, -2277
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:41:46',
+  -1788, -2279
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:41:47',
+  -1818, -2036
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:41:48',
+  -1811, -1965
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:41:50',
+  -1796, -1958
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:41:51',
+  -1778, -1968
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:41:54',
+  -1781, -1969
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:41:55',
+  -1966, -1971
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:41:56',
+  -2117, -1995
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:41:57',
+  -2082, -2178
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:41:58',
+  -2067, -2183
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:41:59',
+  -1921, -2175
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:42:01',
+  -1961, -2145
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:42:02',
+  -1944, -2108
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:42:03',
+  -2124, -2121
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:42:04',
+  -2197, -1950
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:42:05',
+  -2200, -2083
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:42:06',
+  -2136, -2122
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:42:07',
+  -1931, -2096
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:42:08',
+  -1965, -2137
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:42:09',
+  -2200, -2077
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:42:10',
+  -2126, -1887
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:42:11',
+  -2095, -1913
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:42:12',
+  -2089, -1968
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:42:13',
+  -2074, -2040
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:42:17',
+  -2085, -1992
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:42:18',
+  -2102, -1924
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:42:19',
+  -2066, -2052
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:42:20',
+  -2072, -2037
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:42:21',
+  -2075, -2021
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:42:22',
+  -2088, -1969
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:42:23',
+  -2102, -1961
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:42:24',
+  -2126, -1826
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:42:25',
+  -2106, -1913
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:42:26',
+  -2120, -1749
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:42:27',
+  -2198, -1803
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:42:28',
+  -2142, -1769
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:42:29',
+  -2134, -1773
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:42:30',
+  -2065, -1713
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:42:31',
+  -2138, -1696
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:42:32',
+  -2179, -1720
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:42:33',
+  -2076, -1507
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:42:34',
+  -2028, -1489
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:42:35',
+  -2066, -1640
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:42:36',
+  -2080, -1620
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:42:37',
+  -2172, -1768
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:42:38',
+  -2148, -1899
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:42:39',
+  -1943, -2028
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:42:40',
+  -1828, -1939
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:42:41',
+  -1786, -1880
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:42:42',
+  -1951, -1756
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:42:43',
+  -1912, -1720
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:42:44',
+  -1853, -1658
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:42:45',
+  -1877, -1560
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:42:46',
+  -1842, -1407
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:42:47',
+  -1817, -1262
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:42:48',
+  -1814, -1228
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:42:49',
+  -1811, -1020
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:42:50',
+  -1755, -934
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:42:51',
+  -1575, -749
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:42:52',
+  -1394, -812
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:42:53',
+  -1117, -877
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:42:54',
+  -1071, -896
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:42:55',
+  -1079, -900
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:42:57',
+  -1009, -880
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:42:58',
+  -975, -870
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:42:59',
+  -935, -897
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:43:00',
+  -786, -798
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:43:01',
+  -627, -791
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:43:02',
+  -593, -944
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:43:04',
+  -616, -797
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:43:05',
+  -628, -665
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:43:06',
+  -526, -682
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:43:07',
+  -521, -688
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:43:08',
+  -581, -657
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:43:09',
+  -597, -688
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:43:10',
+  -627, -685
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:43:11',
+  -595, -681
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:43:12',
+  -550, -657
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:43:13',
+  -618, -657
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:43:15',
+  -599, -665
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:43:16',
+  -527, -675
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:43:17',
+  -520, -682
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:43:18',
+  -416, -718
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:43:19',
+  -426, -903
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:43:20',
+  -401, -958
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:43:21',
+  -500, -849
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:43:22',
+  -421, -714
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:43:23',
+  -401, -465
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:43:24',
+  -395, -401
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:43:25',
+  -168, -444
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:43:26',
+  -141, -487
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:43:27',
+  -151, -598
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:43:28',
+  -152, -552
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:43:29',
+  -202, -743
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:43:30',
+  -164, -815
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:43:31',
+  -17, -719
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:43:32',
+  -121, -869
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:43:33',
+  -294, -807
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:43:34',
+  -304, -847
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:43:35',
+  -304, -848
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:43:38',
+  -1477, -3277
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:43:39',
+  -1368, -3247
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:43:40',
+  -1457, -3297
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:43:41',
+  -1648, -3364
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:43:42',
+  -1582, -3304
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:43:43',
+  -1471, -3270
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:43:44',
+  -1586, -3123
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:43:45',
+  -1821, -3020
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:43:46',
+  -1848, -3022
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:43:47',
+  -1872, -3071
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:43:48',
+  -1873, -3041
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:43:49',
+  -1864, -2888
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:43:50',
+  -1906, -2758
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:43:51',
+  -1877, -2828
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:43:52',
+  -1811, -2594
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:43:53',
+  -1654, -2518
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:43:54',
+  -1684, -2593
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:43:55',
+  -1669, -2601
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:43:56',
+  -1839, -2621
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:43:57',
+  -1875, -2939
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:43:58',
+  -1581, -3095
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:43:59',
+  -1529, -3101
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:44:00',
+  -1525, -3046
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:44:01',
+  -1489, -3128
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:44:02',
+  -1361, -3025
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:44:03',
+  -1245, -3073
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:44:04',
+  -1067, -2944
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:44:05',
+  -1145, -2697
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:44:06',
+  -1231, -2578
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:44:07',
+  -1332, -2550
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:44:08',
+  -1179, -2462
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:44:09',
+  -1187, -2766
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:44:10',
+  -1317, -3080
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:44:11',
+  -1597, -3039
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:44:12',
+  -1822, -3018
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:44:13',
+  -1864, -2787
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:44:14',
+  -1820, -2587
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:44:15',
+  -1814, -2553
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:44:16',
+  -1862, -2532
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:44:17',
+  -1815, -2531
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:44:18',
+  -1754, -2535
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:44:19',
+  -1947, -2481
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:44:20',
+  -1983, -2498
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:44:21',
+  -1982, -2544
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:44:22',
+  -2005, -2505
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:44:23',
+  -2069, -2453
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:44:24',
+  -1974, -2544
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:44:26',
+  -2050, -2480
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:44:27',
+  -2160, -2409
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:44:28',
+  -2148, -2504
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:44:29',
+  -2156, -2628
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:44:30',
+  -1986, -2499
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:44:31',
+  -2056, -2417
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:44:32',
+  -1977, -2321
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:44:33',
+  -1985, -2257
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:44:34',
+  -1961, -2281
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:44:35',
+  -2028, -2425
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:44:36',
+  -1944, -2519
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:44:37',
+  -1852, -2283
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:44:38',
+  -1872, -2038
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:44:39',
+  -2072, -1984
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:44:40',
+  -2172, -2103
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:44:41',
+  -2097, -2129
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:44:42',
+  -2022, -2105
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:44:43',
+  -1998, -2110
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:44:44',
+  -2038, -2105
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:44:45',
+  -2045, -2167
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:44:46',
+  -2142, -1929
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:44:47',
+  -2143, -1778
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:44:48',
+  -2121, -1786
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:44:49',
+  -2095, -1756
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:44:50',
+  -2144, -1829
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:44:51',
+  -2096, -1759
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:44:53',
+  -2082, -1688
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:44:54',
+  -2040, -1496
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:44:55',
+  -2119, -1576
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:44:56',
+  -2143, -1648
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:44:57',
+  -2041, -1514
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:44:58',
+  -2055, -1680
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:44:59',
+  -2124, -1776
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:45:00',
+  -2151, -1962
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:45:01',
+  -2162, -2096
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:45:02',
+  -2074, -2024
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:45:03',
+  -1838, -2074
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:45:04',
+  -1866, -2349
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:45:05',
+  -2121, -2443
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:45:06',
+  -2153, -2472
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:45:09',
+  -2009, -2553
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:45:10',
+  -2110, -2588
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:45:11',
+  -2160, -2590
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:45:14',
+  -2066, -2494
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:45:15',
+  -1870, -2287
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:45:16',
+  -1815, -2021
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:45:17',
+  -1957, -1784
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:45:18',
+  -1923, -1719
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:45:19',
+  -1894, -1633
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:45:20',
+  -1877, -1587
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:45:21',
+  -1857, -1356
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:45:22',
+  -1856, -1360
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:45:23',
+  -1837, -1319
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:45:24',
+  -1840, -1217
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:45:25',
+  -1818, -1041
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:45:26',
+  -1669, -802
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:45:27',
+  -1484, -784
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:45:28',
+  -1220, -870
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:45:29',
+  -1056, -901
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:45:30',
+  -1108, -933
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:45:31',
+  -1153, -969
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:45:32',
+  -1094, -951
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:45:33',
+  -921, -823
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:45:34',
+  -795, -754
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:45:35',
+  -593, -844
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:45:36',
+  -621, -848
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:45:37',
+  -627, -841
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:45:38',
+  -656, -928
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:45:39',
+  -603, -908
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:45:40',
+  -511, -849
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:45:41',
+  -530, -849
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:45:42',
+  -482, -849
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:45:43',
+  -459, -874
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:45:45',
+  -458, -958
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:45:46',
+  -459, -870
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:45:47',
+  -458, -966
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:45:48',
+  -467, -758
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:45:49',
+  -518, -657
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:45:50',
+  -650, -665
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:45:51',
+  -598, -824
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:45:52',
+  -479, -875
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:45:53',
+  -441, -680
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:45:54',
+  -439, -671
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:45:55',
+  -496, -706
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:45:56',
+  -573, -688
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:45:57',
+  -743, -716
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:45:58',
+  -783, -737
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:45:59',
+  -965, -889
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:46:00',
+  -1186, -894
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:46:01',
+  -1421, -762
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:46:02',
+  -1460, -745
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:46:04',
+  -1368, -751
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:46:05',
+  -1309, -755
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:46:06',
+  -1296, -755
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:46:10',
+  -1215, -768
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:46:11',
+  -1010, -784
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:46:12',
+  -1131, -781
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:46:13',
+  -1204, -779
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:46:14',
+  -970, -782
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:46:15',
+  -900, -694
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:46:16',
+  -975, -636
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:46:17',
+  -1014, -833
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:46:18',
+  -993, -703
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:46:19',
+  -996, -721
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:46:20',
+  -1005, -777
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:46:21',
+  -1073, -683
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:46:22',
+  -1166, -641
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:46:23',
+  -1146, -747
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:46:24',
+  -894, -794
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:46:25',
+  -623, -715
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:46:26',
+  -621, -711
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:46:27',
+  -637, -682
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:46:28',
+  -593, -689
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:46:29',
+  -484, -647
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:46:30',
+  -427, -416
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:46:31',
+  -243, -400
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:46:32',
+  -91, -589
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:46:33',
+  -45, -588
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:46:34',
+  -89, -660
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:46:35',
+  -191, -741
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:46:36',
+  -303, -776
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:46:37',
+  -252, -698
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:46:38',
+  -43, -848
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:46:39',
+  -61, -829
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:46:40',
+  -166, -880
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:46:41',
+  -177, -818
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:46:42',
+  -142, -880
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:46:43',
+  -138, -858
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:46:44',
+  -193, -765
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:46:45',
+  -203, -758
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:46:46',
+  -268, -543
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:46:47',
+  -251, -552
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:46:48',
+  -262, -529
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:46:49',
+  -298, -562
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:46:50',
+  -242, -742
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:46:51',
+  -17, -737
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:46:52',
+  -40, -667
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:46:53',
+  -176, -475
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:46:54',
+  -360, -392
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:46:55',
+  -496, -536
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:46:56',
+  -544, -688
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:46:57',
+  -786, -731
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:46:58',
+  -1143, -751
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:46:59',
+  -1466, -767
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:47:00',
+  -1721, -844
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:47:01',
+  -1805, -1096
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:47:02',
+  -1849, -1382
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:47:03',
+  -1885, -1562
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:47:04',
+  -1905, -1692
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:47:05',
+  -1862, -1927
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:47:06',
+  -1918, -1809
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:47:07',
+  -1806, -1849
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:47:08',
+  -1811, -1970
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:47:09',
+  -1856, -2266
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:47:10',
+  -1953, -2529
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:47:11',
+  -1916, -2552
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:47:12',
+  -1879, -2898
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:47:13',
+  -1620, -3100
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:47:14',
+  -1145, -3051
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:47:15',
+  -1095, -2799
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:47:16',
+  -1178, -2409
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:47:17',
+  -1166, -2438
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:47:18',
+  -1182, -2402
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:47:19',
+  -1240, -2324
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:47:20',
+  -1226, -2291
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:47:21',
+  -1264, -2405
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:47:22',
+  -1313, -2605
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:47:23',
+  -1267, -2459
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:47:24',
+  -1286, -2516
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:47:25',
+  -1208, -2464
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:47:26',
+  -1264, -2365
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:47:27',
+  -1292, -2454
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:47:28',
+  -1211, -2387
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:47:29',
+  -1274, -2237
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:47:30',
+  -1303, -2142
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:47:31',
+  -1197, -2252
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:47:32',
+  -1249, -2266
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:47:33',
+  -1075, -2229
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:47:34',
+  -790, -2203
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:47:35',
+  -684, -2060
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:47:36',
+  -682, -1993
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:47:37',
+  -701, -1952
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:47:38',
+  -711, -1806
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:47:39',
+  -784, -1817
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:47:40',
+  -742, -1860
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:47:41',
+  -998, -1868
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:47:42',
+  -1015, -1944
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:47:43',
+  -994, -1812
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:47:44',
+  -761, -1823
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:47:45',
+  -763, -1839
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:47:46',
+  -914, -1872
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:47:47',
+  -1011, -1870
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:47:48',
+  -1032, -1859
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:47:49',
+  -1015, -1911
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:47:50',
+  -1171, -2109
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:47:51',
+  -1229, -2301
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:47:53',
+  -1233, -2322
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:47:54',
+  -1275, -2495
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:47:55',
+  -1205, -2608
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:47:56',
+  -1176, -2859
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:47:57',
+  -1265, -3073
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:47:58',
+  -1534, -3071
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:47:59',
+  -1805, -3025
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:48:00',
+  -1816, -2831
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:48:01',
+  -1790, -2560
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:48:02',
+  -1866, -2538
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:48:03',
+  -1873, -2749
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:48:04',
+  -1807, -3025
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:48:05',
+  -1574, -3145
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:48:06',
+  -1439, -3140
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:48:07',
+  -1419, -3025
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:48:08',
+  -1420, -3025
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:48:09',
+  -1425, -3010
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:48:10',
+  -1425, -3087
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:48:11',
+  -1383, -3119
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:48:12',
+  -1144, -2984
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:48:13',
+  -1132, -2720
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:48:14',
+  -1215, -2445
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:48:15',
+  -1232, -2389
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:48:16',
+  -1142, -2135
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:48:17',
+  -996, -1884
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:48:18',
+  -836, -1809
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:48:19',
+  -705, -1768
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:48:20',
+  -638, -1730
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:48:21',
+  -725, -1784
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:48:22',
+  -702, -1775
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:48:23',
+  -489, -1616
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:48:24',
+  -587, -1667
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:48:25',
+  -798, -1813
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:48:26',
+  -977, -1873
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:48:27',
+  -1001, -1873
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:48:28',
+  -998, -1873
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:48:29',
+  -906, -1843
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:48:30',
+  -791, -1808
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:48:31',
+  -613, -1729
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:48:32',
+  -501, -1701
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:48:33',
+  -497, -1688
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:48:34',
+  -269, -1602
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:48:35',
+  -54, -1648
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:48:36',
+  -289, -1649
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:48:37',
+  -503, -1658
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:48:38',
+  -365, -1463
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:48:39',
+  -101, -1404
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:48:40',
+  181, -1440
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:48:41',
+  271, -1441
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:48:42',
+  271, -1390
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:48:43',
+  146, -1323
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:48:44',
+  -132, -1342
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:48:45',
+  -303, -1531
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:48:46',
+  -321, -1642
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:48:47',
+  -411, -1643
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:48:48',
+  -383, -1637
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:48:49',
+  -287, -1630
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:48:50',
+  -385, -1526
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:48:51',
+  -361, -1451
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:48:52',
+  -310, -1713
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:48:53',
+  -221, -1880
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:48:54',
+  -309, -1878
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:48:55',
+  -329, -1629
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:48:56',
+  -334, -1542
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:48:57',
+  -405, -1488
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:48:58',
+  -426, -1504
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:48:59',
+  -308, -1530
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:49:00',
+  -375, -1495
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:49:06',
+  -1473, -3326
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:49:07',
+  -1441, -3226
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:49:08',
+  -1441, -3227
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:49:09',
+  -1571, -3374
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:49:10',
+  -1455, -3330
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:49:11',
+  -1547, -3256
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:49:12',
+  -1526, -3185
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:49:13',
+  -1463, -3001
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:49:14',
+  -1517, -3028
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:49:15',
+  -1517, -3055
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:49:16',
+  -1514, -3042
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:49:17',
+  -1497, -3147
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:49:18',
+  -1243, -3059
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:49:19',
+  -1167, -3042
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:49:20',
+  -1167, -3017
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:49:21',
+  -1128, -2753
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:49:22',
+  -1079, -2577
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:49:23',
+  -1233, -2503
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:49:24',
+  -1258, -2468
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:49:25',
+  -1236, -2605
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:49:26',
+  -1213, -2608
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:49:27',
+  -1146, -2734
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:49:28',
+  -1200, -2844
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:49:29',
+  -1130, -2815
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:49:30',
+  -1183, -3050
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:49:31',
+  -1189, -3111
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:49:32',
+  -1169, -3112
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:49:33',
+  -1255, -3093
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:49:34',
+  -1399, -3097
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:49:35',
+  -1681, -3061
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:49:36',
+  -1879, -2918
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:49:37',
+  -1835, -2645
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:49:38',
+  -1875, -2616
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:49:39',
+  -1968, -2684
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:49:40',
+  -1898, -2678
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:49:41',
+  -1721, -2562
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:49:42',
+  -1640, -2587
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:49:43',
+  -1726, -2541
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:49:44',
+  -1852, -2548
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:49:45',
+  -1896, -2803
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:49:46',
+  -1792, -3061
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:49:47',
+  -1530, -3082
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:49:48',
+  -1489, -3073
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:49:49',
+  -1271, -3072
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:49:50',
+  -1129, -2864
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:49:51',
+  -1164, -2636
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:49:52',
+  -1101, -2666
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:49:53',
+  -1132, -2677
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:49:54',
+  -1267, -2576
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:49:55',
+  -1298, -2565
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:49:56',
+  -1264, -2608
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:49:57',
+  -1115, -2695
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:49:58',
+  -1143, -2957
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:49:59',
+  -1393, -3076
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:50:00',
+  -1865, -2993
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:50:01',
+  -1878, -2631
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:50:02',
+  -1868, -2537
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:50:03',
+  -1846, -2533
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:50:04',
+  -1917, -2548
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:50:05',
+  -1881, -2458
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:50:06',
+  -1838, -2288
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:50:07',
+  -1813, -2173
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:50:08',
+  -1888, -1959
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:50:09',
+  -1900, -1998
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:50:10',
+  -1966, -2032
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:50:11',
+  -2026, -2032
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:50:13',
+  -2051, -1996
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:50:14',
+  -2150, -1968
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:50:15',
+  -2200, -1914
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:50:16',
+  -2157, -1911
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:50:17',
+  -2198, -1745
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:50:18',
+  -2215, -1745
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:50:19',
+  -2070, -1813
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:50:20',
+  -2096, -1857
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:50:21',
+  -2142, -2060
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:50:22',
+  -1940, -2169
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:50:23',
+  -1954, -2116
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:50:24',
+  -1962, -2192
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:50:25',
+  -2125, -2042
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:50:26',
+  -2200, -1981
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:50:27',
+  -2136, -1911
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:50:28',
+  -2154, -1776
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:50:29',
+  -2152, -1773
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:50:30',
+  -2150, -1772
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:50:31',
+  -2153, -1837
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:50:33',
+  -2159, -1935
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:50:34',
+  -2162, -1954
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:50:35',
+  -2150, -1920
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:50:36',
+  -2152, -1824
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:50:37',
+  -2146, -1763
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:50:38',
+  -2144, -1744
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:50:39',
+  -2179, -1656
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:50:40',
+  -2001, -1676
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:50:41',
+  -2094, -1522
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:50:42',
+  -2104, -1613
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:50:43',
+  -2005, -1506
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:50:44',
+  -2021, -1680
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:50:45',
+  -2121, -1691
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:50:46',
+  -2223, -1798
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:50:47',
+  -2118, -1973
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:50:48',
+  -1857, -1973
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:50:49',
+  -1814, -1917
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:50:50',
+  -1910, -1835
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:50:51',
+  -1957, -1733
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:50:52',
+  -1906, -1633
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:50:53',
+  -1911, -1563
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:50:54',
+  -1866, -1426
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:50:55',
+  -1824, -1158
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:50:56',
+  -1816, -1255
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:50:57',
+  -1823, -1251
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:50:58',
+  -1793, -1004
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:50:59',
+  -1760, -904
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:51:00',
+  -1575, -728
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:51:01',
+  -1642, -731
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:51:02',
+  -1536, -802
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:51:03',
+  -1496, -782
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:51:04',
+  -1261, -846
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:51:05',
+  -1146, -918
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:51:06',
+  -1114, -908
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:51:07',
+  -1083, -897
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:51:08',
+  -998, -888
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:51:09',
+  -758, -769
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:51:10',
+  -902, -736
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:51:11',
+  -949, -761
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:51:12',
+  -1024, -848
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:51:13',
+  -1226, -783
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:51:14',
+  -1296, -757
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:51:15',
+  -1296, -775
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:51:19',
+  -1294, -755
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:51:22',
+  -1155, -759
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:51:23',
+  -1058, -736
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:51:24',
+  -1045, -734
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:51:25',
+  -991, -721
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:51:26',
+  -998, -757
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:51:27',
+  -1120, -754
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:51:28',
+  -1124, -782
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:51:29',
+  -1016, -910
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:51:30',
+  -804, -835
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:51:31',
+  -633, -722
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:51:32',
+  -640, -675
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:51:33',
+  -604, -862
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:51:35',
+  -689, -889
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:51:36',
+  -538, -849
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:51:37',
+  -530, -849
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:51:38',
+  -514, -849
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:51:39',
+  -434, -866
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:51:40',
+  -442, -830
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:51:41',
+  -438, -847
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:51:42',
+  -401, -976
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:51:43',
+  -496, -875
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:51:44',
+  -456, -851
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:51:45',
+  -466, -589
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:51:46',
+  -324, -419
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:51:47',
+  -252, -397
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:51:48',
+  -151, -496
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:51:49',
+  -155, -541
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:51:50',
+  -176, -637
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:51:51',
+  -200, -729
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:51:52',
+  -286, -731
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:51:53',
+  -237, -766
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:51:54',
+  -21, -848
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:51:55',
+  -19, -804
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:51:57',
+  -49, -784
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:51:58',
+  -162, -720
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:51:59',
+  -163, -728
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:52:00',
+  -62, -767
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:52:02',
+  -22, -777
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:52:03',
+  -18, -756
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:52:04',
+  -83, -762
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:52:05',
+  -92, -776
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:52:06',
+  -17, -847
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:52:08',
+  -39, -843
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:52:09',
+  -255, -756
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:52:10',
+  -302, -845
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:52:11',
+  -267, -839
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:52:12',
+  -274, -693
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:52:13',
+  -260, -529
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:52:14',
+  -247, -529
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:52:15',
+  -227, -721
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:52:16',
+  -133, -865
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:52:17',
+  -218, -747
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:52:18',
+  -100, -535
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:52:19',
+  -232, -369
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:52:20',
+  -387, -432
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:52:21',
+  -443, -588
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:52:22',
+  -490, -748
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:52:23',
+  -461, -656
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:52:24',
+  -718, -717
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:52:25',
+  -1009, -750
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:52:26',
+  -1301, -748
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:52:27',
+  -1591, -773
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:52:28',
+  -1774, -952
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:52:29',
+  -1813, -1213
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:52:30',
+  -1876, -1494
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:52:31',
+  -1886, -1559
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:52:32',
+  -1889, -1607
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:52:33',
+  -1874, -1869
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:52:34',
+  -1829, -2154
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:52:35',
+  -1891, -2441
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:52:36',
+  -1917, -2300
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:52:37',
+  -2012, -2336
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:52:38',
+  -2114, -2449
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:52:39',
+  -1963, -2516
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:52:40',
+  -2023, -2492
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:52:41',
+  -1781, -2559
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:52:42',
+  -1771, -2484
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:52:43',
+  -1857, -2700
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:52:44',
+  -1842, -2986
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:52:45',
+  -1624, -3105
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:52:46',
+  -1485, -3073
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:52:47',
+  -1482, -3061
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:52:48',
+  -1413, -3140
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:52:49',
+  -1166, -3017
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:52:50',
+  -1101, -2763
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:52:51',
+  -1188, -2488
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:52:52',
+  -1202, -2441
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:52:53',
+  -1198, -2520
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:52:54',
+  -1194, -2545
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:52:56',
+  -1198, -2472
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:52:57',
+  -1176, -2274
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:52:59',
+  -1328, -2219
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:53:00',
+  -1328, -2261
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:53:01',
+  -1328, -2270
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:53:04',
+  -1328, -2263
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:53:17',
+  -1455, -3253
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:53:18',
+  -1437, -3250
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:53:19',
+  -1372, -3360
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:53:20',
+  -1493, -3294
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:53:21',
+  -1550, -3217
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:53:22',
+  -1381, -3229
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:53:26',
+  -1374, -3217
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:53:29',
+  -1411, -3250
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:53:30',
+  -1433, -3256
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:53:31',
+  -1536, -3308
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:53:36',
+  -1518, -3392
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:53:38',
+  -1518, -3390
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:53:39',
+  -1522, -3368
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:53:40',
+  -1511, -3361
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:53:41',
+  -1496, -3379
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:53:42',
+  -1446, -3311
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:53:43',
+  -1494, -3259
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:53:44',
+  -1496, -3317
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:53:45',
+  -1535, -3137
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:53:46',
+  -1772, -3025
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:53:47',
+  -1870, -3043
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:53:48',
+  -1875, -3051
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:53:49',
+  -1874, -2877
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:53:50',
+  -1876, -2892
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:53:51',
+  -1884, -2746
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:53:52',
+  -1724, -2586
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:53:53',
+  -1657, -2608
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:53:54',
+  -1791, -2534
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:53:55',
+  -1937, -2704
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:53:56',
+  -1873, -2955
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:53:57',
+  -1658, -3068
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:53:58',
+  -1681, -3075
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:53:59',
+  -1691, -3083
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:54:00',
+  -1499, -3040
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:54:01',
+  -1234, -3070
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:54:02',
+  -1097, -2881
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:54:03',
+  -1117, -2684
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:54:04',
+  -1203, -2605
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:54:05',
+  -1351, -2602
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:54:06',
+  -1224, -2466
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:54:07',
+  -1143, -2676
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:54:08',
+  -1151, -2960
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:54:09',
+  -1377, -3097
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:54:10',
+  -1701, -3078
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:54:11',
+  -1881, -2852
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:54:12',
+  -1859, -2573
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:54:13',
+  -1855, -2552
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:54:14',
+  -1847, -2559
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:54:15',
+  -1888, -2534
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:54:16',
+  -1914, -2543
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:54:17',
+  -1887, -2574
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:54:18',
+  -1800, -2605
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:54:19',
+  -1847, -2604
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:54:20',
+  -1861, -2557
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:54:21',
+  -1852, -2579
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:54:22',
+  -1915, -2496
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:54:23',
+  -2154, -2538
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:54:24',
+  -2123, -2640
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:54:25',
+  -2157, -2618
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:54:26',
+  -2156, -2427
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:54:27',
+  -2026, -2386
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:54:29',
+  -1820, -2206
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:54:30',
+  -1821, -2074
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:54:31',
+  -1877, -2028
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:54:32',
+  -2089, -2008
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:54:33',
+  -2074, -1981
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:54:34',
+  -2071, -2054
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:54:35',
+  -2154, -2016
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:54:36',
+  -2185, -1993
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:54:41',
+  -1452, -3244
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:54:42',
+  -1431, -3217
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:54:44',
+  -1591, -3336
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:54:45',
+  -1648, -3300
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:54:46',
+  -1509, -3219
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:54:47',
+  -1534, -3197
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:54:48',
+  -1741, -3049
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:54:49',
+  -1946, -2941
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:54:50',
+  -1948, -3018
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:54:51',
+  -1918, -3013
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:54:53',
+  -1924, -2946
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:54:54',
+  -1916, -2746
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:54:55',
+  -1880, -2790
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:54:56',
+  -1865, -2822
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:54:57',
+  -1897, -2633
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:54:58',
+  -1786, -2578
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:54:59',
+  -1656, -2597
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:55:00',
+  -1646, -2540
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:55:01',
+  -1741, -2608
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:55:02',
+  -1908, -2722
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:55:03',
+  -1905, -3001
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:55:04',
+  -1710, -3127
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:55:05',
+  -1671, -3088
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:55:06',
+  -1682, -3090
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:55:07',
+  -1414, -3076
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:55:08',
+  -1166, -2995
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:55:09',
+  -1139, -2721
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:55:10',
+  -1077, -2645
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:55:11',
+  -1041, -2668
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:55:13',
+  -1041, -2621
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:55:14',
+  -1053, -2616
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:55:15',
+  -1207, -2603
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:55:16',
+  -1376, -2576
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:55:17',
+  -1233, -2501
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:55:18',
+  -1154, -2436
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:55:19',
+  -1153, -2436
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:55:20',
+  -1211, -2510
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:55:21',
+  -1273, -2552
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:55:22',
+  -1167, -2667
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:55:23',
+  -1148, -2946
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:55:24',
+  -1354, -3092
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:55:25',
+  -1798, -3053
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:55:26',
+  -1968, -2995
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:55:27',
+  -1891, -2819
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:55:28',
+  -1869, -2571
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:55:29',
+  -1882, -2556
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:55:30',
+  -1844, -2577
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:55:31',
+  -1798, -2595
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:55:32',
+  -1806, -2589
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:55:33',
+  -1754, -2603
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:55:35',
+  -1835, -2538
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:55:38',
+  -1751, -2525
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:55:39',
+  -1689, -2525
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:55:40',
+  -1724, -2535
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:55:41',
+  -1658, -2521
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:55:42',
+  -1649, -2531
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:55:44',
+  -1650, -2529
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:55:48',
+  -1646, -2540
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:55:49',
+  -1635, -2567
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:56:14',
+  -1471, -3268
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:56:15',
+  -1483, -3254
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:56:16',
+  -1443, -3271
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:56:17',
+  -1554, -3227
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:56:18',
+  -1506, -3273
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:56:19',
+  -1513, -3220
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:56:20',
+  -1522, -3204
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:56:21',
+  -1724, -3044
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:56:22',
+  -1811, -3034
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:56:23',
+  -1802, -3032
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:56:24',
+  -1809, -3024
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:56:25',
+  -1810, -2890
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:56:26',
+  -1811, -2812
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:56:27',
+  -1812, -2872
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:56:28',
+  -1910, -2772
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:56:29',
+  -1921, -2688
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:56:30',
+  -1731, -2512
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:56:31',
+  -1685, -2554
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:56:32',
+  -1698, -2491
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:56:33',
+  -1747, -2578
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:56:34',
+  -1840, -2702
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:56:35',
+  -1813, -3093
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:56:36',
+  -1715, -3138
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:56:37',
+  -1746, -3151
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:56:39',
+  -1798, -3157
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:56:40',
+  -1630, -3136
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:56:41',
+  -1345, -3099
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:56:42',
+  -1143, -2926
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:56:43',
+  -1166, -2649
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:56:44',
+  -1157, -2585
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:56:45',
+  -1111, -2588
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:56:46',
+  -1341, -2559
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:56:47',
+  -1342, -2598
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:56:48',
+  -1159, -2517
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:56:49',
+  -1102, -2807
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:56:50',
+  -1265, -3132
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:56:51',
+  -1494, -3055
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:56:52',
+  -1481, -3089
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:56:53',
+  -1603, -3115
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:56:54',
+  -1835, -2991
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:56:55',
+  -1857, -2717
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:56:56',
+  -1716, -2539
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:56:57',
+  -1733, -2517
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:56:58',
+  -1629, -2583
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:56:59',
+  -1783, -2546
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:57:00',
+  -1775, -2604
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:57:01',
+  -1799, -2586
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:57:02',
+  -1726, -2608
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:57:03',
+  -1736, -2604
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:57:04',
+  -1757, -2597
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:57:05',
+  -1867, -2558
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:57:06',
+  -1834, -2576
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:57:07',
+  -1928, -2552
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:57:08',
+  -2005, -2408
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:57:09',
+  -2125, -2431
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:57:10',
+  -2160, -2442
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:57:11',
+  -2160, -2462
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:57:12',
+  -2160, -2511
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:57:13',
+  -2160, -2565
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:57:14',
+  -2160, -2637
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:57:16',
+  -2062, -2561
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:57:17',
+  -1877, -2394
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:57:18',
+  -2001, -2269
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:57:19',
+  -1833, -2329
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:57:20',
+  -1830, -2213
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:57:21',
+  -1872, -2076
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:57:22',
+  -2004, -1969
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:57:23',
+  -1962, -1969
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:57:24',
+  -1963, -1974
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:57:25',
+  -1976, -1983
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:57:26',
+  -1959, -1979
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:57:27',
+  -1947, -1972
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:57:29',
+  -1928, -1969
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:57:30',
+  -1971, -2030
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:57:31',
+  -2080, -1983
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:57:32',
+  -2156, -2029
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:57:33',
+  -2007, -2139
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:57:34',
+  -2020, -2108
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:57:35',
+  -1987, -2105
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:57:36',
+  -1952, -2099
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:57:37',
+  -1921, -2098
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:57:39',
+  -1953, -2187
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:57:40',
+  -2150, -2131
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:57:41',
+  -2101, -2196
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:57:43',
+  -1947, -2113
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:57:44',
+  -1947, -2167
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:57:45',
+  -2116, -2105
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:57:46',
+  -2194, -1926
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:57:47',
+  -2160, -1772
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:57:48',
+  -2200, -1967
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:57:49',
+  -2200, -1993
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:57:50',
+  -2162, -1851
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:57:51',
+  -2200, -2017
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:57:52',
+  -2200, -1948
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:57:53',
+  -2178, -1780
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:57:57',
+  -2179, -1701
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:57:58',
+  -2017, -1494
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:57:59',
+  -2077, -1521
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:58:00',
+  -2004, -1608
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:58:01',
+  -2076, -1583
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:58:02',
+  -2173, -1736
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:58:03',
+  -2187, -1874
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:58:04',
+  -2099, -2045
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:58:05',
+  -1970, -1995
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:58:06',
+  -1858, -1902
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:58:07',
+  -1864, -1889
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:58:08',
+  -1896, -1880
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:58:09',
+  -1939, -1718
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:58:10',
+  -1903, -1641
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:58:11',
+  -1899, -1646
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:58:12',
+  -1912, -1863
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:58:13',
+  -1858, -2007
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:58:14',
+  -1835, -2108
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:58:15',
+  -1787, -2083
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:58:16',
+  -1886, -1848
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:58:17',
+  -1879, -1640
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:58:18',
+  -1870, -1571
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:58:19',
+  -1865, -1516
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:58:20',
+  -1831, -1241
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:58:21',
+  -1774, -964
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:58:22',
+  -1605, -773
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:58:23',
+  -1538, -756
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:58:24',
+  -1598, -750
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:58:25',
+  -1560, -751
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:58:26',
+  -1636, -758
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:58:27',
+  -1669, -769
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:58:28',
+  -1839, -804
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:58:29',
+  -1712, -883
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:58:30',
+  -1694, -782
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:58:31',
+  -1774, -783
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:58:32',
+  -1767, -894
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:58:33',
+  -1691, -902
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:58:34',
+  -1696, -832
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:58:35',
+  -1698, -795
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:58:36',
+  -1675, -725
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:58:37',
+  -1686, -721
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:58:39',
+  -1500, -752
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:58:40',
+  -1394, -756
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:58:41',
+  -1378, -770
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:58:43',
+  -1367, -784
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:58:45',
+  -1387, -770
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:58:46',
+  -1400, -763
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:58:47',
+  -1354, -726
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:58:48',
+  -1352, -789
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:58:49',
+  -1224, -919
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:58:50',
+  -1025, -915
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:58:51',
+  -828, -787
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:58:52',
+  -791, -736
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:58:53',
+  -650, -764
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:58:54',
+  -593, -841
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:58:55',
+  -586, -853
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:58:56',
+  -611, -859
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:58:57',
+  -567, -859
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:58:58',
+  -557, -849
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:58:59',
+  -533, -859
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:59:01',
+  -564, -849
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:59:02',
+  -511, -880
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:59:04',
+  -579, -849
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:59:05',
+  -670, -712
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:59:06',
+  -686, -714
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:59:07',
+  -519, -678
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:59:08',
+  -548, -657
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:59:09',
+  -542, -679
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:59:10',
+  -511, -663
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:59:11',
+  -460, -654
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:59:12',
+  -479, -685
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:59:13',
+  -467, -942
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:59:14',
+  -474, -870
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:59:15',
+  -401, -908
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:59:16',
+  -476, -825
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:59:18',
+  -506, -859
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:59:19',
+  -716, -836
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:59:20',
+  -924, -861
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:59:21',
+  -1208, -874
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:59:22',
+  -1299, -818
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:59:23',
+  -1348, -769
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:59:24',
+  -1303, -769
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:59:25',
+  -1296, -769
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:59:28',
+  -1074, -791
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:59:29',
+  -1038, -821
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:59:30',
+  -1045, -822
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:59:31',
+  -913, -799
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:59:32',
+  -653, -726
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:59:33',
+  -503, -657
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:59:34',
+  -430, -456
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:59:35',
+  -223, -409
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:59:36',
+  -137, -445
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:59:37',
+  -137, -409
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:59:38',
+  -175, -382
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:59:39',
+  -277, -369
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:59:40',
+  -290, -430
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:59:41',
+  -304, -439
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:59:42',
+  -150, -423
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:59:43',
+  -157, -512
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:59:44',
+  -220, -775
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:59:45',
+  -272, -708
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:59:46',
+  -127, -755
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:59:47',
+  -58, -818
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:59:48',
+  -163, -832
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:59:49',
+  -130, -880
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:59:51',
+  -147, -839
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:59:52',
+  -137, -844
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:59:54',
+  -266, -696
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:59:55',
+  -303, -559
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:59:56',
+  -267, -529
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:59:57',
+  -245, -644
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:59:58',
+  -111, -769
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 20:59:59',
+  -17, -672
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:00:00',
+  -144, -548
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:00:01',
+  -195, -457
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:00:02',
+  -368, -432
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:00:03',
+  -490, -564
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:00:04',
+  -497, -657
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:00:05',
+  -663, -698
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:00:06',
+  -1033, -716
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:00:07',
+  -1576, -777
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:00:08',
+  -1798, -947
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:00:09',
+  -1825, -1232
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:00:10',
+  -1861, -1520
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:00:11',
+  -1855, -1534
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:00:12',
+  -1874, -1780
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:00:13',
+  -1852, -1983
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:00:14',
+  -1839, -1946
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:00:15',
+  -1840, -2176
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:00:16',
+  -1861, -2373
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:00:17',
+  -2048, -2429
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:00:18',
+  -1993, -2386
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:00:19',
+  -1934, -2420
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:00:20',
+  -1930, -2388
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:00:21',
+  -1879, -2538
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:00:22',
+  -1891, -2937
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:00:23',
+  -1734, -3078
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:00:24',
+  -1453, -3083
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:00:25',
+  -1127, -2982
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:00:26',
+  -1118, -2640
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:00:27',
+  -1224, -2424
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:00:28',
+  -1260, -2506
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:00:29',
+  -1270, -2508
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:00:30',
+  -1246, -2456
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:00:31',
+  -1239, -2479
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:00:32',
+  -1167, -2535
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:00:33',
+  -1162, -2539
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:00:34',
+  -1220, -2560
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:00:35',
+  -1205, -2451
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:00:36',
+  -1206, -2439
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:00:37',
+  -1233, -2574
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:00:38',
+  -1225, -2498
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:00:39',
+  -1229, -2387
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:00:40',
+  -1274, -2130
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:00:42',
+  -1287, -2149
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:00:43',
+  -1154, -2102
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:00:44',
+  -1306, -2159
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:00:45',
+  -1165, -2252
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:00:46',
+  -888, -2275
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:00:47',
+  -718, -2103
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:00:48',
+  -724, -2209
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:00:49',
+  -726, -2220
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:00:50',
+  -699, -2010
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:00:51',
+  -699, -1809
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:00:52',
+  -750, -1859
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:00:53',
+  -623, -1723
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:00:54',
+  -627, -1724
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:00:55',
+  -656, -1728
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:00:57',
+  -680, -1739
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:00:58',
+  -704, -1754
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:01:00',
+  -585, -1683
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:01:01',
+  -536, -1667
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:01:02',
+  -505, -1668
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:01:03',
+  -371, -1515
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:01:04',
+  -123, -1377
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:01:05',
+  151, -1323
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:01:06',
+  212, -1429
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:01:07',
+  229, -1418
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:01:08',
+  191, -1439
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:01:09',
+  4, -1476
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:01:10',
+  -274, -1460
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:01:11',
+  -324, -1673
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:01:12',
+  -313, -1790
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:01:13',
+  -393, -1757
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:01:14',
+  -474, -1608
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:01:15',
+  -455, -1612
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:01:16',
+  -359, -1605
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:01:17',
+  -346, -1635
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:01:18',
+  -349, -1730
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:01:19',
+  -354, -1635
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:01:20',
+  -356, -1589
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:01:23',
+  -361, -1696
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:01:24',
+  -362, -1723
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:01:25',
+  -343, -1613
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:01:26',
+  -237, -1610
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:01:27',
+  -77, -1636
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:01:28',
+  -179, -1647
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:01:29',
+  -365, -1652
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:01:30',
+  -131, -1632
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:01:31',
+  38, -1618
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:01:32',
+  98, -1614
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:01:33',
+  42, -1618
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:01:34',
+  99, -1614
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:01:35',
+  293, -1599
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:01:36',
+  438, -1595
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:01:37',
+  434, -1805
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:01:38',
+  419, -1811
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:01:39',
+  324, -1764
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:01:40',
+  383, -1649
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:01:41',
+  347, -1474
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:01:42',
+  371, -1297
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:01:43',
+  376, -1385
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:01:44',
+  489, -1642
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:01:45',
+  377, -1737
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:01:46',
+  412, -1659
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:01:47',
+  533, -1575
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:01:48',
+  514, -1574
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:01:49',
+  641, -1620
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:01:50',
+  718, -1684
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:01:52',
+  721, -1668
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:01:53',
+  708, -1539
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:01:54',
+  670, -1604
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:01:55',
+  662, -1564
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:01:56',
+  673, -1568
+);
+
+INSERT INTO UXInstrument (nombre, tipo) VALUES ('unknown', 'unknown');
+
+INSERT INTO UXResponse (user_id, instrument_id, fecha_respuesta, respuestas_json)
+VALUES (
+  currval(pg_get_serial_sequence('"User"','user_id')),
+  currval(pg_get_serial_sequence('UXInstrument','instrument_id')),
+  '2025-11-05 20:37:32',
+  'unknown'
+);
+
+-- Fin de inserciones generadas
+
+-- ============================
+-- Inserción generada desde: /Users/danielduarte/Desktop/University/Bases_de_datos/Proyecto/Data/joseContreras_partida7.txt
+-- When (fecha_inicio): 2025-11-05 21:03:25  episodio: 1  map: 4
+-- Telemetrias: 1134 filas. Fecha fin: 2025-11-05 21:27:06 Dur(s): 1417
+-- ============================
+
+INSERT INTO "User" (nombre_completo, genero, carrera)
+VALUES ('Jose Alejandro Contreras Obregon', 'M', 'Ciencia de datos');
+
+INSERT INTO Player (user_id, alias)
+VALUES (currval(pg_get_serial_sequence('"User"','user_id')), 'mysticfriday');
+
+INSERT INTO Map (codigo_map, nombre_oficial)
+VALUES ('4', 'E1M4: Command Control');
+
+INSERT INTO Game (player_id, map_id, fecha_inicio, fecha_fin, duracion_seconds, episodio)
+VALUES (
+  currval(pg_get_serial_sequence('Player','player_id')),
+  currval(pg_get_serial_sequence('Map','map_id')),
+  '2025-11-05 21:03:25',
+  '2025-11-05 21:27:06',
+  1417,
+  1
+);
+
+INSERT INTO Sector (map_id, nombre_sector)
+VALUES (currval(pg_get_serial_sequence('Map','map_id')), 'unknown');
+
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:03:29',
+  2032, 1120
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:03:32',
+  2025, 1125
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:03:33',
+  1881, 1161
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:03:35',
+  1773, 1143
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:03:36',
+  1651, 916
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:03:37',
+  1645, 898
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:03:38',
+  1645, 951
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:03:39',
+  1644, 1046
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:03:40',
+  1642, 1062
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:03:41',
+  1650, 936
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:03:42',
+  1655, 692
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:03:43',
+  1634, 518
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:03:44',
+  1768, 546
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:03:45',
+  1634, 755
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:03:46',
+  1598, 809
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:03:47',
+  1703, 837
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:03:48',
+  1620, 841
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:03:49',
+  1508, 950
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:03:50',
+  1538, 917
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:03:51',
+  1549, 1025
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:03:52',
+  1619, 974
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:03:53',
+  1543, 940
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:03:54',
+  1503, 841
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:03:55',
+  1526, 929
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:03:56',
+  1389, 1150
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:03:57',
+  1572, 1104
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:03:58',
+  1612, 1030
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:03:59',
+  1405, 852
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:04:00',
+  1165, 779
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:04:01',
+  1020, 726
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:04:02',
+  889, 532
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:04:03',
+  875, 475
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:04:04',
+  839, 486
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:04:05',
+  729, 499
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:04:06',
+  711, 583
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:04:07',
+  727, 495
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:06:10',
+  713, 567
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:06:11',
+  725, 594
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:06:12',
+  912, 600
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:06:13',
+  947, 648
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:06:14',
+  849, 562
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:06:15',
+  733, 387
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:06:17',
+  734, 357
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:06:18',
+  720, 368
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:06:19',
+  720, 397
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:06:20',
+  815, 305
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:06:21',
+  888, 303
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:06:22',
+  948, 276
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:06:23',
+  956, 288
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:06:24',
+  1113, 380
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:06:25',
+  1287, 579
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:06:26',
+  1327, 653
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:06:27',
+  1235, 500
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:06:28',
+  1030, 311
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:06:29',
+  759, 260
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:06:30',
+  649, 265
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:06:31',
+  500, 395
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:06:32',
+  402, 665
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:06:33',
+  287, 929
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:06:34',
+  29, 1025
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:06:35',
+  -228, 928
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:06:36',
+  -286, 664
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:06:37',
+  -208, 395
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:06:38',
+  -10, 186
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:06:39',
+  43, -90
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:06:40',
+  124, -205
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:06:41',
+  391, -154
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:06:42',
+  520, -194
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:06:43',
+  383, -237
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:06:44',
+  330, -235
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:06:45',
+  402, -223
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:06:46',
+  304, -229
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:06:47',
+  230, -231
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:06:50',
+  303, -226
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:06:52',
+  311, -215
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:06:53',
+  322, -221
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:06:54',
+  566, -226
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:06:55',
+  808, -146
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:06:56',
+  900, 97
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:06:57',
+  839, 66
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:06:58',
+  1037, -88
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:06:59',
+  1216, -158
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:07:00',
+  1150, -131
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:07:01',
+  1112, -149
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:07:02',
+  1112, -103
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:07:03',
+  1107, -63
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:07:04',
+  1027, -53
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:07:05',
+  1010, -23
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:07:06',
+  1047, -127
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:07:07',
+  1056, -152
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:07:08',
+  836, -169
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:07:09',
+  552, -136
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:07:10',
+  268, -106
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:07:11',
+  -4, -59
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:07:12',
+  -14, 93
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:07:13',
+  -33, 259
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:07:14',
+  -215, 216
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:07:15',
+  -300, 270
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:07:16',
+  -284, 280
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:07:17',
+  -281, 326
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:07:18',
+  -333, 302
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:07:19',
+  -297, 338
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:07:20',
+  -355, 553
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:07:21',
+  -331, 776
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:07:22',
+  -475, 830
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:07:23',
+  -462, 811
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:07:24',
+  -438, 796
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:07:25',
+  -243, 942
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:07:26',
+  28, 1013
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:07:27',
+  295, 931
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:07:28',
+  367, 855
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:07:29',
+  363, 951
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:07:30',
+  372, 1035
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:07:31',
+  337, 1102
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:07:32',
+  342, 951
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:07:33',
+  382, 668
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:07:34',
+  426, 380
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:07:35',
+  544, 213
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:07:36',
+  774, 282
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:07:37',
+  1045, 351
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:07:38',
+  1066, 426
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:07:39',
+  1000, 358
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:07:40',
+  760, 247
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:07:41',
+  472, 266
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:07:42',
+  182, 299
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:07:43',
+  44, 270
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:07:44',
+  -171, 244
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:07:45',
+  -280, 497
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:07:46',
+  -498, 651
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:07:47',
+  -560, 704
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:07:48',
+  -482, 710
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:07:49',
+  -676, 600
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:07:50',
+  -699, 601
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:07:51',
+  -702, 606
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:07:52',
+  -679, 547
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:07:53',
+  -707, 632
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:07:54',
+  -593, 590
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:07:55',
+  -582, 624
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:07:56',
+  -602, 698
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:07:57',
+  -579, 685
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:07:58',
+  -511, 704
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:07:59',
+  -382, 837
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:08:00',
+  -177, 1023
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:08:01',
+  17, 1126
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:08:02',
+  -37, 1171
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:08:03',
+  -61, 1075
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:08:04',
+  189, 1015
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:08:05',
+  349, 794
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:08:06',
+  342, 513
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:08:07',
+  133, 357
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:08:08',
+  -149, 399
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:08:09',
+  -391, 541
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:08:10',
+  -634, 645
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:08:11',
+  -720, 631
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:08:12',
+  -728, 778
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:08:13',
+  -731, 816
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:08:14',
+  -719, 898
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:08:15',
+  -716, 880
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:08:16',
+  -700, 770
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:08:17',
+  -752, 791
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:08:19',
+  -680, 771
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:08:20',
+  -574, 675
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:08:21',
+  -632, 559
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:08:22',
+  -696, 94
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:08:23',
+  -708, -370
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:08:24',
+  -517, -322
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:08:25',
+  -419, -271
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:08:26',
+  -489, -108
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:08:27',
+  -480, -53
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:08:28',
+  -603, -92
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:08:29',
+  -635, -150
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:08:30',
+  -569, -55
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:08:31',
+  -433, -168
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:08:32',
+  -452, -102
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:08:33',
+  -437, 4
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:08:34',
+  -406, -24
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:08:35',
+  -493, 47
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:08:36',
+  -690, 35
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:08:37',
+  -771, -229
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:08:38',
+  -770, -291
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:08:40',
+  -776, -177
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:08:41',
+  -710, 275
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:08:42',
+  -653, 713
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:08:43',
+  -659, 732
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:08:44',
+  -488, 707
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:08:45',
+  -487, 673
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:08:46',
+  -378, 431
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:08:47',
+  -241, 381
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:08:48',
+  -342, 576
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:08:49',
+  -241, 885
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:08:50',
+  -85, 976
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:08:51',
+  192, 1019
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:08:52',
+  403, 847
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:08:53',
+  531, 759
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:08:54',
+  439, 714
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:08:55',
+  518, 710
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:08:56',
+  503, 702
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:09:15',
+  1999, 1119
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:09:16',
+  1923, 1119
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:09:17',
+  1902, 1119
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:09:18',
+  1697, 1047
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:09:19',
+  1681, 1054
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:09:20',
+  1710, 1202
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:09:21',
+  1721, 1245
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:09:22',
+  1727, 1219
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:09:23',
+  1721, 1244
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:09:24',
+  1716, 1192
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:09:25',
+  1717, 1212
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:09:26',
+  1698, 1020
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:09:27',
+  1561, 577
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:09:28',
+  1681, 597
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:09:29',
+  1513, 759
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:09:30',
+  1249, 807
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:09:31',
+  1302, 779
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:09:32',
+  1313, 720
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:09:33',
+  1436, 835
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:09:34',
+  1471, 1090
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:09:35',
+  1519, 1120
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:09:36',
+  1506, 1128
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:09:37',
+  1446, 1134
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:09:38',
+  1317, 1146
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:09:39',
+  1497, 1200
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:09:40',
+  1629, 1034
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:09:41',
+  1420, 869
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:09:42',
+  1145, 826
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:09:43',
+  883, 932
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:09:44',
+  812, 850
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:09:45',
+  996, 466
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:09:46',
+  927, 524
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:09:47',
+  744, 538
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:09:48',
+  731, 588
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:09:49',
+  748, 505
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:09:50',
+  740, 379
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:09:51',
+  738, 357
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:09:52',
+  731, 371
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:09:54',
+  721, 375
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:09:55',
+  734, 381
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:09:56',
+  720, 402
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:09:57',
+  751, 368
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:09:58',
+  759, 359
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:09:59',
+  756, 362
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:10:00',
+  744, 387
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:10:01',
+  743, 265
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:10:02',
+  902, 236
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:10:03',
+  1107, 423
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:10:04',
+  1329, 599
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:10:05',
+  1303, 608
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:10:06',
+  1130, 402
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:10:07',
+  881, 277
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:10:08',
+  592, 267
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:10:09',
+  626, 273
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:10:10',
+  527, 368
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:10:11',
+  550, 418
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:10:12',
+  559, 572
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:10:13',
+  471, 835
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:10:14',
+  258, 1026
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:10:15',
+  47, 1190
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:10:16',
+  14, 1165
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:10:17',
+  3, 1124
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:10:18',
+  6, 1158
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:10:19',
+  -148, 1094
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:10:20',
+  -350, 893
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:10:21',
+  -544, 696
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:10:22',
+  -565, 694
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:10:23',
+  -554, 647
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:10:24',
+  -593, 643
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:10:25',
+  -642, 577
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:10:26',
+  -656, 582
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:10:27',
+  -650, 544
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:10:29',
+  -653, 557
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:10:30',
+  -658, 575
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:10:31',
+  -669, 614
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:10:32',
+  -659, 389
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:10:33',
+  -717, 107
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:10:34',
+  -768, -158
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:10:35',
+  -770, -234
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:10:36',
+  -774, -239
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:10:37',
+  -759, -357
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:10:38',
+  -716, -384
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:10:39',
+  -595, -387
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:10:40',
+  -383, -336
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:10:41',
+  -268, -113
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:10:42',
+  -348, 64
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:10:43',
+  -326, 92
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:10:44',
+  -295, 77
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:10:45',
+  -209, -38
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:10:46',
+  -293, 2
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:10:47',
+  -260, 27
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:10:48',
+  -248, 13
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:10:49',
+  -500, 80
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:10:50',
+  -585, 66
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:10:51',
+  -668, 289
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:10:52',
+  -776, 208
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:10:53',
+  -792, -71
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:10:54',
+  -743, -356
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:10:55',
+  -527, -398
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:10:56',
+  -460, -154
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:10:57',
+  -562, -37
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:10:58',
+  -455, -29
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:10:59',
+  -397, -40
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:11:00',
+  -488, -44
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:11:01',
+  -611, -55
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:11:02',
+  -637, -197
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:11:03',
+  -652, -69
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:11:04',
+  -698, 204
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:11:05',
+  -705, 495
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:11:06',
+  -540, 698
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:11:07',
+  -311, 710
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:11:08',
+  -242, 699
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:11:09',
+  -288, 701
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:11:10',
+  -389, 715
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:11:11',
+  -499, 743
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:11:12',
+  -327, 977
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:11:13',
+  -90, 1160
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:11:14',
+  -6, 1184
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:11:15',
+  219, 1093
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:11:16',
+  222, 1134
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:11:17',
+  203, 1124
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:11:18',
+  191, 1119
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:11:19',
+  260, 1150
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:11:20',
+  309, 994
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:11:21',
+  370, 496
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:11:22',
+  168, 391
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:11:23',
+  -60, 294
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:11:24',
+  -271, 446
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:11:25',
+  -339, 500
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:11:26',
+  -321, 696
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:11:27',
+  -206, 948
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:11:28',
+  13, 939
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:11:29',
+  25, 936
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:11:30',
+  21, 945
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:11:31',
+  83, 1045
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:11:32',
+  146, 1170
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:11:33',
+  192, 1173
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:11:34',
+  88, 1001
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:11:35',
+  36, 733
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:11:36',
+  123, 508
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:11:37',
+  71, 512
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:11:38',
+  150, 754
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:11:39',
+  159, 817
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:11:40',
+  -71, 794
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:11:41',
+  -47, 666
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:11:42',
+  196, 621
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:11:43',
+  133, 587
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:11:44',
+  -60, 676
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:11:45',
+  -3, 680
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:11:46',
+  13, 432
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:11:47',
+  235, 310
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:11:48',
+  520, 270
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:11:49',
+  692, 212
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:11:50',
+  583, 265
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:11:51',
+  303, 287
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:11:52',
+  13, 285
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:11:53',
+  -222, 422
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:11:54',
+  -429, 622
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:11:55',
+  -701, 655
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:11:56',
+  -701, 489
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:11:57',
+  -676, 216
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:11:58',
+  -720, -71
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:11:59',
+  -775, -275
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:12:00',
+  -775, -268
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:12:01',
+  -901, -255
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:12:02',
+  -779, -241
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:12:03',
+  -781, -247
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:12:04',
+  -737, -230
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:12:05',
+  -888, -289
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:12:06',
+  -869, -310
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:12:07',
+  -997, -336
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:12:08',
+  -929, -314
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:12:09',
+  -950, -283
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:12:12',
+  -862, -244
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:12:13',
+  -972, -291
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:12:14',
+  -985, -277
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:12:15',
+  -998, -271
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:12:16',
+  -1043, -319
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:12:17',
+  -1059, -496
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:12:18',
+  -1042, -496
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:12:19',
+  -1004, -496
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:12:20',
+  -1035, -473
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:12:21',
+  -1088, -496
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:12:22',
+  -951, -444
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:12:23',
+  -826, -537
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:12:24',
+  -837, -534
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:12:25',
+  -980, -450
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:12:26',
+  -1113, -400
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:12:27',
+  -1095, -266
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:12:28',
+  -1092, -244
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:12:29',
+  -1091, -48
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:12:30',
+  -1105, 87
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:12:31',
+  -1126, 242
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:12:32',
+  -1100, 522
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:12:33',
+  -1071, 697
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:12:34',
+  -878, 836
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:12:35',
+  -785, 973
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:12:36',
+  -785, 920
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:12:38',
+  -817, 946
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:12:39',
+  -845, 950
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:12:40',
+  -828, 963
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:12:41',
+  -863, 814
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:12:42',
+  -849, 809
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:12:43',
+  -849, 827
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:12:44',
+  -849, 837
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:12:46',
+  -849, 900
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:12:47',
+  -849, 937
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:12:48',
+  -817, 975
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:12:50',
+  -785, 975
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:13:04',
+  1872, 1119
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:13:05',
+  1787, 1106
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:13:06',
+  1697, 1076
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:13:07',
+  1703, 1124
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:13:08',
+  1709, 1171
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:13:09',
+  1716, 1241
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:13:10',
+  1721, 1199
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:13:11',
+  1719, 1185
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:13:12',
+  1718, 1203
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:13:13',
+  1742, 945
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:13:14',
+  1767, 768
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:13:15',
+  1643, 595
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:13:16',
+  1423, 735
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:13:17',
+  1341, 780
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:13:18',
+  1225, 776
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:13:19',
+  1287, 756
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:13:20',
+  1381, 762
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:13:21',
+  1479, 1001
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:13:22',
+  1455, 1118
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:13:23',
+  1376, 1163
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:13:24',
+  1329, 1200
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:13:25',
+  1371, 1164
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:13:26',
+  1427, 1113
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:13:27',
+  1498, 1088
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:13:28',
+  1432, 838
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:13:29',
+  1167, 815
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:13:30',
+  904, 895
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:13:31',
+  765, 722
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:13:32',
+  735, 440
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:13:33',
+  745, 378
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:13:34',
+  751, 363
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:13:35',
+  720, 400
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:13:40',
+  815, 301
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:13:41',
+  951, 305
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:13:42',
+  1152, 461
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:13:43',
+  1331, 605
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:13:44',
+  1271, 613
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:13:45',
+  1120, 405
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:13:46',
+  876, 268
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:13:47',
+  656, 269
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:13:48',
+  554, 287
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:13:49',
+  605, 243
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:13:50',
+  387, 357
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:13:51',
+  311, 331
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:13:52',
+  425, 391
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:13:53',
+  466, 663
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:13:54',
+  336, 914
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:13:55',
+  117, 1102
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:13:56',
+  29, 1273
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:13:57',
+  5, 1181
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:13:58',
+  -3, 1053
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:13:59',
+  -189, 1004
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:14:00',
+  -487, 768
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:14:01',
+  -606, 610
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:14:02',
+  -626, 498
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:14:03',
+  -637, 554
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:14:04',
+  -631, 525
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:14:05',
+  -635, 533
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:14:06',
+  -643, 571
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:14:07',
+  -656, 681
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:14:08',
+  -661, 609
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:14:09',
+  -724, 750
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:14:10',
+  -726, 840
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:14:12',
+  -726, 867
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:14:13',
+  -726, 868
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:14:14',
+  -723, 818
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:14:15',
+  -722, 761
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:14:16',
+  -722, 742
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:14:17',
+  -721, 685
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:14:18',
+  -719, 669
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:14:19',
+  -710, 411
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:14:20',
+  -729, 123
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:14:21',
+  -750, -167
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:14:22',
+  -704, -430
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:14:23',
+  -455, -393
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:14:24',
+  -278, -185
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:14:25',
+  -335, 78
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:14:26',
+  -574, 56
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:14:27',
+  -739, -159
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:14:28',
+  -708, -378
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:14:29',
+  -588, -410
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:14:30',
+  -418, -248
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:14:31',
+  -545, -37
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:14:32',
+  -509, -146
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:14:33',
+  -446, -29
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:14:34',
+  -426, 13
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:14:35',
+  -400, 20
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:14:36',
+  -369, -21
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:14:37',
+  -567, -88
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:14:38',
+  -647, -211
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:14:39',
+  -613, -93
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:14:40',
+  -671, 164
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:14:41',
+  -705, 452
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:14:42',
+  -694, 743
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:14:43',
+  -683, 966
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:14:44',
+  -682, 970
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:14:45',
+  -667, 1020
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:14:46',
+  -676, 1041
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:14:47',
+  -679, 1110
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:14:48',
+  -485, 1255
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:14:49',
+  -232, 1256
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:14:50',
+  -221, 1301
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:14:51',
+  -211, 1282
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:14:52',
+  -211, 1296
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:14:53',
+  -220, 1327
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:14:54',
+  -240, 1385
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:14:55',
+  -177, 1272
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:14:56',
+  -224, 1342
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:14:57',
+  -245, 1289
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:14:58',
+  -322, 1527
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:14:59',
+  -432, 1583
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:15:00',
+  -485, 1584
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:15:01',
+  -521, 1552
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:15:02',
+  -540, 1552
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:15:03',
+  -451, 1582
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:15:04',
+  -454, 1586
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:15:05',
+  -552, 1573
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:15:06',
+  -530, 1707
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:15:07',
+  -545, 1723
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:15:08',
+  -402, 1607
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:15:09',
+  -191, 1653
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:15:10',
+  -174, 1841
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:15:11',
+  -170, 1829
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:15:12',
+  -395, 1698
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:15:13',
+  -551, 1836
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:15:14',
+  -418, 1887
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:15:15',
+  -244, 1688
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:15:16',
+  -231, 1397
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:15:17',
+  -427, 1232
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:15:18',
+  -647, 1215
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:15:19',
+  -794, 1248
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:15:20',
+  -719, 1246
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:15:21',
+  -736, 1248
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:15:22',
+  -705, 1251
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:15:23',
+  -750, 1253
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:15:24',
+  -802, 1260
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:15:25',
+  -752, 1259
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:15:26',
+  -774, 1260
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:15:30',
+  -738, 1254
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:15:31',
+  -757, 1126
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:15:32',
+  -697, 1003
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:15:33',
+  -673, 743
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:15:34',
+  -686, 671
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:15:35',
+  -578, 671
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:15:36',
+  -689, 593
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:15:37',
+  -652, 901
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:15:38',
+  -636, 1407
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:15:39',
+  -481, 1300
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:15:40',
+  -540, 1169
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:15:41',
+  -582, 1096
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:15:42',
+  -611, 1040
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:15:43',
+  -585, 1155
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:15:44',
+  -582, 1178
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:15:45',
+  -679, 1233
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:15:46',
+  -681, 1328
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:15:47',
+  -683, 1181
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:15:48',
+  -679, 1111
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:15:49',
+  -667, 868
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:15:50',
+  -595, 731
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:15:51',
+  -492, 730
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:15:52',
+  -448, 692
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:15:53',
+  -389, 912
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:15:54',
+  -195, 1083
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:15:55',
+  219, 994
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:15:56',
+  413, 745
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:15:57',
+  440, 458
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:15:58',
+  563, 224
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:15:59',
+  590, 303
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:16:00',
+  708, 303
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:16:01',
+  813, 461
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:16:02',
+  842, 520
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:16:03',
+  943, 526
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:16:04',
+  1007, 536
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:16:05',
+  921, 597
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:16:06',
+  1199, 802
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:16:07',
+  1618, 820
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:16:08',
+  1584, 768
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:16:09',
+  1311, 804
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:16:10',
+  1292, 811
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:16:11',
+  1566, 832
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:16:12',
+  1661, 836
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:16:13',
+  1395, 797
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:16:14',
+  1253, 771
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:16:15',
+  998, 753
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:16:16',
+  736, 631
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:16:17',
+  673, 615
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:16:18',
+  915, 605
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:16:19',
+  1006, 532
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:16:20',
+  946, 506
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:16:21',
+  934, 624
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:16:22',
+  846, 893
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:16:23',
+  937, 909
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:16:24',
+  867, 756
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:16:25',
+  732, 511
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:16:26',
+  734, 498
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:16:27',
+  752, 464
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:16:28',
+  778, 405
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:16:30',
+  784, 389
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:16:32',
+  801, 307
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:16:33',
+  657, 208
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:16:34',
+  389, 265
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:16:35',
+  112, 194
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:16:36',
+  -12, -33
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:16:37',
+  53, -208
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:16:38',
+  282, -164
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:16:39',
+  572, -189
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:16:40',
+  665, -379
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:16:41',
+  638, -298
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:16:42',
+  612, -185
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:16:43',
+  602, -126
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:16:44',
+  599, -57
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:16:45',
+  655, -109
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:16:46',
+  648, -117
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:16:47',
+  661, -91
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:16:49',
+  671, -92
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:16:50',
+  682, -81
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:17:00',
+  1879, 1119
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:17:01',
+  1818, 1118
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:17:02',
+  1636, 964
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:17:03',
+  1632, 1039
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:17:04',
+  1627, 1163
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:17:05',
+  1620, 1233
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:17:06',
+  1633, 993
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:17:07',
+  1640, 773
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:17:08',
+  1631, 540
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:17:09',
+  1622, 592
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:17:10',
+  1424, 712
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:17:11',
+  1400, 749
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:17:12',
+  1390, 765
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:17:13',
+  1292, 762
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:17:14',
+  1431, 737
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:17:15',
+  1464, 986
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:17:16',
+  1402, 1165
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:17:17',
+  1493, 1194
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:17:18',
+  1590, 1182
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:17:19',
+  1381, 1191
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:17:20',
+  1449, 1196
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:17:21',
+  1424, 1215
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:17:22',
+  1334, 1155
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:17:23',
+  1358, 1105
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:17:24',
+  1353, 1125
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:17:29',
+  1367, 1104
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:17:30',
+  1394, 1104
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:17:31',
+  1428, 1105
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:17:32',
+  1300, 1191
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:17:33',
+  1286, 1264
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:17:34',
+  1291, 1371
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:17:35',
+  1291, 1376
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:17:36',
+  1295, 1266
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:17:37',
+  1296, 1181
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:17:38',
+  1315, 1179
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:17:39',
+  1276, 1363
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:17:40',
+  1272, 1420
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:17:41',
+  1243, 1341
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:17:42',
+  1352, 1582
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:17:43',
+  1530, 1809
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:17:47',
+  1583, 1824
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:17:48',
+  1608, 1746
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:17:49',
+  1705, 1718
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:17:50',
+  1706, 1723
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:17:52',
+  1698, 1756
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:17:53',
+  1691, 1841
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:17:54',
+  1523, 1889
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:17:55',
+  1219, 1933
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:17:56',
+  943, 1916
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:17:57',
+  956, 1961
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:17:58',
+  1204, 1916
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:17:59',
+  1264, 1909
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:18:00',
+  1425, 1871
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:18:01',
+  1495, 1871
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:18:02',
+  1470, 1906
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:18:03',
+  1473, 1926
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:18:04',
+  1689, 1821
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:18:05',
+  1658, 1735
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:18:06',
+  1674, 1552
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:18:07',
+  1823, 1563
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:18:08',
+  1839, 1685
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:18:09',
+  1763, 1775
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:18:10',
+  1705, 1769
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:18:11',
+  1506, 1743
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:18:12',
+  1217, 1740
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:18:13',
+  926, 1745
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:18:14',
+  636, 1729
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:18:15',
+  442, 1746
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:18:16',
+  228, 1740
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:18:17',
+  114, 1624
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:18:18',
+  35, 1465
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:18:19',
+  39, 1439
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:18:20',
+  123, 1355
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:18:21',
+  392, 1364
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:18:22',
+  682, 1360
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:18:23',
+  605, 1356
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:18:24',
+  548, 1423
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:18:25',
+  523, 1295
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:18:26',
+  580, 1359
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:18:27',
+  533, 1409
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:18:28',
+  575, 1360
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:18:29',
+  713, 1365
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:18:30',
+  958, 1271
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:18:31',
+  1185, 1097
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:18:32',
+  1442, 988
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:18:33',
+  1618, 968
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:18:34',
+  1488, 778
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:18:35',
+  1221, 758
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:18:36',
+  1090, 811
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:18:37',
+  966, 700
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:18:38',
+  814, 503
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:18:39',
+  850, 648
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:18:40',
+  964, 498
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:18:41',
+  928, 584
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:18:42',
+  823, 801
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:18:43',
+  860, 880
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:18:44',
+  817, 753
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:18:45',
+  688, 664
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:18:46',
+  756, 592
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:18:47',
+  723, 377
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:18:49',
+  725, 358
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:18:50',
+  788, 247
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:18:51',
+  981, 273
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:18:52',
+  1189, 470
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:18:53',
+  1306, 619
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:18:54',
+  1242, 521
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:18:55',
+  1036, 349
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:18:56',
+  790, 262
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:18:57',
+  688, 243
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:18:58',
+  537, 236
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:18:59',
+  526, 306
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:19:00',
+  484, 584
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:19:01',
+  390, 853
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:19:02',
+  169, 1032
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:19:03',
+  -107, 1055
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:19:04',
+  -315, 879
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:19:05',
+  -431, 622
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:19:06',
+  -533, 632
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:19:07',
+  -613, 703
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:19:08',
+  -652, 547
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:19:09',
+  -671, 577
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:19:10',
+  -687, 620
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:19:11',
+  -669, 568
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:19:12',
+  -656, 625
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:19:13',
+  -648, 690
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:19:14',
+  -647, 695
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:19:15',
+  -655, 631
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:19:16',
+  -666, 457
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:19:17',
+  -689, 492
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:19:18',
+  -599, 322
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:19:19',
+  -452, 81
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:19:20',
+  -310, 40
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:19:21',
+  -298, -157
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:19:22',
+  -323, -313
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:19:23',
+  -470, -179
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:19:24',
+  -480, -58
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:19:25',
+  -374, -15
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:19:26',
+  -412, -40
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:19:27',
+  -586, -86
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:19:28',
+  -699, -272
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:19:29',
+  -780, -334
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:19:30',
+  -759, -394
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:19:31',
+  -751, -181
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:19:32',
+  -700, 104
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:19:33',
+  -645, 390
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:19:34',
+  -575, 670
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:19:35',
+  -343, 743
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:19:36',
+  -264, 712
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:19:37',
+  -335, 717
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:19:38',
+  -494, 761
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:19:39',
+  -513, 731
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:19:40',
+  -445, 741
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:19:41',
+  -324, 896
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:19:42',
+  30, 968
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:19:43',
+  97, 1025
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:19:44',
+  133, 1055
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:19:45',
+  342, 944
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:19:46',
+  427, 659
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:19:47',
+  495, 669
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:19:48',
+  478, 696
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:19:49',
+  530, 663
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:19:50',
+  371, 690
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:19:51',
+  346, 694
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:19:52',
+  305, 701
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:19:53',
+  450, 683
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:19:54',
+  464, 628
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:19:55',
+  298, 408
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:19:56',
+  72, 323
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:19:57',
+  -8, 303
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:19:58',
+  -21, 283
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:19:59',
+  32, 377
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:20:00',
+  41, 418
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:20:01',
+  137, 640
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:20:02',
+  171, 820
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:20:03',
+  -6, 796
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:20:04',
+  -78, 850
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:20:05',
+  13, 731
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:20:06',
+  170, 543
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:20:07',
+  68, 531
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:20:08',
+  -45, 717
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:20:09',
+  173, 728
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:20:10',
+  174, 529
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:20:11',
+  41, 417
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:20:12',
+  22, 220
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:20:14',
+  23, 204
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:20:15',
+  137, 160
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:20:16',
+  -24, 222
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:20:17',
+  33, 10
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:20:18',
+  152, -208
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:20:19',
+  373, -199
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:20:20',
+  343, -174
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:20:21',
+  256, -164
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:20:22',
+  290, -240
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:20:23',
+  299, -163
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:20:24',
+  383, -101
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:20:25',
+  645, -138
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:20:26',
+  687, -140
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:20:27',
+  678, -81
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:20:29',
+  548, -178
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:20:30',
+  557, -185
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:20:31',
+  653, -190
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:20:32',
+  649, -196
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:20:33',
+  639, -66
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:20:34',
+  571, -35
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:20:35',
+  596, -152
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:20:36',
+  817, -226
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:20:37',
+  867, -111
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:20:38',
+  839, -62
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:20:39',
+  839, -94
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:20:40',
+  815, -221
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:20:41',
+  761, -470
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:20:42',
+  968, -460
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:20:43',
+  1491, -355
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:20:44',
+  1617, 0
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:20:45',
+  1531, 158
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:20:46',
+  1718, 107
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:20:47',
+  1686, -124
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:20:48',
+  1641, -117
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:20:49',
+  1526, 41
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:20:50',
+  1574, 184
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:20:51',
+  1445, 128
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:20:52',
+  1510, 27
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:20:53',
+  1641, -206
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:20:54',
+  1500, -400
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:20:55',
+  1219, -373
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:20:56',
+  735, -425
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:20:57',
+  165, -446
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:20:58',
+  40, -401
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:20:59',
+  8, -360
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:21:00',
+  13, -382
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:21:01',
+  35, -508
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:21:02',
+  -1, -437
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:21:04',
+  -39, -407
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:21:05',
+  7, -415
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:21:06',
+  22, -369
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:21:08',
+  25, -357
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:21:10',
+  40, -295
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:21:11',
+  54, -163
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:21:12',
+  72, 55
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:21:13',
+  11, 222
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:21:14',
+  -207, 392
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:21:15',
+  -406, 593
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:21:16',
+  -518, 652
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:21:17',
+  -652, 518
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:21:18',
+  -718, 243
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:21:19',
+  -751, -46
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:21:20',
+  -775, -279
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:21:21',
+  -806, -285
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:21:22',
+  -776, -280
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:21:23',
+  -948, -267
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:21:24',
+  -868, -250
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:21:25',
+  -835, -241
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:21:26',
+  -929, -273
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:21:27',
+  -987, -309
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:21:28',
+  -967, -241
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:21:29',
+  -955, -241
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:21:30',
+  -955, -241
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:21:31',
+  -866, -262
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:21:32',
+  -857, -270
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:21:33',
+  -857, -269
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:21:34',
+  -1001, -303
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:21:35',
+  -1053, -269
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:21:36',
+  -1025, -327
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:21:37',
+  -1069, -496
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:21:38',
+  -913, -447
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:21:40',
+  -849, -554
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:21:41',
+  -819, -466
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:21:42',
+  -1043, -439
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:21:43',
+  -1152, -380
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:21:44',
+  -1261, -310
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:21:45',
+  -1225, -364
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:21:46',
+  -1201, -251
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:21:47',
+  -1205, -303
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:21:48',
+  -1245, -496
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:21:49',
+  -1380, -433
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:21:50',
+  -1408, -432
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:21:51',
+  -1410, -466
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:21:52',
+  -1382, -281
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:21:53',
+  -1375, -145
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:21:54',
+  -1248, -172
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:21:55',
+  -1207, -153
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:21:56',
+  -1264, -106
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:21:57',
+  -1256, -49
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:21:58',
+  -1272, -50
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:21:59',
+  -1264, -89
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:22:00',
+  -1339, -80
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:22:01',
+  -1359, -32
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:22:02',
+  -1394, -38
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:22:03',
+  -1286, 79
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:22:04',
+  -1275, 75
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:22:05',
+  -1231, 93
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:22:06',
+  -1188, 168
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:22:07',
+  -1253, 176
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:22:08',
+  -1417, 144
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:22:09',
+  -1407, 144
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:22:10',
+  -1393, 303
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:22:11',
+  -1433, 238
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:22:12',
+  -1415, 144
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:22:13',
+  -1393, 188
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:22:14',
+  -1393, 198
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:22:15',
+  -1434, 193
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:22:16',
+  -1455, 200
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:22:18',
+  -1386, 169
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:22:19',
+  -1412, 175
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:22:20',
+  -1343, 166
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:22:21',
+  -1308, 175
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:22:22',
+  -1268, 144
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:22:23',
+  -1230, 175
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:22:24',
+  -1264, 252
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:22:25',
+  -1264, 238
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:22:26',
+  -1251, 304
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:22:27',
+  -1344, 392
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:22:28',
+  -1421, 456
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:22:29',
+  -1374, 375
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:22:30',
+  -1251, 385
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:22:31',
+  -1256, 216
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:22:32',
+  -1201, 84
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:22:33',
+  -1157, 175
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:22:34',
+  -1110, 324
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:22:35',
+  -1114, 609
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:22:36',
+  -1084, 791
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:22:37',
+  -1141, 783
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:22:39',
+  -1073, 791
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:22:40',
+  -1134, 771
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:22:41',
+  -1220, 783
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:22:42',
+  -1208, 747
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:22:43',
+  -1162, 783
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:22:44',
+  -1087, 801
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:22:45',
+  -1073, 815
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:22:46',
+  -1157, 756
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:22:47',
+  -1228, 740
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:22:48',
+  -1245, 642
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:22:49',
+  -1276, 621
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:22:50',
+  -1328, 623
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:22:51',
+  -1404, 741
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:22:52',
+  -1379, 745
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:22:53',
+  -1334, 579
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:22:54',
+  -1233, 643
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:22:55',
+  -1236, 756
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:22:56',
+  -1073, 772
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:22:57',
+  -944, 693
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:22:58',
+  -835, 642
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:22:59',
+  -833, 647
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:23:00',
+  -977, 700
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:23:01',
+  -922, 792
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:23:02',
+  -894, 928
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:23:03',
+  -812, 940
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:23:04',
+  -889, 860
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:23:05',
+  -918, 743
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:23:06',
+  -1005, 918
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:23:07',
+  -961, 892
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:23:08',
+  -992, 874
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:23:09',
+  -1082, 685
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:23:10',
+  -1091, 440
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:23:11',
+  -1136, 522
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:23:12',
+  -1136, 301
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:23:13',
+  -1125, 7
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:23:14',
+  -1116, -160
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:23:16',
+  -1136, -176
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:23:17',
+  -1136, -192
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:23:18',
+  -1091, -10
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:23:19',
+  -1080, 66
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:23:20',
+  -1315, 26
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:23:21',
+  -1329, 0
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:23:22',
+  -1270, 79
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:23:23',
+  -1262, 98
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:23:24',
+  -1263, 164
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:23:25',
+  -1442, 144
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:23:26',
+  -1456, 174
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:23:27',
+  -1243, 162
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:23:28',
+  -1073, 52
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:23:29',
+  -1066, -220
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:23:30',
+  -897, -324
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:23:32',
+  -947, -283
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:23:33',
+  -939, -274
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:23:34',
+  -997, -319
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:23:35',
+  -1230, -422
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:23:36',
+  -1362, -460
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:23:37',
+  -1274, -496
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:23:38',
+  -1243, -433
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:23:39',
+  -1219, -402
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:23:40',
+  -1169, -466
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:23:41',
+  -1364, -453
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:23:42',
+  -1445, -424
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:23:43',
+  -1365, -227
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:23:44',
+  -1289, -145
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:23:45',
+  -1250, -101
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:23:46',
+  -1340, -35
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:23:47',
+  -1320, 31
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:23:48',
+  -1235, 95
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:23:49',
+  -1344, 175
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:23:50',
+  -1456, 262
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:23:51',
+  -1398, 202
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:23:52',
+  -1393, 186
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:23:53',
+  -1275, 175
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:23:54',
+  -1257, 196
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:23:55',
+  -1250, 383
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:23:56',
+  -1334, 398
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:23:57',
+  -1378, 369
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:23:58',
+  -1233, 326
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:23:59',
+  -1229, 161
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:24:00',
+  -1160, 175
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:24:01',
+  -1096, 320
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:24:02',
+  -1114, 605
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:24:03',
+  -1136, 706
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:24:04',
+  -1085, 676
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:24:05',
+  -1071, 695
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:24:06',
+  -891, 708
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:24:07',
+  -918, 664
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:24:08',
+  -897, 847
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:24:09',
+  -827, 972
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:24:10',
+  -800, 912
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:24:11',
+  -896, 869
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:24:12',
+  -1008, 846
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:24:13',
+  -998, 856
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:24:14',
+  -1007, 902
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:24:15',
+  -1198, 904
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:24:16',
+  -1313, 1004
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:24:17',
+  -1319, 1248
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:24:18',
+  -1302, 1334
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:24:19',
+  -1249, 1313
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:24:20',
+  -1342, 1329
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:24:21',
+  -1368, 1061
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:24:22',
+  -1456, 1038
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:24:23',
+  -1441, 1095
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:24:24',
+  -1382, 1349
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:24:25',
+  -1396, 1484
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:24:26',
+  -1168, 1477
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:24:27',
+  -1077, 1476
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:24:28',
+  -989, 1501
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:24:29',
+  -1028, 1473
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:24:30',
+  -1020, 1539
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:24:31',
+  -992, 1595
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:24:32',
+  -890, 1736
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:24:33',
+  -674, 1742
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:24:34',
+  -662, 1875
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:24:35',
+  -727, 2125
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:24:36',
+  -894, 2151
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:24:37',
+  -808, 2159
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:24:38',
+  -730, 2082
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:24:39',
+  -652, 1960
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:24:40',
+  -636, 1963
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:24:41',
+  -625, 1952
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:24:42',
+  -663, 1944
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:24:43',
+  -666, 1934
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:24:44',
+  -630, 1876
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:24:45',
+  -540, 1803
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:24:46',
+  -487, 1715
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:24:47',
+  -544, 1637
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:24:48',
+  -493, 1552
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:24:49',
+  -516, 1552
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:24:50',
+  -491, 1552
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:24:52',
+  -560, 1552
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:24:54',
+  -515, 1555
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:24:55',
+  -528, 1557
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:24:56',
+  -368, 1736
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:24:57',
+  -188, 1904
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:24:58',
+  -177, 1873
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:24:59',
+  -162, 1609
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:25:00',
+  -221, 1612
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:25:01',
+  -337, 1626
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:25:02',
+  -287, 1822
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:25:03',
+  -351, 2023
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:25:04',
+  -442, 1861
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:25:05',
+  -445, 1576
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:25:06',
+  -295, 1503
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:25:07',
+  -245, 1268
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:25:08',
+  -354, 1263
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:25:09',
+  -388, 1260
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:25:10',
+  -249, 1269
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:25:11',
+  -313, 1520
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:25:12',
+  -478, 1763
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:25:13',
+  -568, 1906
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:25:14',
+  -655, 1903
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:25:15',
+  -876, 1904
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:25:16',
+  -964, 1895
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:26:30',
+  -1007, 1890
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:26:31',
+  -1189, 1795
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:26:32',
+  -1116, 1708
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:26:33',
+  -974, 1652
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:26:34',
+  -1072, 1714
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:26:35',
+  -1195, 1914
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:26:36',
+  -1147, 1982
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:26:37',
+  -1188, 2126
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:26:38',
+  -985, 2085
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:26:39',
+  -719, 2100
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:26:40',
+  -661, 1977
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:26:41',
+  -699, 1881
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:26:42',
+  -918, 1892
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:26:43',
+  -971, 1894
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:26:44',
+  -1198, 1894
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:26:45',
+  -1147, 1844
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:26:46',
+  -1021, 1602
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:26:47',
+  -1004, 1582
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:26:48',
+  -993, 1436
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:26:49',
+  -1010, 1490
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:26:50',
+  -1117, 1527
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:26:51',
+  -1090, 1517
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:26:52',
+  -1007, 1543
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:26:53',
+  -990, 1543
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:26:54',
+  -1069, 1650
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:26:55',
+  -1082, 1656
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:26:56',
+  -842, 1726
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:26:57',
+  -622, 1846
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:26:58',
+  -771, 1903
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:26:59',
+  -1056, 1887
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:27:00',
+  -1344, 1899
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:27:01',
+  -1361, 1917
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:27:02',
+  -1255, 1878
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:27:03',
+  -1373, 1842
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:27:04',
+  -1416, 1877
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:27:06',
+  -1540, 1888
+);
+
+INSERT INTO UXInstrument (nombre, tipo) VALUES ('unknown', 'unknown');
+
+INSERT INTO UXResponse (user_id, instrument_id, fecha_respuesta, respuestas_json)
+VALUES (
+  currval(pg_get_serial_sequence('"User"','user_id')),
+  currval(pg_get_serial_sequence('UXInstrument','instrument_id')),
+  '2025-11-05 21:03:25',
+  'unknown'
+);
+
+-- Fin de inserciones generadas
+
+-- ============================
+-- Inserción generada desde: /Users/danielduarte/Desktop/University/Bases_de_datos/Proyecto/Data/joseContreras_partida8.txt
+-- When (fecha_inicio): 2025-11-05 21:27:51  episodio: 1  map: 5
+-- Telemetrias: 1817 filas. Fecha fin: 2025-11-05 22:06:38 Dur(s): 2324
+-- ============================
+
+INSERT INTO "User" (nombre_completo, genero, carrera)
+VALUES ('Jose Alejandro Contreras Obregon', 'M', 'Ciencia de datos');
+
+INSERT INTO Player (user_id, alias)
+VALUES (currval(pg_get_serial_sequence('"User"','user_id')), 'mysticfriday');
+
+INSERT INTO Map (codigo_map, nombre_oficial)
+VALUES ('5', 'E1M5: Phobos Lab');
+
+INSERT INTO Game (player_id, map_id, fecha_inicio, fecha_fin, duracion_seconds, episodio)
+VALUES (
+  currval(pg_get_serial_sequence('Player','player_id')),
+  currval(pg_get_serial_sequence('Map','map_id')),
+  '2025-11-05 21:27:51',
+  '2025-11-05 22:06:38',
+  2324,
+  1
+);
+
+INSERT INTO Sector (map_id, nombre_sector)
+VALUES (currval(pg_get_serial_sequence('Map','map_id')), 'unknown');
+
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:27:54',
+  -224, -624
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:27:55',
+  -180, -556
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:27:56',
+  -161, -613
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:27:57',
+  -312, -670
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:27:58',
+  -275, -687
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:27:59',
+  -66, -625
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:28:00',
+  -66, -576
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:28:01',
+  -52, -551
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:28:02',
+  -56, -556
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:28:03',
+  -229, -148
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:28:04',
+  -256, -109
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:28:05',
+  -400, -195
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:28:06',
+  -348, -220
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:28:07',
+  -323, -195
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:28:08',
+  -305, -153
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:28:09',
+  -312, -164
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:28:10',
+  -258, -129
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:28:11',
+  -268, -171
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:28:12',
+  -246, -136
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:28:13',
+  -237, -129
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:28:14',
+  -168, 2
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:28:15',
+  -47, 235
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:28:16',
+  -45, 278
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:28:17',
+  -70, 295
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:28:18',
+  33, 146
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:28:19',
+  -99, 91
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:28:20',
+  15, 103
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:28:21',
+  40, 170
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:28:22',
+  -102, 272
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:28:23',
+  -150, 287
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:28:24',
+  -155, 278
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:28:25',
+  -157, 252
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:28:26',
+  -138, 17
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:28:27',
+  -219, -380
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:28:28',
+  -197, -677
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:28:29',
+  -188, -592
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:28:30',
+  -184, -590
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:28:31',
+  -186, -536
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:28:33',
+  -181, -688
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:28:34',
+  -178, -650
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:28:35',
+  -225, -719
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:28:37',
+  -240, -720
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:28:38',
+  -183, -565
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:28:39',
+  -193, -408
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:28:40',
+  -230, -59
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:28:41',
+  -236, -69
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:28:42',
+  -232, -81
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:28:43',
+  -114, 135
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:28:44',
+  -82, 147
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:28:45',
+  147, 143
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:28:46',
+  147, 193
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:28:47',
+  141, 57
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:28:48',
+  382, 123
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:28:49',
+  666, 152
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:28:50',
+  875, 166
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:28:51',
+  903, 349
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:28:52',
+  927, 306
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:28:53',
+  920, 193
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:28:54',
+  848, 419
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:28:55',
+  848, 367
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:28:56',
+  892, 234
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:28:57',
+  884, 282
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:28:58',
+  860, 274
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:28:59',
+  862, 276
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:29:01',
+  848, 286
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:29:02',
+  927, 217
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:29:03',
+  902, 313
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:29:04',
+  896, 426
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:29:05',
+  859, 400
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:29:06',
+  873, 251
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:29:07',
+  848, 156
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:29:08',
+  581, 156
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:29:09',
+  324, 140
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:29:10',
+  190, 177
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:29:11',
+  172, 92
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:29:12',
+  -36, 235
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:29:13',
+  -67, 274
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:29:14',
+  -61, 165
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:29:15',
+  -51, 265
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:29:16',
+  -114, 388
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:29:17',
+  -129, 401
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:29:18',
+  -322, 396
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:29:19',
+  -362, 434
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:29:20',
+  -412, 459
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:29:21',
+  -420, 468
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:29:22',
+  -423, 502
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:29:23',
+  -434, 490
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:29:24',
+  -428, 368
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:29:25',
+  -489, 374
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:29:26',
+  -478, 541
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:29:27',
+  -479, 780
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:29:28',
+  -502, 644
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:29:29',
+  -502, 664
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:29:30',
+  -489, 864
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:29:31',
+  -478, 1038
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:29:32',
+  -354, 1266
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:29:33',
+  -147, 1256
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:29:34',
+  43, 1209
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:29:35',
+  3, 1295
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:29:36',
+  -255, 1295
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:29:37',
+  -525, 1064
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:29:38',
+  -382, 778
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:29:39',
+  -299, 833
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:29:40',
+  -496, 882
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:29:41',
+  -470, 647
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:29:42',
+  -358, 413
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:29:43',
+  -84, 358
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:29:44',
+  -65, 308
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:29:45',
+  88, 118
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:29:46',
+  210, 148
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:29:47',
+  190, 340
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:29:48',
+  207, 383
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:29:49',
+  232, 638
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:29:50',
+  300, 686
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:29:51',
+  367, 703
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:29:52',
+  279, 622
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:29:53',
+  111, 593
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:29:54',
+  169, 485
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:29:55',
+  138, 664
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:29:56',
+  96, 630
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:29:57',
+  245, 556
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:29:58',
+  421, 506
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:29:59',
+  609, 608
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:30:00',
+  882, 699
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:30:01',
+  1085, 801
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:30:02',
+  1086, 785
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:30:03',
+  1065, 803
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:30:04',
+  982, 876
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:30:05',
+  978, 886
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:30:06',
+  900, 886
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:30:07',
+  709, 826
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:30:08',
+  808, 808
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:30:09',
+  835, 884
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:30:10',
+  910, 903
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:30:11',
+  1097, 763
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:30:12',
+  1057, 730
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:30:13',
+  1040, 733
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:30:14',
+  1051, 909
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:30:15',
+  1005, 915
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:30:16',
+  941, 904
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:30:17',
+  841, 875
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:30:18',
+  842, 874
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:30:19',
+  877, 894
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:30:20',
+  752, 865
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:30:21',
+  704, 850
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:30:22',
+  732, 834
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:30:23',
+  818, 895
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:30:24',
+  886, 918
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:30:25',
+  942, 919
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:30:26',
+  926, 915
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:30:27',
+  883, 907
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:30:28',
+  731, 841
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:30:29',
+  760, 808
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:30:30',
+  672, 821
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:30:31',
+  735, 735
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:30:32',
+  762, 762
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:30:33',
+  755, 755
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:30:34',
+  696, 824
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:30:35',
+  770, 875
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:30:36',
+  743, 807
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:30:37',
+  705, 828
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:30:38',
+  782, 782
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:30:39',
+  834, 834
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:30:40',
+  829, 887
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:30:41',
+  790, 882
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:30:42',
+  768, 845
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:30:43',
+  789, 789
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:30:45',
+  672, 825
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:30:46',
+  694, 822
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:30:48',
+  672, 802
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:30:49',
+  675, 752
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:30:50',
+  699, 809
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:30:51',
+  718, 806
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:30:52',
+  879, 904
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:30:53',
+  1103, 820
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:30:54',
+  1028, 752
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:30:55',
+  782, 681
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:30:56',
+  576, 617
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:30:57',
+  464, 538
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:30:58',
+  299, 530
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:30:59',
+  130, 687
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:31:00',
+  96, 600
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:31:01',
+  141, 541
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:31:02',
+  199, 269
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:31:03',
+  107, 2
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:31:04',
+  110, -48
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:31:05',
+  72, -25
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:31:06',
+  -199, -25
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:31:07',
+  -303, -153
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:31:08',
+  -293, -137
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:31:09',
+  -136, 66
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:31:10',
+  -99, 144
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:31:11',
+  0, 136
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:31:12',
+  191, 291
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:31:13',
+  123, 555
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:31:14',
+  96, 604
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:31:15',
+  132, 520
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:31:16',
+  347, 525
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:31:17',
+  469, 485
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:31:18',
+  406, 527
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:31:19',
+  292, 506
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:31:20',
+  133, 291
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:31:21',
+  203, 161
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:31:22',
+  589, 173
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:31:23',
+  927, 224
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:31:24',
+  857, 431
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:31:27',
+  854, 294
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:31:28',
+  713, 145
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:31:29',
+  300, 98
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:31:30',
+  145, 59
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:31:31',
+  156, 311
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:31:32',
+  302, 516
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:31:33',
+  521, 547
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:31:34',
+  708, 642
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:31:35',
+  867, 707
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:31:36',
+  1063, 810
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:31:37',
+  968, 919
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:31:38',
+  728, 818
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:31:39',
+  687, 752
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:31:40',
+  675, 752
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:31:41',
+  743, 743
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:31:46',
+  672, 782
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:31:47',
+  672, 813
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:31:48',
+  672, 818
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:31:49',
+  672, 752
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:31:51',
+  672, 813
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:31:52',
+  716, 847
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:31:53',
+  822, 822
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:31:54',
+  705, 822
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:31:55',
+  672, 807
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:31:56',
+  672, 752
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:31:57',
+  672, 752
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:31:58',
+  848, 885
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:31:59',
+  1094, 839
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:32:00',
+  1071, 763
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:32:01',
+  920, 723
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:32:02',
+  735, 643
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:32:03',
+  493, 540
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:32:04',
+  229, 430
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:32:05',
+  155, 268
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:32:06',
+  112, 184
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:32:07',
+  -57, 72
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:32:08',
+  -290, -97
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:32:09',
+  -288, -161
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:32:10',
+  -213, 47
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:32:11',
+  -161, 152
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:32:12',
+  -46, 303
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:32:13',
+  -53, 125
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:32:14',
+  -45, 302
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:32:15',
+  -153, 398
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:32:16',
+  -428, 444
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:32:17',
+  -517, 684
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:32:18',
+  -495, 805
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:32:19',
+  -497, 1070
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:32:20',
+  -323, 1238
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:32:21',
+  -101, 1237
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:32:22',
+  31, 1273
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:32:23',
+  3, 1264
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:32:24',
+  -25, 1224
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:32:25',
+  -132, 1295
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:32:26',
+  -289, 1295
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:32:27',
+  -441, 1295
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:32:28',
+  -547, 1245
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:32:29',
+  -550, 1124
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:32:30',
+  -564, 863
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:32:31',
+  -531, 870
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:32:32',
+  -338, 863
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:32:33',
+  -294, 852
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:32:35',
+  -268, 800
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:32:39',
+  -370, 810
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:32:40',
+  -613, 832
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:32:41',
+  -624, 833
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:32:42',
+  -580, 830
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:32:43',
+  -510, 824
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:32:44',
+  -626, 835
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:32:45',
+  -779, 831
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:32:46',
+  -739, 823
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:32:47',
+  -721, 812
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:32:48',
+  -789, 826
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:32:49',
+  -715, 854
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:32:50',
+  -749, 866
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:32:51',
+  -870, 836
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:32:52',
+  -835, 879
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:32:53',
+  -1001, 943
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:32:54',
+  -976, 862
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:32:55',
+  -1033, 740
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:32:56',
+  -956, 509
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:32:57',
+  -1195, 444
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:32:58',
+  -1505, 464
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:32:59',
+  -1649, 522
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:33:00',
+  -1591, 422
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:33:01',
+  -1468, 488
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:33:02',
+  -1456, 443
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:33:03',
+  -1406, 431
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:33:04',
+  -1405, 432
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:33:20',
+  -225, -562
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:33:21',
+  -225, -205
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:33:22',
+  -227, -169
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:33:23',
+  -304, -103
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:33:24',
+  -398, -146
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:33:25',
+  -404, -272
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:33:26',
+  -311, -158
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:33:27',
+  -349, -139
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:33:28',
+  -198, -65
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:33:29',
+  -125, -48
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:33:30',
+  -127, 19
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:33:31',
+  -141, 78
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:33:32',
+  -158, -17
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:33:33',
+  -184, -100
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:33:34',
+  -71, 12
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:33:35',
+  -125, -19
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:33:36',
+  -185, -93
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:33:37',
+  -190, -517
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:33:38',
+  -249, -666
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:33:39',
+  -192, -616
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:33:40',
+  -298, -677
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:33:41',
+  -209, -714
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:33:44',
+  -209, -718
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:33:45',
+  -208, -657
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:33:46',
+  -202, -559
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:33:48',
+  -162, -530
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:33:49',
+  -221, -678
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:33:50',
+  -224, -700
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:33:51',
+  -214, -629
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:33:52',
+  -239, -630
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:33:53',
+  -75, -628
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:33:54',
+  -43, -581
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:33:55',
+  -190, -354
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:33:56',
+  -272, -119
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:33:57',
+  -154, -119
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:33:58',
+  -260, -120
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:33:59',
+  -199, 18
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:34:00',
+  -134, 181
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:34:01',
+  -50, 119
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:34:02',
+  13, 60
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:34:03',
+  -25, -29
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:34:04',
+  178, -37
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:34:05',
+  390, 133
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:34:06',
+  664, 175
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:34:07',
+  892, 228
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:34:08',
+  919, 360
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:34:09',
+  866, 431
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:34:10',
+  923, 313
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:34:11',
+  855, 357
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:34:12',
+  850, 375
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:34:13',
+  923, 310
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:34:14',
+  870, 184
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:34:15',
+  927, 284
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:34:16',
+  927, 366
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:34:17',
+  896, 326
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:34:18',
+  842, 184
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:34:19',
+  630, 174
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:34:20',
+  350, 134
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:34:21',
+  146, 104
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:34:22',
+  164, 299
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:34:23',
+  223, 508
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:34:24',
+  395, 500
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:34:25',
+  619, 639
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:34:26',
+  778, 668
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:34:27',
+  1008, 761
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:34:28',
+  1096, 753
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:34:29',
+  1092, 780
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:34:30',
+  1068, 815
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:34:31',
+  1051, 883
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:34:32',
+  928, 882
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:34:33',
+  910, 890
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:34:34',
+  924, 896
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:34:35',
+  739, 850
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:34:36',
+  781, 796
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:34:37',
+  741, 822
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:34:38',
+  802, 828
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:34:39',
+  1060, 833
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:34:40',
+  1060, 753
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:34:41',
+  803, 693
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:34:42',
+  630, 599
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:34:43',
+  366, 494
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:34:44',
+  140, 345
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:34:45',
+  108, 163
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:34:46',
+  -81, 105
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:34:47',
+  -180, 37
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:34:48',
+  -304, -71
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:34:49',
+  -389, -184
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:34:50',
+  -333, -117
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:34:51',
+  -155, 40
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:34:52',
+  -175, 213
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:34:53',
+  -87, 297
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:34:54',
+  -107, 340
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:34:55',
+  -119, 402
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:34:56',
+  -276, 392
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:34:57',
+  -374, 397
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:34:58',
+  -505, 580
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:34:59',
+  -491, 642
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:35:00',
+  -446, 887
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:35:01',
+  -461, 1081
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:35:02',
+  -491, 1149
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:35:03',
+  -449, 1225
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:35:04',
+  -166, 1270
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:35:05',
+  -20, 1295
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:35:07',
+  15, 1289
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:35:08',
+  -55, 1295
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:35:10',
+  -119, 1295
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:35:11',
+  -161, 1230
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:35:12',
+  -459, 1224
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:35:13',
+  -518, 1041
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:35:14',
+  -500, 1039
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:35:15',
+  -485, 1035
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:35:16',
+  -382, 832
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:35:17',
+  -258, 830
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:35:18',
+  -293, 814
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:35:19',
+  -316, 803
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:35:20',
+  -289, 816
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:35:21',
+  -305, 803
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:35:24',
+  -293, 810
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:35:25',
+  -310, 800
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:35:26',
+  -517, 843
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:35:27',
+  -537, 846
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:35:28',
+  -620, 841
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:35:29',
+  -504, 845
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:35:30',
+  -725, 836
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:35:31',
+  -721, 837
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:35:33',
+  -743, 845
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:35:34',
+  -767, 849
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:35:35',
+  -731, 840
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:35:36',
+  -875, 865
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:35:37',
+  -796, 879
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:35:38',
+  -962, 831
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:35:39',
+  -1027, 935
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:35:40',
+  -1050, 1230
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:35:41',
+  -1140, 1210
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:35:42',
+  -1340, 1202
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:35:43',
+  -1490, 1217
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:35:44',
+  -1606, 1177
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:35:45',
+  -1538, 1263
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:35:46',
+  -1598, 1173
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:35:47',
+  -1592, 1256
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:35:48',
+  -1658, 1145
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:35:49',
+  -1702, 1141
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:35:50',
+  -1701, 1111
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:35:51',
+  -1691, 858
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:35:52',
+  -1683, 771
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:35:53',
+  -1684, 719
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:35:54',
+  -1656, 886
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:35:55',
+  -1681, 834
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:36:10',
+  -225, -624
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:36:11',
+  -350, -313
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:36:12',
+  -389, -127
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:36:13',
+  -410, -147
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:36:14',
+  -427, -177
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:36:15',
+  -277, -98
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:36:16',
+  -365, -146
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:36:17',
+  -391, -161
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:36:20',
+  -387, -156
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:36:21',
+  -316, -122
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:36:22',
+  -355, -145
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:36:23',
+  -287, -137
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:36:24',
+  -146, -154
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:36:25',
+  -129, -170
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:36:26',
+  -134, -199
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:36:27',
+  -37, -609
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:36:28',
+  -173, -634
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:36:29',
+  -190, -558
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:36:30',
+  -206, -688
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:36:31',
+  -224, -716
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:36:32',
+  -212, -720
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:36:33',
+  -214, -681
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:36:34',
+  -209, -710
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:36:35',
+  -222, -579
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:36:36',
+  -203, -688
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:36:37',
+  -204, -688
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:36:39',
+  -208, -675
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:36:40',
+  -211, -617
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:36:42',
+  -206, -629
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:36:43',
+  -258, -653
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:36:44',
+  -344, -640
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:36:45',
+  -280, -666
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:36:46',
+  -237, -413
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:36:47',
+  -239, -117
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:36:48',
+  -280, -33
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:36:49',
+  -58, 13
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:36:50',
+  -38, -1
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:36:51',
+  99, -48
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:36:52',
+  3, 15
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:36:53',
+  -149, 186
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:36:54',
+  -76, 150
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:36:55',
+  56, 168
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:36:56',
+  204, 115
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:36:57',
+  487, 160
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:36:58',
+  773, 165
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:36:59',
+  872, 203
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:37:00',
+  894, 431
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:37:01',
+  894, 424
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:37:02',
+  904, 423
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:37:04',
+  927, 415
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:37:05',
+  862, 426
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:37:06',
+  920, 415
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:37:07',
+  896, 421
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:37:09',
+  865, 286
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:37:10',
+  860, 265
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:37:14',
+  872, 281
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:37:15',
+  927, 355
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:37:18',
+  885, 270
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:37:19',
+  853, 220
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:37:20',
+  681, 144
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:37:21',
+  453, 140
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:37:22',
+  169, 88
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:37:23',
+  -114, 20
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:37:24',
+  -203, -43
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:37:25',
+  -86, 1
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:37:26',
+  -44, 172
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:37:27',
+  141, 164
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:37:28',
+  207, 383
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:37:29',
+  345, 484
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:37:30',
+  606, 596
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:37:31',
+  828, 689
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:37:32',
+  1025, 775
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:37:33',
+  1044, 734
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:37:34',
+  1054, 863
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:37:35',
+  1042, 874
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:37:36',
+  1051, 863
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:37:37',
+  806, 856
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:37:38',
+  765, 782
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:37:39',
+  742, 851
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:37:40',
+  706, 852
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:37:41',
+  750, 812
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:37:43',
+  795, 832
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:37:44',
+  941, 918
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:37:45',
+  1091, 780
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:37:46',
+  966, 745
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:37:47',
+  625, 608
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:37:48',
+  437, 508
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:37:49',
+  200, 414
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:37:50',
+  112, 236
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:37:51',
+  112, 208
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:37:52',
+  96, 74
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:37:53',
+  -149, 1
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:37:54',
+  -289, -53
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:37:55',
+  -135, 43
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:37:56',
+  -176, 172
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:37:57',
+  -79, 259
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:37:58',
+  -50, 253
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:37:59',
+  -133, 389
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:38:00',
+  -174, 438
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:38:01',
+  -318, 427
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:38:02',
+  -450, 422
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:38:03',
+  -460, 479
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:38:04',
+  -459, 808
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:38:05',
+  -543, 858
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:38:06',
+  -450, 790
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:38:07',
+  -405, 814
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:38:08',
+  -335, 830
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:38:09',
+  -388, 840
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:38:10',
+  -434, 927
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:38:11',
+  -466, 1181
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:38:12',
+  -333, 1275
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:38:18',
+  -178, 1262
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:38:19',
+  23, 1241
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:38:20',
+  -11, 1295
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:38:21',
+  -357, 1222
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:38:22',
+  -559, 1056
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:38:23',
+  -441, 902
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:41:07',
+  -331, 838
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:41:08',
+  -372, 854
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:41:09',
+  -296, 808
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:41:10',
+  -246, 819
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:41:29',
+  -267, 807
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:41:32',
+  -285, 800
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:41:33',
+  -306, 800
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:41:36',
+  -389, 815
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:41:37',
+  -496, 1012
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:41:38',
+  -422, 976
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:41:39',
+  -617, 858
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:41:40',
+  -556, 849
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:41:41',
+  -721, 830
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:41:42',
+  -721, 828
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:41:44',
+  -766, 831
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:41:45',
+  -743, 838
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:41:46',
+  -968, 827
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:41:47',
+  -1029, 778
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:41:48',
+  -993, 503
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:41:49',
+  -1078, 456
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:41:50',
+  -1371, 433
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:41:51',
+  -1537, 442
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:41:52',
+  -1498, 400
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:41:53',
+  -1579, 426
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:41:54',
+  -1565, 430
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:41:55',
+  -1506, 499
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:41:56',
+  -1510, 501
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:41:57',
+  -1510, 501
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:41:58',
+  -1510, 486
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:41:59',
+  -1507, 414
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:42:00',
+  -1483, 400
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:42:01',
+  -1481, 400
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:42:05',
+  -287, -418
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:42:06',
+  -377, -157
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:42:07',
+  -379, -202
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:42:08',
+  -367, -190
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:42:09',
+  -299, -121
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:42:10',
+  -212, -66
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:42:11',
+  -283, -110
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:42:12',
+  -420, -176
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:42:13',
+  -350, -141
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:42:14',
+  -419, -198
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:42:15',
+  -359, -162
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:42:16',
+  -375, -167
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:42:17',
+  -197, -161
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:42:18',
+  -184, -120
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:42:19',
+  -244, -130
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:42:20',
+  -295, -451
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:42:21',
+  -55, -628
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:42:22',
+  -64, -642
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:42:23',
+  -108, -668
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:42:24',
+  -167, -688
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:42:25',
+  -177, -688
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:42:26',
+  -180, -676
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:42:27',
+  -118, -576
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:42:28',
+  -77, -650
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:42:29',
+  -87, -604
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:42:30',
+  -96, -654
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:42:31',
+  -96, -562
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:42:32',
+  -91, -561
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:42:33',
+  -80, -634
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:42:34',
+  -342, -655
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:42:35',
+  -331, -607
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:42:36',
+  -266, -343
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:42:37',
+  -187, -265
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:42:38',
+  -54, -222
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:42:39',
+  -104, -223
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:42:40',
+  -181, -165
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:42:41',
+  -236, -171
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:42:42',
+  -410, -229
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:42:43',
+  -400, -128
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:42:44',
+  -348, -145
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:42:45',
+  -179, 24
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:42:46',
+  -22, 2
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:42:47',
+  199, -33
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:42:48',
+  417, 127
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:42:49',
+  692, 164
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:42:50',
+  901, 290
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:42:51',
+  880, 405
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:42:52',
+  873, 410
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:42:53',
+  906, 403
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:42:54',
+  873, 428
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:43:00',
+  869, 403
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:43:01',
+  848, 341
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:43:03',
+  907, 288
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:43:04',
+  810, 166
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:43:05',
+  581, 144
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:43:06',
+  154, 152
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:43:07',
+  112, 367
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:43:08',
+  99, 550
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:43:09',
+  278, 727
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:43:10',
+  367, 577
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:43:11',
+  378, 455
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:43:12',
+  423, 527
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:43:13',
+  564, 608
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:43:14',
+  752, 654
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:43:15',
+  1004, 771
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:43:16',
+  1033, 750
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:43:17',
+  1048, 796
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:43:18',
+  1085, 785
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:43:19',
+  1106, 748
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:43:20',
+  1022, 912
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:43:21',
+  1006, 918
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:43:22',
+  786, 829
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:43:23',
+  758, 758
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:43:24',
+  695, 795
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:43:25',
+  750, 781
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:43:26',
+  745, 802
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:43:27',
+  696, 785
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:43:28',
+  718, 769
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:43:29',
+  681, 805
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:43:30',
+  746, 831
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:43:31',
+  722, 820
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:43:32',
+  698, 823
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:43:33',
+  742, 818
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:43:34',
+  705, 800
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:43:35',
+  688, 777
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:43:36',
+  676, 791
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:43:37',
+  691, 770
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:43:41',
+  673, 808
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:43:43',
+  725, 735
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:43:44',
+  696, 775
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:43:45',
+  780, 809
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:43:46',
+  721, 807
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:43:47',
+  672, 803
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:43:49',
+  754, 841
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:43:50',
+  1007, 898
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:43:51',
+  1056, 747
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:43:52',
+  992, 709
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:43:53',
+  768, 664
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:43:54',
+  554, 585
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:43:55',
+  305, 483
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:43:56',
+  122, 290
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:43:57',
+  112, 207
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:43:58',
+  112, 207
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:43:59',
+  131, 154
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:44:00',
+  136, 37
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:44:01',
+  32, 12
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:44:02',
+  33, 54
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:44:03',
+  40, -6
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:44:04',
+  -3, 202
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:44:05',
+  123, 82
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:44:06',
+  85, 55
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:44:07',
+  -71, 256
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:44:08',
+  -106, 282
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:44:09',
+  -104, 282
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:44:10',
+  -98, 353
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:44:11',
+  -232, 473
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:44:12',
+  -447, 437
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:44:13',
+  -459, 584
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:44:14',
+  -476, 512
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:44:15',
+  -487, 406
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:44:16',
+  -496, 598
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:44:17',
+  -479, 691
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:44:18',
+  -464, 678
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:44:19',
+  -512, 641
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:44:20',
+  -498, 813
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:44:21',
+  -479, 1100
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:44:22',
+  -324, 1290
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:44:23',
+  -46, 1247
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:44:24',
+  -25, 1295
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:44:25',
+  -124, 1290
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:44:26',
+  -538, 1169
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:44:27',
+  -501, 950
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:44:28',
+  -273, 805
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:44:29',
+  -274, 811
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:44:30',
+  -319, 800
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:44:31',
+  -425, 819
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:44:32',
+  -602, 837
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:44:33',
+  -550, 854
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:44:34',
+  -792, 841
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:44:35',
+  -764, 843
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:44:36',
+  -756, 861
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:44:37',
+  -749, 879
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:44:38',
+  -889, 861
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:44:39',
+  -1048, 842
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:44:40',
+  -924, 778
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:44:41',
+  -952, 921
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:44:42',
+  -1103, 1213
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:44:43',
+  -1124, 1224
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:44:44',
+  -1179, 1178
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:44:45',
+  -1389, 1249
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:44:46',
+  -1543, 1221
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:44:47',
+  -1573, 1258
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:44:48',
+  -1563, 1262
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:44:49',
+  -1535, 1218
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:44:50',
+  -1562, 1219
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:44:51',
+  -1554, 1228
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:44:52',
+  -1514, 1222
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:44:53',
+  -1487, 1238
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:44:54',
+  -1519, 1235
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:44:55',
+  -1501, 1194
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:44:56',
+  -1390, 1228
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:44:57',
+  -1112, 1168
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:44:58',
+  -1111, 1149
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:44:59',
+  -1142, 1174
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:45:00',
+  -1102, 1205
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:46:05',
+  -285, -503
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:46:06',
+  -383, -143
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:46:08',
+  -360, -174
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:46:08',
+  -400, -207
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:46:09',
+  -266, -118
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:46:10',
+  -285, -118
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:46:11',
+  -296, -137
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:46:12',
+  -305, -154
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:46:13',
+  -340, -178
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:46:14',
+  -267, -122
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:46:15',
+  -285, -159
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:46:16',
+  -149, -375
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:46:17',
+  -303, -666
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:46:18',
+  -179, -665
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:46:19',
+  -116, -639
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:46:20',
+  -58, -593
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:46:21',
+  -40, -614
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:46:22',
+  -72, -539
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:46:23',
+  -56, -601
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:46:24',
+  -50, -623
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:46:26',
+  -60, -539
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:46:27',
+  -53, -620
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:46:28',
+  -58, -598
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:46:29',
+  -77, -508
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:46:30',
+  -69, -508
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:46:31',
+  -91, -121
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:46:32',
+  -233, -86
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:46:33',
+  -217, -32
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:46:34',
+  -242, -6
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:46:35',
+  -304, -88
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:46:36',
+  -304, -94
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:46:37',
+  -277, -84
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:46:38',
+  -207, -73
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:46:39',
+  -121, -191
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:46:40',
+  -188, -120
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:46:41',
+  -241, 9
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:46:42',
+  -46, 72
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:46:43',
+  304, 129
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:46:44',
+  418, 116
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:46:45',
+  315, 16
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:46:46',
+  0, -48
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:46:47',
+  139, 3
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:46:48',
+  473, 157
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:46:49',
+  889, 147
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:46:50',
+  927, 302
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:46:51',
+  848, 334
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:46:52',
+  913, 431
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:46:53',
+  865, 427
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:46:54',
+  861, 429
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:46:55',
+  869, 397
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:46:56',
+  869, 394
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:46:57',
+  885, 430
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:47:00',
+  848, 352
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:47:02',
+  877, 324
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:47:03',
+  879, 261
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:47:04',
+  741, 144
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:47:05',
+  443, 141
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:47:06',
+  135, 89
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:47:07',
+  108, 175
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:47:08',
+  170, 357
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:47:09',
+  300, 604
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:47:10',
+  301, 617
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:47:11',
+  318, 564
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:47:12',
+  290, 648
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:47:13',
+  291, 667
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:47:14',
+  289, 735
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:47:15',
+  358, 650
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:47:16',
+  300, 721
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:47:17',
+  233, 661
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:47:18',
+  159, 718
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:47:19',
+  150, 736
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:47:20',
+  218, 616
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:47:21',
+  397, 482
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:47:22',
+  428, 527
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:47:23',
+  601, 601
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:47:24',
+  785, 672
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:47:25',
+  1020, 770
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:47:26',
+  1052, 755
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:47:27',
+  1095, 806
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:47:28',
+  1028, 850
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:47:29',
+  963, 876
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:47:30',
+  836, 861
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:47:31',
+  812, 857
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:47:32',
+  724, 801
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:47:33',
+  728, 812
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:47:34',
+  738, 802
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:47:35',
+  672, 801
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:47:36',
+  688, 792
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:47:37',
+  702, 772
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:47:38',
+  677, 758
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:47:39',
+  692, 755
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:47:40',
+  690, 768
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:47:41',
+  672, 797
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:47:43',
+  739, 739
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:47:44',
+  707, 740
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:47:45',
+  672, 782
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:47:46',
+  863, 886
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:47:47',
+  1103, 817
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:47:48',
+  1013, 738
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:47:49',
+  763, 660
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:47:50',
+  530, 596
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:47:51',
+  414, 502
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:47:52',
+  172, 409
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:47:53',
+  112, 236
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:47:54',
+  7, 53
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:47:55',
+  -42, 99
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:47:56',
+  -53, 102
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:47:57',
+  -56, 364
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:47:58',
+  -286, 440
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:47:59',
+  -498, 558
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:48:00',
+  -531, 572
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:48:01',
+  -548, 461
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:48:02',
+  -530, 459
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:48:03',
+  -512, 555
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:48:04',
+  -498, 550
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:48:05',
+  -490, 576
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:48:06',
+  -503, 841
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:48:07',
+  -491, 1126
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:48:08',
+  -254, 1234
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:48:09',
+  -240, 1243
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:48:10',
+  -30, 1260
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:48:11',
+  -54, 1228
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:48:12',
+  -159, 1233
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:48:13',
+  -547, 1242
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:48:14',
+  -541, 1058
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:48:15',
+  -378, 844
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:48:16',
+  -272, 800
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:48:17',
+  -308, 800
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:48:18',
+  -410, 858
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:48:19',
+  -601, 881
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:48:20',
+  -656, 869
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:48:21',
+  -792, 872
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:48:22',
+  -775, 877
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:48:23',
+  -748, 879
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:48:25',
+  -737, 879
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:48:27',
+  -782, 860
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:48:28',
+  -1011, 736
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:48:29',
+  -1048, 668
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:48:30',
+  -1048, 696
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:48:31',
+  -1030, 605
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:48:32',
+  -1014, 484
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:48:33',
+  -977, 443
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:48:34',
+  -978, 403
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:48:36',
+  -1008, 369
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:48:39',
+  -977, 368
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:48:41',
+  -984, 368
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:48:43',
+  -999, 368
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:48:47',
+  -977, 409
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:48:48',
+  -976, 695
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:48:49',
+  -1007, 1132
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:48:50',
+  -1015, 1167
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:48:51',
+  -995, 903
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:48:52',
+  -958, 895
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:48:53',
+  -916, 986
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:48:54',
+  -926, 903
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:48:55',
+  -980, 659
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:48:56',
+  -954, 603
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:48:57',
+  -953, 855
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:48:58',
+  -1024, 1162
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:48:59',
+  -1038, 1229
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:49:00',
+  -945, 1039
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:49:01',
+  -931, 899
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:49:02',
+  -1005, 1170
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:49:03',
+  -1060, 1171
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:49:04',
+  -977, 1273
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:49:09',
+  -977, 1295
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:49:10',
+  -956, 1289
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:49:11',
+  -1008, 1295
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:49:13',
+  -904, 1277
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:49:14',
+  -930, 1270
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:49:15',
+  -881, 1278
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:49:16',
+  -921, 1275
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:49:17',
+  -895, 1291
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:49:18',
+  -808, 1243
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:49:19',
+  -807, 1219
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:49:20',
+  -789, 1184
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:49:21',
+  -792, 1326
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:49:22',
+  -666, 1467
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:49:23',
+  -593, 1460
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:49:24',
+  -727, 1583
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:49:25',
+  -871, 1590
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:49:26',
+  -1008, 1566
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:49:27',
+  -953, 1531
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:49:28',
+  -791, 1313
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:49:29',
+  -753, 1265
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:49:30',
+  -817, 1391
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:49:31',
+  165, 7
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:49:32',
+  148, 87
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:49:33',
+  137, 127
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:49:35',
+  182, 44
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:49:36',
+  186, 79
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:49:37',
+  167, 202
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:49:38',
+  189, 42
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:49:39',
+  -11, 162
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:49:40',
+  -112, 303
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:49:41',
+  -125, 389
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:49:42',
+  -366, 447
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:49:43',
+  -530, 625
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:49:44',
+  -604, 808
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:49:45',
+  -654, 824
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:49:46',
+  -910, 879
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:49:47',
+  -976, 1084
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:49:48',
+  -1115, 1243
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:49:49',
+  -1165, 1188
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:49:50',
+  -1441, 1197
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:49:51',
+  -1668, 1141
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:49:52',
+  -1669, 1190
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:49:53',
+  -1642, 1231
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:49:54',
+  -1625, 1243
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:49:55',
+  -1622, 1191
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:49:56',
+  -1621, 1216
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:49:57',
+  -1611, 1233
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:49:58',
+  -1599, 1239
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:49:59',
+  -1592, 1260
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:50:00',
+  -1715, 1194
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:50:01',
+  -1610, 1206
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:50:02',
+  -1643, 1209
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:50:03',
+  -1473, 1202
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:50:04',
+  -1430, 1168
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:50:05',
+  -1430, 1168
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:50:06',
+  -1412, 1170
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:50:07',
+  -1241, 1171
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:50:08',
+  -1257, 1349
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:50:09',
+  -1233, 1394
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:50:10',
+  -1331, 1259
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:50:11',
+  -1584, 1174
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:50:12',
+  -1548, 1204
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:50:13',
+  -1572, 1225
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:50:14',
+  -1623, 1130
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:50:15',
+  -1711, 871
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:50:16',
+  -1778, 838
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:50:17',
+  -1794, 825
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:50:18',
+  -1781, 825
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:50:19',
+  -1685, 623
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:50:20',
+  -1736, 584
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:50:21',
+  -1698, 554
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:50:22',
+  -1759, 556
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:50:23',
+  -1697, 525
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:50:24',
+  -1695, 470
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:50:25',
+  -1648, 457
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:50:26',
+  -1636, 469
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:50:27',
+  -1647, 520
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:50:28',
+  -1665, 535
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:50:29',
+  -1672, 794
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:50:30',
+  -1710, 989
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:50:31',
+  -1771, 990
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:50:32',
+  -1677, 825
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:50:33',
+  -1663, 784
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:50:34',
+  -1661, 534
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:50:35',
+  -1433, 428
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:50:36',
+  -1301, 409
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:50:37',
+  -1269, 274
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:50:38',
+  -1274, 296
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:50:39',
+  -1204, 440
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:50:40',
+  -1017, 449
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:50:42',
+  -985, 368
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:50:44',
+  -1008, 376
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:50:47',
+  -989, 368
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:50:48',
+  -977, 375
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:50:49',
+  -1035, 447
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:50:50',
+  -1209, 465
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:50:51',
+  -1484, 459
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:50:52',
+  -1659, 642
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:50:53',
+  -1585, 747
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:50:54',
+  -1219, 820
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:50:55',
+  -1105, 851
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:50:59',
+  -1112, 854
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:51:00',
+  -1105, 878
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:51:02',
+  -1105, 875
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:51:05',
+  -1154, 851
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:51:07',
+  -1105, 830
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:51:08',
+  -1155, 809
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:51:09',
+  -1105, 875
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:51:10',
+  -1245, 916
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:51:11',
+  -1776, 1070
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:51:12',
+  -1746, 1045
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:51:13',
+  -1537, 1190
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:51:14',
+  -1329, 1284
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:51:15',
+  -1281, 1274
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:51:16',
+  -1041, 1181
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:51:17',
+  -977, 1251
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:51:21',
+  -909, 1293
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:51:22',
+  -800, 1379
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:51:23',
+  -740, 1415
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:51:24',
+  -653, 1604
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:51:26',
+  -796, 1631
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:51:27',
+  -785, 1715
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:51:28',
+  -753, 1801
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:51:29',
+  -814, 1860
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:51:30',
+  -846, 1637
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:51:31',
+  -965, 1478
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:51:32',
+  -828, 1359
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:51:33',
+  -691, 1184
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:51:34',
+  -721, 1188
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:51:35',
+  -593, 1184
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:51:36',
+  -474, 1187
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:51:37',
+  -475, 1078
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:51:38',
+  -452, 1056
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:51:39',
+  -421, 885
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:51:40',
+  -361, 817
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:51:41',
+  -477, 817
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:51:42',
+  -194, 813
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:51:43',
+  265, 808
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:51:44',
+  321, 809
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:51:45',
+  374, 840
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:51:46',
+  443, 868
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:51:47',
+  413, 790
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:51:48',
+  420, 854
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:51:49',
+  97, 864
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:51:50',
+  -461, 811
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:51:51',
+  -557, 789
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:51:52',
+  -387, 842
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:51:53',
+  -287, 846
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:51:54',
+  -259, 846
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:51:55',
+  -272, 845
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:51:57',
+  -285, 842
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:51:58',
+  -385, 842
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:52:00',
+  -346, 821
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:52:01',
+  -334, 807
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:52:02',
+  -448, 824
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:52:03',
+  -344, 821
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:52:04',
+  -374, 820
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:52:06',
+  -293, 823
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:52:07',
+  -344, 800
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:52:08',
+  -321, 809
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:52:10',
+  -377, 810
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:52:11',
+  -444, 810
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:52:12',
+  -479, 705
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:52:13',
+  -486, 811
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:52:14',
+  -325, 826
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:52:15',
+  -271, 833
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:52:16',
+  -373, 824
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:52:17',
+  -522, 851
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:52:18',
+  -476, 630
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:52:19',
+  -516, 604
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:52:20',
+  -489, 727
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:52:21',
+  -353, 874
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:52:22',
+  -130, 845
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:52:23',
+  115, 821
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:52:24',
+  292, 807
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:52:25',
+  358, 840
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:52:26',
+  376, 836
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:52:27',
+  411, 862
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:52:28',
+  459, 898
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:52:29',
+  487, 899
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:52:30',
+  491, 1003
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:52:31',
+  386, 1208
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:52:32',
+  436, 1142
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:52:33',
+  580, 1032
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:52:34',
+  575, 768
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:52:35',
+  490, 829
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:52:36',
+  612, 1022
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:52:37',
+  529, 1011
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:52:38',
+  617, 1037
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:52:39',
+  775, 1091
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:52:40',
+  752, 1113
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:52:41',
+  635, 1106
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:52:42',
+  667, 1110
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:52:43',
+  635, 1107
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:52:44',
+  837, 1118
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:52:45',
+  834, 1119
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:52:46',
+  782, 1119
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:52:47',
+  847, 1112
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:52:48',
+  829, 1114
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:52:49',
+  858, 1129
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:52:50',
+  905, 1104
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:52:51',
+  852, 1106
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:52:52',
+  615, 1104
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:52:53',
+  481, 1103
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:52:54',
+  577, 1111
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:52:55',
+  802, 1209
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:52:56',
+  892, 1175
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:52:57',
+  914, 1127
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:52:58',
+  849, 1145
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:52:59',
+  743, 1196
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:53:00',
+  932, 1173
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:53:01',
+  1039, 1061
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:53:02',
+  1020, 1205
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:53:03',
+  1198, 1071
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:53:04',
+  1327, 1013
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:53:05',
+  1327, 1027
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:53:06',
+  1450, 1222
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:53:07',
+  1419, 1277
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:53:08',
+  1206, 1327
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:53:09',
+  1073, 1327
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:53:10',
+  1098, 1325
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:53:11',
+  1089, 1099
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:53:12',
+  976, 977
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:53:13',
+  976, 1079
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:53:14',
+  1009, 1263
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:53:15',
+  1135, 1327
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:53:16',
+  1331, 1327
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:53:17',
+  1455, 1297
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:53:18',
+  1455, 1139
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:53:19',
+  1448, 997
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:53:20',
+  1426, 1036
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:53:21',
+  1437, 909
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:53:22',
+  1468, 872
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:53:23',
+  1463, 842
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:53:24',
+  1517, 807
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:53:25',
+  1545, 788
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:53:27',
+  1548, 898
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:53:28',
+  1550, 868
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:53:29',
+  1570, 1096
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:53:30',
+  1585, 1271
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:53:31',
+  1538, 1376
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:53:32',
+  1532, 1410
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:53:33',
+  1642, 1355
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:53:34',
+  1636, 1257
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:53:35',
+  1645, 1315
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:53:36',
+  1647, 1361
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:53:37',
+  1565, 1377
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:53:38',
+  1523, 1415
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:53:40',
+  1530, 1460
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:53:44',
+  1525, 1406
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:53:45',
+  1601, 1193
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:53:46',
+  1552, 920
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:53:47',
+  1563, 919
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:53:48',
+  1579, 843
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:53:49',
+  1578, 865
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:53:58',
+  1579, 849
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:53:59',
+  1580, 798
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:54:00',
+  1575, 938
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:54:01',
+  1572, 1134
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:54:02',
+  1574, 1377
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:54:03',
+  1471, 1413
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:54:04',
+  1196, 1427
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:54:05',
+  1057, 1414
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:54:06',
+  1021, 1407
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:54:07',
+  1288, 1465
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:54:08',
+  1170, 1500
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:54:09',
+  942, 1414
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:54:10',
+  766, 1411
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:54:11',
+  592, 1423
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:54:12',
+  412, 1421
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:54:13',
+  312, 1388
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:54:14',
+  391, 1455
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:54:15',
+  413, 1455
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:54:20',
+  362, 1388
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:54:21',
+  296, 1329
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:54:22',
+  300, 1397
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:54:23',
+  259, 1349
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:54:24',
+  184, 1242
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:54:25',
+  184, 1206
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:54:26',
+  184, 1264
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:54:49',
+  -228, -557
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:54:50',
+  -340, -302
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:54:51',
+  -395, -153
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:54:54',
+  -373, -146
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:54:55',
+  -383, -151
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:54:58',
+  -405, -161
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:54:59',
+  -418, -171
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:55:00',
+  -408, -164
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:55:01',
+  -421, -188
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:55:02',
+  -231, -359
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:55:03',
+  -72, -631
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:55:05',
+  -73, -643
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:55:06',
+  -84, -616
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:55:07',
+  -88, -626
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:55:08',
+  -93, -659
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:55:09',
+  -115, -666
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:55:10',
+  -108, -653
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:55:11',
+  -114, -661
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:55:12',
+  -116, -669
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:55:13',
+  -103, -636
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:55:14',
+  -42, -623
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:55:15',
+  -45, -617
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:55:16',
+  -359, -640
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:55:17',
+  -349, -661
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:55:21',
+  -349, -354
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:55:22',
+  -386, -137
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:55:23',
+  -319, -115
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:55:24',
+  -267, -109
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:55:25',
+  -298, -118
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:55:26',
+  -362, -139
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:55:28',
+  -274, -99
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:55:29',
+  -276, -126
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:55:30',
+  -263, -102
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:55:31',
+  -278, -154
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:55:32',
+  -201, -80
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:55:33',
+  -203, -24
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:55:34',
+  -313, -170
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:55:35',
+  -338, -666
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:55:36',
+  -26, -553
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:55:37',
+  -20, -583
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:55:38',
+  -22, -567
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:55:39',
+  -33, -624
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:55:40',
+  -29, -612
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:55:41',
+  -22, -590
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:55:42',
+  -67, -603
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:55:43',
+  -184, -688
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:55:44',
+  -194, -668
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:55:45',
+  -178, -624
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:55:46',
+  -161, -543
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:55:47',
+  -157, -599
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:55:48',
+  -131, -548
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:55:49',
+  -74, -358
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:55:50',
+  -212, -90
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:55:51',
+  -176, 61
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:55:52',
+  -7, -18
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:55:53',
+  146, -47
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:55:54',
+  340, 53
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:55:55',
+  480, 151
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:55:56',
+  747, 145
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:55:57',
+  912, 322
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:55:58',
+  910, 422
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:56:00',
+  911, 426
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:56:11',
+  893, 378
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:56:12',
+  839, 191
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:56:13',
+  628, 153
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:56:14',
+  347, 148
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:56:15',
+  159, 250
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:56:16',
+  209, 515
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:56:17',
+  297, 735
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:56:18',
+  325, 656
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:56:19',
+  399, 462
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:56:20',
+  400, 496
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:56:21',
+  549, 566
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:56:22',
+  776, 666
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:56:23',
+  1010, 730
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:56:24',
+  1101, 737
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:56:25',
+  1105, 714
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:56:26',
+  1125, 685
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:56:27',
+  1123, 741
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:56:28',
+  1074, 562
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:56:29',
+  976, 444
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:56:30',
+  976, 478
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:56:31',
+  902, 529
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:56:32',
+  625, 440
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:56:33',
+  594, 488
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:56:34',
+  625, 496
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:56:47',
+  -313, -441
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:56:48',
+  -411, -168
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:56:49',
+  -376, -186
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:56:50',
+  -379, -189
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:56:51',
+  -286, -119
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:56:52',
+  -243, -86
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:56:53',
+  -266, -128
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:56:54',
+  -341, -190
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:56:55',
+  -338, -191
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:56:56',
+  -331, -191
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:56:57',
+  -242, -156
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:56:58',
+  -230, -171
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:57:02',
+  -189, -235
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:57:03',
+  -190, -406
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:57:04',
+  -305, -683
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:57:05',
+  -18, -575
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:57:06',
+  -19, -579
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:57:07',
+  -29, -573
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:57:08',
+  -59, -598
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:57:09',
+  -37, -627
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:57:10',
+  -158, -569
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:57:11',
+  -117, -638
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:57:12',
+  -124, -570
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:57:13',
+  -234, -60
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:57:14',
+  -262, 39
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:57:15',
+  -207, -49
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:57:16',
+  -235, -146
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:57:17',
+  -143, 38
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:57:18',
+  -29, 95
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:57:19',
+  20, 136
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:57:20',
+  35, -48
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:57:21',
+  252, 5
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:57:22',
+  417, 120
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:57:23',
+  830, 170
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:57:24',
+  881, 374
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:57:25',
+  900, 371
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:57:26',
+  874, 376
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:57:27',
+  905, 431
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:57:33',
+  919, 394
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:57:34',
+  896, 312
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:57:37',
+  926, 339
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:57:39',
+  927, 366
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:57:40',
+  920, 376
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:57:41',
+  827, 170
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:57:42',
+  618, 148
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:57:43',
+  332, 129
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:57:44',
+  145, 277
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:57:45',
+  237, 475
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:57:46',
+  359, 666
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:57:48',
+  221, 671
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:57:49',
+  101, 604
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:57:50',
+  320, 529
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:57:51',
+  566, 546
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:57:52',
+  808, 671
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:57:53',
+  1062, 784
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:57:54',
+  1103, 773
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:57:55',
+  1088, 778
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:57:56',
+  1040, 831
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:57:57',
+  1053, 856
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:57:58',
+  854, 900
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:57:59',
+  851, 912
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:58:00',
+  858, 914
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:58:01',
+  789, 833
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:58:02',
+  806, 836
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:58:03',
+  784, 812
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:58:04',
+  757, 820
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:58:05',
+  723, 819
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:58:06',
+  732, 873
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:58:07',
+  672, 828
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:58:08',
+  684, 805
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:58:09',
+  715, 735
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:58:10',
+  676, 768
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:58:13',
+  712, 738
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:58:15',
+  721, 721
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:58:16',
+  741, 741
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:58:17',
+  709, 776
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:58:18',
+  682, 788
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:58:19',
+  672, 807
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:58:20',
+  692, 769
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:58:21',
+  702, 754
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:58:22',
+  693, 769
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:58:28',
+  740, 745
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:58:36',
+  672, 789
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:58:37',
+  771, 879
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:58:38',
+  1025, 882
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:58:39',
+  1061, 774
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:58:40',
+  776, 671
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:58:41',
+  536, 573
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:58:42',
+  257, 440
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:58:43',
+  116, 265
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:58:44',
+  47, 124
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:58:45',
+  32, 94
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:58:46',
+  -48, 303
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:58:47',
+  -61, 245
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:58:48',
+  -157, 456
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:58:49',
+  -418, 456
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:58:50',
+  -449, 470
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:58:51',
+  -470, 568
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:58:52',
+  -474, 421
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:58:53',
+  -484, 591
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:58:54',
+  -469, 782
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:58:55',
+  -292, 817
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:58:56',
+  -453, 808
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:58:57',
+  -464, 1052
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:58:58',
+  -502, 1017
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:58:59',
+  -488, 1160
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:59:00',
+  -315, 1258
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:59:01',
+  -6, 1278
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:59:02',
+  -190, 1295
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:59:03',
+  -557, 1231
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:59:04',
+  -557, 1224
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:59:05',
+  -560, 1156
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:59:06',
+  -465, 912
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:59:07',
+  -314, 838
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:59:08',
+  -303, 827
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:59:10',
+  -307, 800
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:59:18',
+  -370, 790
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:59:19',
+  -461, 747
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:59:20',
+  -292, 814
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:59:21',
+  -298, 807
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:59:22',
+  -319, 809
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:59:23',
+  -397, 828
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:59:24',
+  -617, 837
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:59:25',
+  -538, 843
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:59:26',
+  -736, 862
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:59:27',
+  -776, 866
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:59:28',
+  -721, 879
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:59:31',
+  -789, 877
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:59:32',
+  -871, 875
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:59:33',
+  -721, 879
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:59:34',
+  -855, 875
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:59:35',
+  -749, 879
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:59:36',
+  -850, 875
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:59:37',
+  -729, 879
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:59:38',
+  -847, 876
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:59:41',
+  -826, 876
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:59:42',
+  -819, 876
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:59:43',
+  -784, 807
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:59:44',
+  -767, 833
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:59:45',
+  -862, 877
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:59:46',
+  -957, 878
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:59:47',
+  -1047, 875
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:59:48',
+  -945, 861
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:59:49',
+  -985, 694
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:59:50',
+  -1038, 670
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:59:51',
+  -1048, 769
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:59:52',
+  -1018, 571
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:59:53',
+  -1030, 552
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:59:54',
+  -1048, 696
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:59:55',
+  -1045, 542
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:59:56',
+  -1060, 426
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:59:57',
+  -984, 593
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:59:58',
+  -923, 786
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 21:59:59',
+  -934, 882
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 22:00:00',
+  -935, 895
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 22:00:01',
+  -951, 991
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 22:00:02',
+  -1038, 1216
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 22:00:03',
+  -1038, 1159
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 22:00:04',
+  -977, 1269
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 22:00:09',
+  -986, 1264
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 22:00:10',
+  -922, 1277
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 22:00:11',
+  -928, 1274
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 22:00:12',
+  -939, 1273
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 22:00:13',
+  -816, 1247
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 22:00:14',
+  -697, 1184
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 22:00:15',
+  -793, 1270
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 22:00:16',
+  -806, 1342
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 22:00:17',
+  -758, 1401
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 22:00:18',
+  -692, 1607
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 22:00:19',
+  -707, 1629
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 22:00:20',
+  -639, 1570
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 22:00:21',
+  -809, 1411
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 22:00:22',
+  -998, 1471
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 22:00:23',
+  -922, 1563
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 22:00:24',
+  -980, 1499
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 22:00:25',
+  -997, 1493
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 22:00:26',
+  -900, 1627
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 22:00:27',
+  -763, 1810
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 22:00:28',
+  -657, 1921
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 22:00:29',
+  -633, 1915
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 22:00:30',
+  -625, 1904
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 22:00:31',
+  -710, 1943
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 22:00:32',
+  -802, 1765
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 22:00:33',
+  -864, 1611
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 22:00:34',
+  -855, 1362
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 22:00:35',
+  -827, 1217
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 22:00:36',
+  -871, 1270
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 22:00:37',
+  -1008, 1232
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 22:00:38',
+  -1101, 1141
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 22:00:39',
+  -1275, 1208
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 22:00:40',
+  -1562, 1191
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 22:00:41',
+  -1648, 1158
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 22:00:42',
+  -1667, 1095
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 22:00:43',
+  -1710, 869
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 22:00:44',
+  -1706, 783
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 22:00:45',
+  -1712, 574
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 22:00:46',
+  -1689, 539
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 22:00:47',
+  -1672, 513
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 22:00:48',
+  -1755, 549
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 22:00:49',
+  -1755, 549
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 22:00:50',
+  -1696, 524
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 22:00:51',
+  -1575, 490
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 22:00:52',
+  -1668, 553
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 22:00:53',
+  -1552, 470
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 22:00:54',
+  -1463, 400
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 22:00:55',
+  -1536, 428
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 22:00:56',
+  -1700, 617
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 22:00:57',
+  -1664, 1081
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 22:00:58',
+  -1655, 1149
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 22:00:59',
+  -1557, 1199
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 22:01:00',
+  -1377, 1251
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 22:01:01',
+  -1233, 1400
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 22:01:02',
+  -1268, 1338
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 22:01:03',
+  -1426, 1211
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 22:01:04',
+  -1673, 1102
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 22:01:05',
+  -1709, 828
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 22:01:06',
+  -1683, 548
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 22:01:07',
+  -1439, 440
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 22:01:08',
+  -1412, 495
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 22:01:10',
+  -1427, 495
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 22:01:11',
+  -1508, 499
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 22:01:12',
+  -1508, 499
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 22:01:13',
+  -1705, 466
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 22:01:14',
+  -1726, 587
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 22:01:15',
+  -1739, 517
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 22:01:16',
+  -1730, 505
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 22:01:17',
+  -1713, 469
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 22:01:18',
+  -1677, 446
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 22:01:19',
+  -1606, 410
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 22:01:20',
+  -1610, 465
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 22:01:21',
+  -1670, 678
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 22:01:22',
+  -1706, 682
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 22:01:23',
+  -1708, 828
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 22:01:24',
+  -1768, 944
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 22:01:25',
+  -1483, 886
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 22:01:26',
+  -1120, 855
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 22:01:27',
+  -1144, 861
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 22:01:28',
+  -1160, 872
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 22:01:29',
+  -1144, 898
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 22:01:30',
+  -1162, 888
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 22:01:31',
+  -1105, 844
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 22:01:32',
+  -1105, 787
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 22:01:34',
+  -1108, 746
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 22:01:35',
+  -1158, 816
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 22:01:36',
+  -1389, 912
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 22:01:37',
+  -1642, 666
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 22:01:38',
+  -1686, 534
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 22:01:39',
+  -1741, 529
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 22:01:40',
+  -1528, 446
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 22:01:41',
+  -1315, 314
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 22:01:43',
+  -1328, 229
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 22:01:44',
+  -1284, 315
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 22:01:45',
+  -1244, 489
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 22:01:46',
+  -1486, 488
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 22:01:47',
+  -1489, 476
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 22:01:48',
+  -1654, 513
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 22:01:49',
+  -1733, 795
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 22:01:50',
+  -1661, 900
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 22:01:51',
+  -1761, 830
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 22:01:52',
+  -1731, 796
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 22:01:53',
+  -1728, 1035
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 22:01:54',
+  -1533, 1200
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 22:01:55',
+  -1249, 1193
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 22:01:56',
+  -1048, 1072
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 22:01:57',
+  -983, 816
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 22:01:58',
+  -873, 811
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 22:01:59',
+  -825, 837
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 22:02:00',
+  -768, 849
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 22:02:01',
+  -733, 856
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 22:02:02',
+  -686, 853
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 22:02:03',
+  -573, 842
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 22:02:04',
+  -467, 837
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 22:02:05',
+  -451, 692
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 22:02:06',
+  -499, 749
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 22:02:07',
+  -437, 791
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 22:02:08',
+  -434, 848
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 22:02:10',
+  -433, 783
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 22:02:11',
+  -428, 772
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 22:02:12',
+  -295, 840
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 22:02:16',
+  -295, 840
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 22:02:17',
+  -350, 812
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 22:02:18',
+  -338, 818
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 22:02:22',
+  66, 828
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 22:02:23',
+  343, 819
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 22:02:24',
+  347, 814
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 22:02:25',
+  310, 800
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 22:02:26',
+  183, 799
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 22:02:27',
+  333, 817
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 22:02:28',
+  414, 875
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 22:02:29',
+  458, 915
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 22:02:30',
+  461, 924
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 22:02:31',
+  505, 984
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 22:02:32',
+  552, 1094
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 22:02:33',
+  551, 1097
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 22:02:34',
+  538, 1096
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 22:02:35',
+  618, 1115
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 22:02:36',
+  645, 1113
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 22:02:37',
+  672, 1115
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 22:02:38',
+  627, 1112
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 22:02:39',
+  758, 1121
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 22:02:40',
+  799, 1124
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 22:02:41',
+  756, 1128
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 22:02:42',
+  470, 1101
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 22:02:43',
+  507, 1163
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 22:02:44',
+  768, 1205
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 22:02:45',
+  804, 1168
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 22:02:46',
+  697, 1182
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 22:02:47',
+  659, 1011
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 22:02:48',
+  563, 810
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 22:02:49',
+  452, 688
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 22:02:50',
+  526, 788
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 22:02:51',
+  618, 1193
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 22:02:52',
+  828, 1198
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 22:02:53',
+  926, 1165
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 22:02:54',
+  902, 1190
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 22:02:56',
+  913, 1174
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 22:02:57',
+  982, 1145
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 22:02:58',
+  1022, 990
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 22:02:59',
+  1073, 1078
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 22:03:00',
+  1073, 1232
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 22:03:01',
+  1232, 1231
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 22:03:02',
+  1414, 1040
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 22:03:03',
+  1434, 1007
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 22:03:04',
+  1437, 1020
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 22:03:05',
+  1446, 968
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 22:03:06',
+  1501, 840
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 22:03:07',
+  1562, 817
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 22:03:08',
+  1582, 905
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 22:03:09',
+  1596, 920
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 22:03:10',
+  1618, 875
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 22:03:11',
+  1545, 806
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 22:03:12',
+  1525, 868
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 22:03:13',
+  1551, 811
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 22:03:14',
+  1584, 1033
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 22:03:15',
+  1562, 1315
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 22:03:16',
+  1564, 1377
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 22:03:17',
+  1599, 1389
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 22:03:18',
+  1599, 1290
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 22:03:19',
+  1619, 1332
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 22:03:20',
+  1647, 1369
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 22:03:21',
+  1647, 1305
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 22:03:22',
+  1562, 1380
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 22:03:23',
+  1563, 1382
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 22:03:24',
+  1632, 1375
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 22:03:25',
+  1601, 1381
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 22:03:26',
+  1507, 1391
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 22:03:27',
+  1345, 1519
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 22:03:28',
+  1321, 1519
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 22:03:29',
+  1480, 1519
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 22:03:30',
+  1517, 1442
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 22:03:31',
+  1502, 1429
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 22:03:32',
+  1462, 1499
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 22:03:34',
+  1478, 1519
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 22:03:35',
+  1516, 1387
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 22:03:36',
+  1588, 1357
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 22:03:37',
+  1550, 1383
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 22:03:38',
+  1573, 1414
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 22:03:39',
+  1299, 1421
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 22:03:40',
+  1016, 1409
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 22:03:41',
+  988, 1411
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 22:03:42',
+  1239, 1507
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 22:03:43',
+  1429, 1519
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 22:03:44',
+  1606, 1465
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 22:03:45',
+  1621, 1355
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 22:03:46',
+  1552, 964
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 22:03:47',
+  1422, 908
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 22:03:48',
+  1380, 1158
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 22:03:49',
+  1034, 1237
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 22:03:50',
+  990, 1091
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 22:03:51',
+  976, 1102
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 22:03:52',
+  765, 1157
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 22:03:53',
+  568, 980
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 22:03:54',
+  506, 716
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 22:03:55',
+  460, 690
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 22:03:56',
+  521, 861
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 22:03:57',
+  683, 1075
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 22:03:58',
+  858, 1127
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 22:03:59',
+  1010, 1140
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 22:04:00',
+  1243, 1153
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 22:04:01',
+  1306, 1198
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 22:04:02',
+  1454, 995
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 22:04:03',
+  1513, 893
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 22:04:04',
+  1590, 1073
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 22:04:05',
+  1577, 1354
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 22:04:06',
+  1336, 1440
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 22:04:07',
+  1049, 1426
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 22:04:08',
+  774, 1395
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 22:04:09',
+  521, 1392
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 22:04:10',
+  358, 1368
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 22:04:11',
+  314, 1350
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 22:04:12',
+  290, 1395
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 22:04:13',
+  288, 1398
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 22:04:14',
+  388, 1455
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 22:04:15',
+  529, 1455
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 22:04:19',
+  547, 1455
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 22:04:20',
+  348, 1379
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 22:04:21',
+  271, 1297
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 22:04:22',
+  246, 1182
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 22:04:23',
+  261, 1107
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 22:04:24',
+  232, 1049
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 22:04:25',
+  299, 1367
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 22:04:26',
+  529, 1356
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 22:04:27',
+  530, 1398
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 22:04:28',
+  378, 1437
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 22:04:29',
+  389, 1455
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 22:04:30',
+  439, 1455
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 22:04:31',
+  481, 1455
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 22:04:32',
+  395, 1404
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 22:04:33',
+  302, 1345
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 22:04:34',
+  254, 1301
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 22:04:35',
+  251, 1397
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 22:04:36',
+  309, 1430
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 22:04:37',
+  326, 1401
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 22:04:38',
+  258, 1265
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 22:04:39',
+  295, 1333
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 22:04:40',
+  278, 1352
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 22:04:41',
+  370, 1455
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 22:04:42',
+  408, 1455
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 22:04:43',
+  257, 1330
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 22:04:44',
+  184, 1242
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 22:04:45',
+  204, 1319
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 22:04:46',
+  241, 1383
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 22:04:47',
+  213, 1279
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 22:04:48',
+  203, 1240
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 22:04:49',
+  205, 1309
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 22:04:50',
+  280, 1184
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 22:04:52',
+  277, 1191
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 22:04:53',
+  104, 1155
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 22:04:54',
+  96, 1309
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 22:04:55',
+  101, 1134
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 22:04:56',
+  98, 933
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 22:04:57',
+  244, 973
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 22:04:58',
+  235, 1043
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 22:04:59',
+  174, 1013
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 22:05:00',
+  139, 1151
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 22:05:01',
+  96, 1318
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 22:05:02',
+  96, 1452
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 22:05:04',
+  127, 1424
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 22:05:05',
+  127, 1415
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 22:05:06',
+  127, 1373
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 22:05:07',
+  127, 1304
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 22:05:08',
+  100, 1384
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 22:05:09',
+  107, 1484
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 22:05:10',
+  76, 1468
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 22:05:11',
+  28, 1378
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 22:05:12',
+  -19, 1469
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 22:05:13',
+  127, 1497
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 22:05:14',
+  127, 1320
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 22:05:15',
+  163, 1043
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 22:05:16',
+  215, 963
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 22:05:17',
+  96, 958
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 22:05:18',
+  113, 1192
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 22:05:19',
+  99, 1502
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 22:05:20',
+  2, 1440
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 22:05:21',
+  -21, 1303
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 22:05:22',
+  -19, 1219
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 22:05:23',
+  -104, 1276
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 22:05:24',
+  -57, 1295
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 22:05:25',
+  -7, 1492
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 22:05:26',
+  -17, 1472
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 22:05:27',
+  -11, 1544
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 22:05:28',
+  -9, 1543
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 22:05:29',
+  -9, 1465
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 22:05:30',
+  -4, 1465
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 22:05:31',
+  -4, 1500
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 22:05:32',
+  -7, 1484
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 22:05:33',
+  11, 1458
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 22:05:34',
+  -2, 1517
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 22:05:35',
+  23, 1479
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 22:05:36',
+  4, 1580
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 22:05:37',
+  -26, 1501
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 22:05:38',
+  4, 1572
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 22:05:39',
+  -16, 1579
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 22:05:40',
+  21, 1516
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 22:05:41',
+  63, 1424
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 22:05:42',
+  15, 1538
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 22:05:43',
+  -26, 1426
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 22:05:44',
+  4, 1551
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 22:05:45',
+  9, 1533
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 22:05:46',
+  -10, 1545
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 22:05:47',
+  -40, 1535
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 22:05:48',
+  -23, 1514
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 22:05:49',
+  7, 1507
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 22:05:50',
+  15, 1581
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 22:05:51',
+  17, 1535
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 22:05:52',
+  38, 1511
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 22:05:53',
+  43, 1463
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 22:05:54',
+  -12, 1576
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 22:05:55',
+  -2, 1600
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 22:05:56',
+  -26, 1628
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 22:05:57',
+  57, 1676
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 22:05:58',
+  303, 1763
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 22:05:59',
+  401, 1775
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 22:06:00',
+  458, 1801
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 22:06:01',
+  450, 1749
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 22:06:02',
+  313, 1681
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 22:06:03',
+  71, 1656
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 22:06:04',
+  -104, 1670
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 22:06:05',
+  -79, 1656
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 22:06:06',
+  -58, 1656
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 22:06:07',
+  -149, 1664
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 22:06:08',
+  -276, 1680
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 22:06:09',
+  -231, 1735
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 22:06:10',
+  -100, 1656
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 22:06:11',
+  -7, 1600
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 22:06:14',
+  -11, 1600
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 22:06:15',
+  15, 1600
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 22:06:16',
+  -112, 1727
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 22:06:17',
+  -270, 1722
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 22:06:18',
+  -245, 1693
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 22:06:19',
+  -165, 1680
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 22:06:20',
+  25, 1628
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 22:06:22',
+  28, 1669
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 22:06:23',
+  48, 1741
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 22:06:24',
+  -91, 1681
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 22:06:25',
+  -352, 1755
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 22:06:26',
+  -492, 1988
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 22:06:27',
+  -537, 1931
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 22:06:28',
+  -379, 1777
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 22:06:29',
+  -103, 1678
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 22:06:30',
+  182, 1707
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 22:06:31',
+  375, 1757
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 22:06:32',
+  313, 1838
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 22:06:33',
+  369, 2078
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 22:06:34',
+  235, 2160
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 22:06:35',
+  122, 2184
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 22:06:36',
+  -85, 2284
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 22:06:37',
+  -120, 2322
+);
+INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
+VALUES (
+  currval(pg_get_serial_sequence('Game','game_id')),
+  '2025-11-05 22:06:38',
+  -305, 2409
+);
+
+INSERT INTO UXInstrument (nombre, tipo) VALUES ('unknown', 'unknown');
+
+INSERT INTO UXResponse (user_id, instrument_id, fecha_respuesta, respuestas_json)
+VALUES (
+  currval(pg_get_serial_sequence('"User"','user_id')),
+  currval(pg_get_serial_sequence('UXInstrument','instrument_id')),
+  '2025-11-05 21:27:51',
+  'unknown'
+);
+
+-- Fin de inserciones generadas
+
