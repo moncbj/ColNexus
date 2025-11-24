@@ -5,7 +5,7 @@
 -- ============================
 
 INSERT INTO "User" (nombre_completo, genero, carrera)
-VALUES ('Jose Alejandro Contreras Obregon', 'M', 'Ciencia de datos');
+VALUES ('Jose Alejandro Contreras Obregon', 'Masculino', 'Ciencia de datos');
 
 INSERT INTO Player (user_id, alias)
 VALUES (currval(pg_get_serial_sequence('"User"','user_id')), 'mysticfriday');
@@ -1458,7 +1458,7 @@ VALUES (
 -- ============================
 
 INSERT INTO "User" (nombre_completo, genero, carrera)
-VALUES ('Jose Alejandro Contreras Obregon', 'M', 'Ciencia de datos');
+VALUES ('Jose Alejandro Contreras Obregon', 'Masculino', 'Ciencia de datos');
 
 INSERT INTO Player (user_id, alias)
 VALUES (currval(pg_get_serial_sequence('"User"','user_id')), 'mysticfriday');
@@ -8233,7 +8233,7 @@ VALUES (
 -- ============================
 
 INSERT INTO "User" (nombre_completo, genero, carrera)
-VALUES ('Jose Alejandro Contreras Obregon', 'M', 'Ciencia de datos');
+VALUES ('Jose Alejandro Contreras Obregon', 'Masculino', 'Ciencia de datos');
 
 INSERT INTO Player (user_id, alias)
 VALUES (currval(pg_get_serial_sequence('"User"','user_id')), 'mysticfriday');
@@ -9962,7 +9962,7 @@ VALUES (
 -- ============================
 
 INSERT INTO "User" (nombre_completo, genero, carrera)
-VALUES ('Jose Alejandro Contreras Obregon', 'M', 'Ciencia de datos');
+VALUES ('Jose Alejandro Contreras Obregon', 'Masculino', 'Ciencia de datos');
 
 INSERT INTO Player (user_id, alias)
 VALUES (currval(pg_get_serial_sequence('"User"','user_id')), 'mysticfriday');
@@ -12939,7 +12939,7 @@ VALUES (
 -- ============================
 
 INSERT INTO "User" (nombre_completo, genero, carrera)
-VALUES ('Jose Alejandro Contreras Obregon', 'M', 'Ciencia de datos');
+VALUES ('Jose Alejandro Contreras Obregon', 'Masculino', 'Ciencia de datos');
 
 INSERT INTO Player (user_id, alias)
 VALUES (currval(pg_get_serial_sequence('"User"','user_id')), 'mysticfriday');
@@ -30328,7 +30328,7 @@ VALUES (
 -- ============================
 
 INSERT INTO "User" (nombre_completo, genero, carrera)
-VALUES ('Daniel Alejandro Duarte Duarte', 'M', 'Ciencia de datos');
+VALUES ('Daniel Alejandro Duarte Duarte', 'Masculino', 'Ciencia de datos');
 
 INSERT INTO Player (user_id, alias)
 VALUES (currval(pg_get_serial_sequence('"User"','user_id')), 'elito1322');
@@ -32897,7 +32897,7 @@ VALUES (
 -- ============================
 
 INSERT INTO "User" (nombre_completo, genero, carrera)
-VALUES ('Daniel Alejandro Duarte Duarte', 'M', 'Ciencia de datos');
+VALUES ('Daniel Alejandro Duarte Duarte', 'Masculino', 'Ciencia de datos');
 
 INSERT INTO Player (user_id, alias)
 VALUES (currval(pg_get_serial_sequence('"User"','user_id')), 'elito1322');
@@ -34337,7 +34337,7 @@ VALUES (
 -- ============================
 
 INSERT INTO "User" (nombre_completo, genero, carrera)
-VALUES ('Daniel Alejandro Duarte Duarte', 'M', 'Ciencia de datos');
+VALUES ('Daniel Alejandro Duarte Duarte', 'Masculino', 'Ciencia de datos');
 
 INSERT INTO Player (user_id, alias)
 VALUES (currval(pg_get_serial_sequence('"User"','user_id')), 'elito1322');
@@ -35826,7 +35826,7 @@ VALUES (
 -- ============================
 
 INSERT INTO "User" (nombre_completo, genero, carrera)
-VALUES ('Daniel Alejandro Duarte Duarte', 'M', 'Ciencia de datos');
+VALUES ('Daniel Alejandro Duarte Duarte', 'Masculino', 'Ciencia de datos');
 
 INSERT INTO Player (user_id, alias)
 VALUES (currval(pg_get_serial_sequence('"User"','user_id')), 'elito1322');
@@ -43225,7 +43225,7 @@ VALUES (
 -- ============================
 
 INSERT INTO "User" (nombre_completo, genero, carrera)
-VALUES ('Daniel Alejandro Duarte Duarte', 'M', 'Ciencia de datos');
+VALUES ('Daniel Alejandro Duarte Duarte', 'Masculino', 'Ciencia de datos');
 
 INSERT INTO Player (user_id, alias)
 VALUES (currval(pg_get_serial_sequence('"User"','user_id')), 'elito1322');
@@ -46580,7 +46580,7 @@ VALUES (
 -- ============================
 
 INSERT INTO "User" (nombre_completo, genero, carrera)
-VALUES ('Jose Alejandro Contreras Obregon', 'M', 'Ciencia de datos');
+VALUES ('Jose Alejandro Contreras Obregon', 'Masculino', 'Ciencia de datos');
 
 INSERT INTO Player (user_id, alias)
 VALUES (currval(pg_get_serial_sequence('"User"','user_id')), 'mysticfriday');
@@ -54543,7 +54543,7 @@ VALUES (
 -- ============================
 
 INSERT INTO "User" (nombre_completo, genero, carrera)
-VALUES ('Jose Alejandro Contreras Obregon', 'M', 'Ciencia de datos');
+VALUES ('Jose Alejandro Contreras Obregon', 'Masculino', 'Ciencia de datos');
 
 INSERT INTO Player (user_id, alias)
 VALUES (currval(pg_get_serial_sequence('"User"','user_id')), 'mysticfriday');
@@ -61390,7 +61390,7 @@ VALUES (
 -- ============================
 
 INSERT INTO "User" (nombre_completo, genero, carrera)
-VALUES ('Jose Alejandro Contreras Obregon', 'M', 'Ciencia de datos');
+VALUES ('Jose Alejandro Contreras Obregon', 'Masculino', 'Ciencia de datos');
 
 INSERT INTO Player (user_id, alias)
 VALUES (currval(pg_get_serial_sequence('"User"','user_id')), 'mysticfriday');
