@@ -171,7 +171,7 @@ int main() {
     out << ");\n\n";
 
     out << "INSERT INTO Sector (map_id, nombre_sector)\n";
-    out << "VALUES (currval(pg_get_serial_sequence('Map','map_id')), 'unknown');\n\n";
+    out << "VALUES (currval(pg_get_serial_sequence('Map','map_id')));\n\n";
 
     for (const auto &ev : telemetry) {
         out << "INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)\n";
@@ -189,8 +189,7 @@ int main() {
     out << "VALUES (\n";
     out << "  currval(pg_get_serial_sequence('\"User\"','user_id')),\n";
     out << "  currval(pg_get_serial_sequence('UXInstrument','instrument_id')),\n";
-    out << "  '" << normalizeTimestampForSQL(when_ts) << "',\n";
-    out << "  'unknown'\n";
+    out << "  '" << normalizeTimestampForSQL(when_ts) << "'\n";
     out << ");\n\n";
 
     out << "-- Fin de inserciones generadas\n\n";

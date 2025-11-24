@@ -24,7 +24,10 @@ VALUES (
 );
 
 INSERT INTO Sector (map_id, nombre_sector)
-VALUES (currval(pg_get_serial_sequence('Map','map_id')), 'unknown');
+VALUES (
+    currval(pg_get_serial_sequence('Map', 'map_id')), -- Valor para map_id
+    'Nombre del Sector Aquí'                          -- Valor para nombre_sector (OBLIGATORIO)
+);
 
 INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
 VALUES (
@@ -1439,12 +1442,11 @@ VALUES (
 
 INSERT INTO UXInstrument (nombre, tipo) VALUES ('unknown', 'unknown');
 
-INSERT INTO UXResponse (user_id, instrument_id, fecha_respuesta, respuestas_json)
+INSERT INTO UXResponse (user_id, instrument_id, fecha_respuesta)
 VALUES (
   currval(pg_get_serial_sequence('"User"','user_id')),
   currval(pg_get_serial_sequence('UXInstrument','instrument_id')),
-  '2025-11-04 19:44:00',
-  'unknown'
+  '2025-11-04 19:44:00'
 );
 
 -- Fin de inserciones generadas
@@ -1475,7 +1477,10 @@ VALUES (
 );
 
 INSERT INTO Sector (map_id, nombre_sector)
-VALUES (currval(pg_get_serial_sequence('Map','map_id')), 'unknown');
+VALUES (
+    currval(pg_get_serial_sequence('Map', 'map_id')), -- Valor para map_id
+    'Nombre del Sector Aquí'                          -- Valor para nombre_sector (OBLIGATORIO)
+);
 
 INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
 VALUES (
@@ -8212,12 +8217,11 @@ VALUES (
 
 INSERT INTO UXInstrument (nombre, tipo) VALUES ('unknown', 'unknown');
 
-INSERT INTO UXResponse (user_id, instrument_id, fecha_respuesta, respuestas_json)
+INSERT INTO UXResponse (user_id, instrument_id, fecha_respuesta)
 VALUES (
   currval(pg_get_serial_sequence('"User"','user_id')),
   currval(pg_get_serial_sequence('UXInstrument','instrument_id')),
-  '2025-11-04 19:49:25',
-  'unknown'
+  '2025-11-04 19:49:25'
 );
 
 -- Fin de inserciones generadas
@@ -8248,7 +8252,10 @@ VALUES (
 );
 
 INSERT INTO Sector (map_id, nombre_sector)
-VALUES (currval(pg_get_serial_sequence('Map','map_id')), 'unknown');
+VALUES (
+    currval(pg_get_serial_sequence('Map', 'map_id')), -- Valor para map_id
+    'Nombre del Sector Aquí'                          -- Valor para nombre_sector (OBLIGATORIO)
+);
 
 INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
 VALUES (
@@ -9939,12 +9946,11 @@ VALUES (
 
 INSERT INTO UXInstrument (nombre, tipo) VALUES ('unknown', 'unknown');
 
-INSERT INTO UXResponse (user_id, instrument_id, fecha_respuesta, respuestas_json)
+INSERT INTO UXResponse (user_id, instrument_id, fecha_respuesta)
 VALUES (
   currval(pg_get_serial_sequence('"User"','user_id')),
   currval(pg_get_serial_sequence('UXInstrument','instrument_id')),
-  '2025-11-04 20:11:49',
-  'unknown'
+  '2025-11-04 20:11:49'
 );
 
 -- Fin de inserciones generadas
@@ -9975,7 +9981,10 @@ VALUES (
 );
 
 INSERT INTO Sector (map_id, nombre_sector)
-VALUES (currval(pg_get_serial_sequence('Map','map_id')), 'unknown');
+VALUES (
+    currval(pg_get_serial_sequence('Map', 'map_id')), -- Valor para map_id
+    'Nombre del Sector Aquí'                          -- Valor para nombre_sector (OBLIGATORIO)
+);
 
 INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
 VALUES (
@@ -12914,12 +12923,11 @@ VALUES (
 
 INSERT INTO UXInstrument (nombre, tipo) VALUES ('unknown', 'unknown');
 
-INSERT INTO UXResponse (user_id, instrument_id, fecha_respuesta, respuestas_json)
+INSERT INTO UXResponse (user_id, instrument_id, fecha_respuesta)
 VALUES (
   currval(pg_get_serial_sequence('"User"','user_id')),
   currval(pg_get_serial_sequence('UXInstrument','instrument_id')),
-  '2025-11-04 20:58:09',
-  'unknown'
+  '2025-11-04 20:58:09'
 );
 
 -- Fin de inserciones generadas
@@ -12950,7 +12958,10 @@ VALUES (
 );
 
 INSERT INTO Sector (map_id, nombre_sector)
-VALUES (currval(pg_get_serial_sequence('Map','map_id')), 'unknown');
+VALUES (
+    currval(pg_get_serial_sequence('Map', 'map_id')), -- Valor para map_id
+    'Nombre del Sector Aquí'                          -- Valor para nombre_sector (OBLIGATORIO)
+);
 
 INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
 VALUES (
@@ -30301,12 +30312,11 @@ VALUES (
 
 INSERT INTO UXInstrument (nombre, tipo) VALUES ('unknown', 'unknown');
 
-INSERT INTO UXResponse (user_id, instrument_id, fecha_respuesta, respuestas_json)
+INSERT INTO UXResponse (user_id, instrument_id, fecha_respuesta)
 VALUES (
   currval(pg_get_serial_sequence('"User"','user_id')),
   currval(pg_get_serial_sequence('UXInstrument','instrument_id')),
-  '2025-11-04 21:10:50',
-  'unknown'
+  '2025-11-04 21:10:50'
 );
 
 -- Fin de inserciones generadas
@@ -30337,7 +30347,10 @@ VALUES (
 );
 
 INSERT INTO Sector (map_id, nombre_sector)
-VALUES (currval(pg_get_serial_sequence('Map','map_id')), 'unknown');
+VALUES (
+    currval(pg_get_serial_sequence('Map', 'map_id')), -- Valor para map_id
+    'Nombre del Sector Aquí'                          -- Valor para nombre_sector (OBLIGATORIO)
+);
 
 INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
 VALUES (
@@ -32868,12 +32881,11 @@ VALUES (
 
 INSERT INTO UXInstrument (nombre, tipo) VALUES ('unknown', 'unknown');
 
-INSERT INTO UXResponse (user_id, instrument_id, fecha_respuesta, respuestas_json)
+INSERT INTO UXResponse (user_id, instrument_id, fecha_respuesta)
 VALUES (
   currval(pg_get_serial_sequence('"User"','user_id')),
   currval(pg_get_serial_sequence('UXInstrument','instrument_id')),
-  '2025-11-04 17:23:54',
-  'unknown'
+  '2025-11-04 17:23:54'
 );
 
 -- Fin de inserciones generadas
@@ -32904,7 +32916,10 @@ VALUES (
 );
 
 INSERT INTO Sector (map_id, nombre_sector)
-VALUES (currval(pg_get_serial_sequence('Map','map_id')), 'unknown');
+VALUES (
+    currval(pg_get_serial_sequence('Map', 'map_id')), -- Valor para map_id
+    'Nombre del Sector Aquí'                          -- Valor para nombre_sector (OBLIGATORIO)
+);
 
 INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
 VALUES (
@@ -34307,12 +34322,11 @@ VALUES (
 
 INSERT INTO UXInstrument (nombre, tipo) VALUES ('unknown', 'unknown');
 
-INSERT INTO UXResponse (user_id, instrument_id, fecha_respuesta, respuestas_json)
+INSERT INTO UXResponse (user_id, instrument_id, fecha_respuesta)
 VALUES (
   currval(pg_get_serial_sequence('"User"','user_id')),
   currval(pg_get_serial_sequence('UXInstrument','instrument_id')),
-  '2025-11-04 17:33:25',
-  'unknown'
+  '2025-11-04 17:33:25'
 );
 
 -- Fin de inserciones generadas
@@ -34342,7 +34356,10 @@ VALUES (
 );
 
 INSERT INTO Sector (map_id, nombre_sector)
-VALUES (currval(pg_get_serial_sequence('Map','map_id')), 'unknown');
+VALUES (
+    currval(pg_get_serial_sequence('Map', 'map_id')), -- Valor para map_id
+    'Nombre del Sector Aquí'                          -- Valor para nombre_sector (OBLIGATORIO)
+);
 
 INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
 VALUES (
@@ -35793,12 +35810,11 @@ VALUES (
 
 INSERT INTO UXInstrument (nombre, tipo) VALUES ('unknown', 'unknown');
 
-INSERT INTO UXResponse (user_id, instrument_id, fecha_respuesta, respuestas_json)
+INSERT INTO UXResponse (user_id, instrument_id, fecha_respuesta)
 VALUES (
   currval(pg_get_serial_sequence('"User"','user_id')),
   currval(pg_get_serial_sequence('UXInstrument','instrument_id')),
-  '2025-11-04 17:41:08',
-  'unknown'
+  '2025-11-04 17:41:08'
 );
 
 -- Fin de inserciones generadas
@@ -35829,7 +35845,10 @@ VALUES (
 );
 
 INSERT INTO Sector (map_id, nombre_sector)
-VALUES (currval(pg_get_serial_sequence('Map','map_id')), 'unknown');
+VALUES (
+    currval(pg_get_serial_sequence('Map', 'map_id')), -- Valor para map_id
+    'Nombre del Sector Aquí'                          -- Valor para nombre_sector (OBLIGATORIO)
+);
 
 INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
 VALUES (
@@ -43190,12 +43209,11 @@ VALUES (
 
 INSERT INTO UXInstrument (nombre, tipo) VALUES ('unknown', 'unknown');
 
-INSERT INTO UXResponse (user_id, instrument_id, fecha_respuesta, respuestas_json)
+INSERT INTO UXResponse (user_id, instrument_id, fecha_respuesta)
 VALUES (
   currval(pg_get_serial_sequence('"User"','user_id')),
   currval(pg_get_serial_sequence('UXInstrument','instrument_id')),
-  '2025-11-04 18:48:24',
-  'unknown'
+  '2025-11-04 18:48:24'
 );
 
 -- Fin de inserciones generadas
@@ -43226,7 +43244,10 @@ VALUES (
 );
 
 INSERT INTO Sector (map_id, nombre_sector)
-VALUES (currval(pg_get_serial_sequence('Map','map_id')), 'unknown');
+VALUES (
+    currval(pg_get_serial_sequence('Map', 'map_id')), -- Valor para map_id
+    'Nombre del Sector Aquí'                          -- Valor para nombre_sector (OBLIGATORIO)
+);
 
 INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
 VALUES (
@@ -46543,12 +46564,11 @@ VALUES (
 
 INSERT INTO UXInstrument (nombre, tipo) VALUES ('unknown', 'unknown');
 
-INSERT INTO UXResponse (user_id, instrument_id, fecha_respuesta, respuestas_json)
+INSERT INTO UXResponse (user_id, instrument_id, fecha_respuesta)
 VALUES (
   currval(pg_get_serial_sequence('"User"','user_id')),
   currval(pg_get_serial_sequence('UXInstrument','instrument_id')),
-  '2025-11-04 20:09:17',
-  'unknown'
+  '2025-11-04 20:09:17'
 );
 
 -- Fin de inserciones generadas
@@ -46579,7 +46599,10 @@ VALUES (
 );
 
 INSERT INTO Sector (map_id, nombre_sector)
-VALUES (currval(pg_get_serial_sequence('Map','map_id')), 'unknown');
+VALUES (
+    currval(pg_get_serial_sequence('Map', 'map_id')), -- Valor para map_id
+    'Nombre del Sector Aquí'                          -- Valor para nombre_sector (OBLIGATORIO)
+);
 
 INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
 VALUES (
@@ -54504,12 +54527,11 @@ VALUES (
 
 INSERT INTO UXInstrument (nombre, tipo) VALUES ('unknown', 'unknown');
 
-INSERT INTO UXResponse (user_id, instrument_id, fecha_respuesta, respuestas_json)
+INSERT INTO UXResponse (user_id, instrument_id, fecha_respuesta)
 VALUES (
   currval(pg_get_serial_sequence('"User"','user_id')),
   currval(pg_get_serial_sequence('UXInstrument','instrument_id')),
-  '2025-11-05 20:37:32',
-  'unknown'
+  '2025-11-05 20:37:32'
 );
 
 -- Fin de inserciones generadas
@@ -54540,7 +54562,10 @@ VALUES (
 );
 
 INSERT INTO Sector (map_id, nombre_sector)
-VALUES (currval(pg_get_serial_sequence('Map','map_id')), 'unknown');
+VALUES (
+    currval(pg_get_serial_sequence('Map', 'map_id')), -- Valor para map_id
+    'Nombre del Sector Aquí'                          -- Valor para nombre_sector (OBLIGATORIO)
+);
 
 INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
 VALUES (
@@ -61349,12 +61374,11 @@ VALUES (
 
 INSERT INTO UXInstrument (nombre, tipo) VALUES ('unknown', 'unknown');
 
-INSERT INTO UXResponse (user_id, instrument_id, fecha_respuesta, respuestas_json)
+INSERT INTO UXResponse (user_id, instrument_id, fecha_respuesta)
 VALUES (
   currval(pg_get_serial_sequence('"User"','user_id')),
   currval(pg_get_serial_sequence('UXInstrument','instrument_id')),
-  '2025-11-05 21:03:25',
-  'unknown'
+  '2025-11-05 21:03:25'
 );
 
 -- Fin de inserciones generadas
@@ -61385,7 +61409,10 @@ VALUES (
 );
 
 INSERT INTO Sector (map_id, nombre_sector)
-VALUES (currval(pg_get_serial_sequence('Map','map_id')), 'unknown');
+VALUES (
+    currval(pg_get_serial_sequence('Map', 'map_id')), -- Valor para map_id
+    'Nombre del Sector Aquí'                          -- Valor para nombre_sector (OBLIGATORIO)
+);
 
 INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
 VALUES (
@@ -72292,12 +72319,11 @@ VALUES (
 
 INSERT INTO UXInstrument (nombre, tipo) VALUES ('unknown', 'unknown');
 
-INSERT INTO UXResponse (user_id, instrument_id, fecha_respuesta, respuestas_json)
+INSERT INTO UXResponse (user_id, instrument_id, fecha_respuesta)
 VALUES (
   currval(pg_get_serial_sequence('"User"','user_id')),
   currval(pg_get_serial_sequence('UXInstrument','instrument_id')),
-  '2025-11-05 21:27:51',
-  'unknown'
+  '2025-11-05 21:03:25'
 );
 
 -- Fin de inserciones generadas

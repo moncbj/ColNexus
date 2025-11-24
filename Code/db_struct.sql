@@ -59,7 +59,6 @@ CREATE TABLE UXInstrument (
 );
 
 CREATE TABLE UXResponse (
-  response_id SERIAL PRIMARY KEY,
   user_id INTEGER NOT NULL REFERENCES "User"(user_id),
   instrument_id INTEGER NOT NULL REFERENCES UXInstrument(instrument_id),
   fecha_respuesta TIMESTAMP NOT NULL
@@ -73,8 +72,7 @@ CREATE TABLE UXItem (
 );
 
 CREATE TABLE UXResponseItem (
-  response_id INTEGER NOT NULL REFERENCES UXResponse(response_id),
   item_id INTEGER NOT NULL REFERENCES UXItem(item_id),
   valor_likert INTEGER NOT NULL CHECK (valor_likert BETWEEN 1 AND 7),
-  PRIMARY KEY (response_id, item_id)
+  PRIMARY KEY (item_id)
 );
