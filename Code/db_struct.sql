@@ -58,12 +58,6 @@ CREATE TABLE UXInstrument (
   tipo VARCHAR(50) NOT NULL
 );
 
-CREATE TABLE UXResponse (
-  user_id INTEGER NOT NULL REFERENCES "User"(user_id),
-  instrument_id INTEGER NOT NULL REFERENCES UXInstrument(instrument_id),
-  fecha_respuesta TIMESTAMP NOT NULL
-);
-
 CREATE TABLE UXItem (
   item_id SERIAL PRIMARY KEY,
   instrument_id INTEGER NOT NULL REFERENCES UXInstrument(instrument_id),
@@ -71,8 +65,17 @@ CREATE TABLE UXItem (
   dimension VARCHAR(100)
 );
 
+CREATE TABLE UXResponse (
+  response_id SERIAL PRIMARY KEY,
+  user_id INTEGER NOT NULL REFERENCES "User"(user_id),
+  instrument_id INTEGER NOT NULL REFERENCES UXInstrument(instrument_id),
+  fecha_respuesta TIMESTAMP NOT NULL,
+  respuestas_json TEXT DEFAULT '{}' 
+);
+
 CREATE TABLE UXResponseItem (
+  response_id INTEGER NOT NULL REFERENCES UXResponse(response_id),
   item_id INTEGER NOT NULL REFERENCES UXItem(item_id),
   valor_likert INTEGER NOT NULL CHECK (valor_likert BETWEEN 1 AND 7),
-  PRIMARY KEY (item_id)
+  PRIMARY KEY (response_id, item_id)
 );
