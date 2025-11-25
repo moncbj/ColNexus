@@ -28,7 +28,9 @@ VALUES
 INSERT INTO "User" (nombre_completo, genero, carrera)
 VALUES
 ('Monica Maria Castro Benitez', 'Femenino', 'Ciencia de datos'),
-('Juan Felipe Vela Jimenez', 'Masculino', 'Ciencia de datos');
+('Juan Felipe Vela Jimenez', 'Masculino', 'Ciencia de datos'),
+('Jose Alejandro Contreras Obregon', 'Masculino', 'Ciencia de datos'),
+('Daniel Alejandro Duarte Duarte', 'Masculino', 'Ciencia de datos');
 
 INSERT INTO Player (user_id, alias)
 VALUES
@@ -38,9 +40,9 @@ VALUES
 INSERT INTO UXResponse (user_id, instrument_id, fecha_respuesta)
 VALUES
 (1, 1, '2025-09-21 14:36:12'),
-(1, 1, '2025-10-05 09:42:55'),
-(2, 1, '2025-10-22 17:28:33'),
-(2, 1, '2025-10-29 11:57:41');
+(2, 1, '2025-10-05 09:42:55'),
+(3, 1, '2025-10-22 17:28:33'),
+(4, 1, '2025-10-29 11:57:41');
 
 INSERT INTO UXResponseItem (response_id, item_id, valor_likert) VALUES
 (1, 1, 6), (1, 2, 7), (1, 3, 5), (1, 4, 6), (1, 5, 7), (1, 6, 6),
