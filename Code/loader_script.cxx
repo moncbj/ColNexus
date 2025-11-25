@@ -9,7 +9,7 @@
 using namespace std;
 
 struct TelemetryEvent {
-    string datetime; 
+    string datetime;
     int tic;
     long pos_x;
     long pos_y;
@@ -18,9 +18,10 @@ struct TelemetryEvent {
 time_t parseTimestamp(const string &ts) {
     struct tm tmv = {};
     string s = ts;
-    for (char &c : const_cast<string&>(s)) if (c == 'T') c = ' ';
+    for (char &c : s) if (c == 'T') c = ' ';
     int yr, mo, da, hh, mm, ss;
-    if (sscanf(s.c_str(), "%d-%d-%d %d:%d:%d", &yr, &mo, &da, &hh, &mm, &ss) != 6) {
+    if (sscanf(s.c_str(), "%d-%d-%d %d:%d:%d",
+               &yr, &mo, &da, &hh, &mm, &ss) != 6) {
         return 0;
     }
     tmv.tm_year = yr - 1900;
@@ -76,6 +77,7 @@ int main() {
         cerr << "ERROR: no se pudo abrir el archivo: " << rutaEntrada << "\n";
         return 1;
     }
+
     vector<string> all;
     string line;
     while (getline(fin, line)) all.push_back(line);
@@ -84,7 +86,11 @@ int main() {
     string when_ts;
     int episodio = 0;
     int mapa = 0;
-    regex whenRe(R"(When:\s*([0-9]{4}-[0-9]{2}-[0-9]{2}\s+[0-9]{2}:[0-9]{2}:[0-9]{2}).*Episode:\s*([0-9]+).*Map:\s*([0-9]+))");
+
+    regex whenRe(
+        R"(When:\s*([0-9]{4}-[0-9]{2}-[0-9]{2}\s+[0-9]{2}:[0-9]{2}:[0-9]{2}).*Episode:\s*([0-9]+).*Map:\s*([0-9]+))"
+    );
+
     for (const auto &L : all) {
         smatch m;
         if (regex_search(L, m, whenRe)) {
@@ -94,12 +100,16 @@ int main() {
             break;
         }
     }
+
     if (when_ts.empty()) {
-        cerr << "ERROR: no se encontró la línea 'When: ... Episode: ... Map: ...' en el archivo.\n";
+        cerr << "ERROR: no se encontró la línea 'When: ... Episode: ... Map: ...'.\n";
         return 1;
     }
 
-    regex rowRe(R"(^\s*([0-9]{4}-[0-9]{2}-[0-9]{2}\s+[0-9]{2}:[0-9]{2}:[0-9]{2})\s+(-?\d+)\s+(-?\d+)\s+(-?\d+))");
+    regex rowRe(
+        R"(^\s*([0-9]{4}-[0-9]{2}-[0-9]{2}\s+[0-9]{2}:[0-9]{2}:[0-9]{2})\s+(-?\d+)\s+(-?\d+)\s+(-?\d+))"
+    );
+
     vector<TelemetryEvent> telemetry;
     for (const auto &L : all) {
         smatch m;
@@ -114,16 +124,16 @@ int main() {
     }
 
     if (telemetry.empty()) {
-        cerr << "ERROR: no se encontraron filas de telemetría válidas en el archivo.\n";
+        cerr << "ERROR: no se encontraron filas de telemetría.\n";
         return 1;
     }
 
     string first_ts = telemetry.front().datetime;
     string last_ts  = telemetry.back().datetime;
+
     time_t tfirst = parseTimestamp(first_ts);
     time_t tlast  = parseTimestamp(last_ts);
-    long dur_seconds = 0;
-    if (tfirst != 0 && tlast != 0) dur_seconds = (long)difftime(tlast, tfirst);
+    long dur_seconds = (tfirst && tlast) ? (long)difftime(tlast, tfirst) : 0;
 
     string nombre_oficial = "Doom Map " + to_string(mapa);
     auto it = DOOM1_MAP_NAMES.find(mapa);
@@ -136,68 +146,69 @@ int main() {
         return 1;
     }
 
+    auto esc = [](const string &s)->string {
+        string r;
+        for (char c : s) r += (c == '\'') ? "''" : string(1, c);
+        return r;
+    };
+
     out << "-- ============================\n";
     out << "-- Inserción generada desde: " << rutaEntrada << "\n";
     out << "-- When (fecha_inicio): " << when_ts << "  episodio: " << episodio << "  map: " << mapa << "\n";
     out << "-- Telemetrias: " << telemetry.size() << " filas. Fecha fin: " << last_ts << " Dur(s): " << dur_seconds << "\n";
     out << "-- ============================\n\n";
 
-    auto esc = [](const string &s)->string {
-        string r;
-        for (char c : s) {
-            if (c == '\'') r += "''";
-            else r += c;
-        }
-        return r;
-    };
-
     out << "INSERT INTO \"User\" (nombre_completo, genero, carrera)\n";
-    out << "VALUES ('" << esc(nombreCompleto) << "', '" << esc(genero) << "', '" << esc(carrera) << "');\n\n";
+    out << "VALUES ('" << esc(nombreCompleto) << "', '" << esc(genero)
+        << "', '" << esc(carrera) << "');\n\n";
 
     out << "INSERT INTO Player (user_id, alias)\n";
-    out << "VALUES (currval(pg_get_serial_sequence('\"User\"','user_id')), '" << esc(username) << "');\n\n";
+    out << "VALUES (currval(pg_get_serial_sequence('\"User\"','user_id')), '"
+        << esc(username) << "');\n\n";
 
     out << "INSERT INTO Map (codigo_map, nombre_oficial)\n";
     out << "VALUES ('" << mapa << "', '" << esc(nombre_oficial) << "');\n\n";
 
     out << "INSERT INTO Game (player_id, map_id, fecha_inicio, fecha_fin, duracion_seconds, episodio)\n";
-    out << "VALUES (\n";
-    out << "  currval(pg_get_serial_sequence('Player','player_id')),\n";
-    out << "  currval(pg_get_serial_sequence('Map','map_id')),\n";
-    out << "  '" << normalizeTimestampForSQL(when_ts) << "',\n";
-    out << "  '" << normalizeTimestampForSQL(last_ts) << "',\n";
-    out << "  " << dur_seconds << ",\n";
-    out << "  " << episodio << "\n";
-    out << ");\n\n";
+    out << "VALUES (\n"
+           "  currval(pg_get_serial_sequence('Player','player_id')),\n"
+           "  currval(pg_get_serial_sequence('Map','map_id')),\n"
+        << "  '" << normalizeTimestampForSQL(when_ts) << "',\n"
+        << "  '" << normalizeTimestampForSQL(last_ts) << "',\n"
+        << "  " << dur_seconds << ",\n"
+        << "  " << episodio << "\n);\n\n";
 
     out << "INSERT INTO Sector (map_id, nombre_sector)\n";
-    out << "VALUES (currval(pg_get_serial_sequence('Map','map_id')));\n\n";
+    out << "VALUES (\n"
+           "    currval(pg_get_serial_sequence('Map', 'map_id')),\n"
+           "    'Nombre del Sector Aquí'\n"
+           ");\n\n";
 
     for (const auto &ev : telemetry) {
         out << "INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)\n";
-        out << "VALUES (\n";
-        out << "  currval(pg_get_serial_sequence('Game','game_id')),\n";
-        out << "  '" << normalizeTimestampForSQL(ev.datetime) << "',\n";
-        out << "  " << ev.pos_x << ", " << ev.pos_y << "\n";
-        out << ");\n";
+        out << "VALUES (\n"
+               "  currval(pg_get_serial_sequence('Game','game_id')),\n"
+            << "  '" << normalizeTimestampForSQL(ev.datetime) << "',\n"
+            << "  " << ev.pos_x << ", " << ev.pos_y << "\n);\n";
     }
-    out << "\n";
 
-    out << "INSERT INTO UXInstrument (nombre, tipo) VALUES ('unknown', 'unknown');\n\n";
+    out << "\nINSERT INTO UXInstrument (nombre, tipo) VALUES ('unknown', 'unknown');\n\n";
 
     out << "INSERT INTO UXResponse (user_id, instrument_id, fecha_respuesta, respuestas_json)\n";
-    out << "VALUES (\n";
-    out << "  currval(pg_get_serial_sequence('\"User\"','user_id')),\n";
-    out << "  currval(pg_get_serial_sequence('UXInstrument','instrument_id')),\n";
-    out << "  '" << normalizeTimestampForSQL(when_ts) << "'\n";
-    out << ");\n\n";
+    out << "VALUES (\n"
+           "  currval(pg_get_serial_sequence('\"User\"','user_id')),\n"
+           "  currval(pg_get_serial_sequence('UXInstrument','instrument_id')),\n"
+        << "  '" << normalizeTimestampForSQL(when_ts) << "',\n"
+           "  '{}'\n"
+           ");\n\n";
 
     out << "-- Fin de inserciones generadas\n\n";
     out.close();
 
-    cout << "\tArchivo SQL generado: " << outname << "  (se añadió en modo append)\n";
+    cout << "\tArchivo SQL generado: " << outname << " (append)\n";
     cout << "Filas de telemetría detectadas: " << telemetry.size() << "\n";
-    cout << "Fecha inicio: " << when_ts << "  Fecha fin: " << last_ts << "  Duración(s): " << dur_seconds << "\n";
+    cout << "Fecha inicio: " << when_ts << "  Fecha fin: " << last_ts
+         << "  Duración(s): " << dur_seconds << "\n";
 
     return 0;
 }

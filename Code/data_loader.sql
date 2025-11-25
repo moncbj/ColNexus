@@ -25,8 +25,8 @@ VALUES (
 
 INSERT INTO Sector (map_id, nombre_sector)
 VALUES (
-    currval(pg_get_serial_sequence('Map', 'map_id')), -- Valor para map_id
-    'Nombre del Sector Aquí'                          -- Valor para nombre_sector (OBLIGATORIO)
+    currval(pg_get_serial_sequence('Map', 'map_id')), 
+    'Nombre del Sector Aquí'                          
 );
 
 INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
@@ -1478,8 +1478,8 @@ VALUES (
 
 INSERT INTO Sector (map_id, nombre_sector)
 VALUES (
-    currval(pg_get_serial_sequence('Map', 'map_id')), -- Valor para map_id
-    'Nombre del Sector Aquí'                          -- Valor para nombre_sector (OBLIGATORIO)
+    currval(pg_get_serial_sequence('Map', 'map_id')), 
+    'Nombre del Sector Aquí'                          
 );
 
 INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
@@ -8253,8 +8253,8 @@ VALUES (
 
 INSERT INTO Sector (map_id, nombre_sector)
 VALUES (
-    currval(pg_get_serial_sequence('Map', 'map_id')), -- Valor para map_id
-    'Nombre del Sector Aquí'                          -- Valor para nombre_sector (OBLIGATORIO)
+    currval(pg_get_serial_sequence('Map', 'map_id')), 
+    'Nombre del Sector Aquí'                          
 );
 
 INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
@@ -9982,8 +9982,8 @@ VALUES (
 
 INSERT INTO Sector (map_id, nombre_sector)
 VALUES (
-    currval(pg_get_serial_sequence('Map', 'map_id')), -- Valor para map_id
-    'Nombre del Sector Aquí'                          -- Valor para nombre_sector (OBLIGATORIO)
+    currval(pg_get_serial_sequence('Map', 'map_id')), 
+    'Nombre del Sector Aquí'                          
 );
 
 INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
@@ -12959,8 +12959,8 @@ VALUES (
 
 INSERT INTO Sector (map_id, nombre_sector)
 VALUES (
-    currval(pg_get_serial_sequence('Map', 'map_id')), -- Valor para map_id
-    'Nombre del Sector Aquí'                          -- Valor para nombre_sector (OBLIGATORIO)
+    currval(pg_get_serial_sequence('Map', 'map_id')), 
+    'Nombre del Sector Aquí'                          
 );
 
 INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
@@ -30348,8 +30348,8 @@ VALUES (
 
 INSERT INTO Sector (map_id, nombre_sector)
 VALUES (
-    currval(pg_get_serial_sequence('Map', 'map_id')), -- Valor para map_id
-    'Nombre del Sector Aquí'                          -- Valor para nombre_sector (OBLIGATORIO)
+    currval(pg_get_serial_sequence('Map', 'map_id')), 
+    'Nombre del Sector Aquí'                          
 );
 
 INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
@@ -32917,8 +32917,8 @@ VALUES (
 
 INSERT INTO Sector (map_id, nombre_sector)
 VALUES (
-    currval(pg_get_serial_sequence('Map', 'map_id')), -- Valor para map_id
-    'Nombre del Sector Aquí'                          -- Valor para nombre_sector (OBLIGATORIO)
+    currval(pg_get_serial_sequence('Map', 'map_id')), 
+    'Nombre del Sector Aquí'                          
 );
 
 INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
@@ -34357,8 +34357,8 @@ VALUES (
 
 INSERT INTO Sector (map_id, nombre_sector)
 VALUES (
-    currval(pg_get_serial_sequence('Map', 'map_id')), -- Valor para map_id
-    'Nombre del Sector Aquí'                          -- Valor para nombre_sector (OBLIGATORIO)
+    currval(pg_get_serial_sequence('Map', 'map_id')), 
+    'Nombre del Sector Aquí'                          
 );
 
 INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
@@ -35846,8 +35846,8 @@ VALUES (
 
 INSERT INTO Sector (map_id, nombre_sector)
 VALUES (
-    currval(pg_get_serial_sequence('Map', 'map_id')), -- Valor para map_id
-    'Nombre del Sector Aquí'                          -- Valor para nombre_sector (OBLIGATORIO)
+    currval(pg_get_serial_sequence('Map', 'map_id')), 
+    'Nombre del Sector Aquí'                          
 );
 
 INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
@@ -43245,8 +43245,8 @@ VALUES (
 
 INSERT INTO Sector (map_id, nombre_sector)
 VALUES (
-    currval(pg_get_serial_sequence('Map', 'map_id')), -- Valor para map_id
-    'Nombre del Sector Aquí'                          -- Valor para nombre_sector (OBLIGATORIO)
+    currval(pg_get_serial_sequence('Map', 'map_id')), 
+    'Nombre del Sector Aquí'                          
 );
 
 INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
@@ -46600,8 +46600,8 @@ VALUES (
 
 INSERT INTO Sector (map_id, nombre_sector)
 VALUES (
-    currval(pg_get_serial_sequence('Map', 'map_id')), -- Valor para map_id
-    'Nombre del Sector Aquí'                          -- Valor para nombre_sector (OBLIGATORIO)
+    currval(pg_get_serial_sequence('Map', 'map_id')), 
+    'Nombre del Sector Aquí'                          
 );
 
 INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
@@ -54563,8 +54563,8 @@ VALUES (
 
 INSERT INTO Sector (map_id, nombre_sector)
 VALUES (
-    currval(pg_get_serial_sequence('Map', 'map_id')), -- Valor para map_id
-    'Nombre del Sector Aquí'                          -- Valor para nombre_sector (OBLIGATORIO)
+    currval(pg_get_serial_sequence('Map', 'map_id')), 
+    'Nombre del Sector Aquí'                          
 );
 
 INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
@@ -61410,8 +61410,8 @@ VALUES (
 
 INSERT INTO Sector (map_id, nombre_sector)
 VALUES (
-    currval(pg_get_serial_sequence('Map', 'map_id')), -- Valor para map_id
-    'Nombre del Sector Aquí'                          -- Valor para nombre_sector (OBLIGATORIO)
+    currval(pg_get_serial_sequence('Map', 'map_id')), 
+    'Nombre del Sector Aquí'                          
 );
 
 INSERT INTO TelemetryEvent (game_id, marca_tiempo, pos_x, pos_y)
