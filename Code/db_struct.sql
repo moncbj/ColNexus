@@ -69,8 +69,7 @@ CREATE TABLE UXResponse (
   response_id SERIAL PRIMARY KEY,
   user_id INTEGER NOT NULL REFERENCES "User"(user_id),
   instrument_id INTEGER NOT NULL REFERENCES UXInstrument(instrument_id),
-  fecha_respuesta TIMESTAMP NOT NULL,
-  respuestas_json TEXT DEFAULT '{}' 
+  fecha_respuesta TIMESTAMP NOT NULL
 );
 
 CREATE TABLE UXResponseItem (

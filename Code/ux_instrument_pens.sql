@@ -35,12 +35,12 @@ VALUES
 (1, 'monik23b'),
 (2, 'juanchiVJ');
 
-INSERT INTO UXResponse (user_id, instrument_id, fecha_respuesta, respuestas_json)
+INSERT INTO UXResponse (user_id, instrument_id, fecha_respuesta)
 VALUES
-(1, 1, '2025-09-21 14:36:12', '{}'),
-(1, 1, '2025-10-05 09:42:55', '{}'),
-(2, 1, '2025-10-22 17:28:33', '{}'),
-(2, 1, '2025-10-29 11:57:41', '{}');
+(1, 1, '2025-09-21 14:36:12'),
+(1, 1, '2025-10-05 09:42:55'),
+(2, 1, '2025-10-22 17:28:33'),
+(2, 1, '2025-10-29 11:57:41');
 
 INSERT INTO UXResponseItem (response_id, item_id, valor_likert) VALUES
 (1, 1, 6), (1, 2, 7), (1, 3, 5), (1, 4, 6), (1, 5, 7), (1, 6, 6),
