@@ -182,18 +182,10 @@ int main() {
             << " | Duración(s): " << dur_seconds << "\n";
         out << "-- ===========================================\n\n";
 
-        out << "INSERT INTO Player (user_id, alias)\n";
-        out << "VALUES ("
-            << esc(idUser) << ", '"
-            << esc(alias) << "');\n\n";
-
-        out << "INSERT INTO Map (codigo_map, nombre_oficial)\n";
-        out << "VALUES ('" << mapa << "', '" << esc(nombre_oficial) << "');\n\n";
-
         out << "INSERT INTO Game (player_id, map_id, fecha_inicio, fecha_fin, duracion_seconds, episodio)\n";
         out << "VALUES (\n"
-               "  currval(pg_get_serial_sequence('Player','player_id')),\n"
-               "  currval(pg_get_serial_sequence('Map','map_id')),\n"
+               "  (SELECT player_id FROM Player WHERE alias = '" << alias << "'),\n"
+            << mapa << ",\n"
             << "  '" << normalizeTimestampForSQL(when_ts) << "',\n"
             << "  '" << normalizeTimestampForSQL(last_ts) << "',\n"
             << "  " << dur_seconds << ",\n"

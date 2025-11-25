@@ -1,5 +1,43 @@
-INSERT INTO Map (codigo_map, nombre_oficial) 
-VALUES ('MAP01', 'Laboratorio Central');
+INSERT INTO Map (codigo_map, nombre_oficial) VALUES
+('1',  'E1M1: Hangar'),
+('1',  'E1M2: Nuclear Plant'),
+('1',  'E1M3: Toxin Refinery'),
+('1',  'E1M4: Command Control'),
+('1',  'E1M5: Phobos Lab'),
+('1',  'E1M6: Central Processing'),
+('1',  'E1M7: Computer Station'),
+('1',  'E1M8: Phobos Anomaly'),
+('1',  'E1M9: Military Base'),
+
+('2', 'E2M1: Deimos Anomaly'),
+('2', 'E2M2: Containment Area'),
+('2', 'E2M3: Refinery'),
+('2', 'E2M4: Deimos Lab'),
+('2', 'E2M5: Command Center'),
+('2', 'E2M6: Halls of the Damned'),
+('2', 'E2M7: Spawning Vats'),
+('2', 'E2M8: Tower of Babel'),
+('2', 'E2M9: Fortress of Mystery'),
+
+('3', 'E3M1: Hell Keep'),
+('3', 'E3M2: Slough of Despair'),
+('3', 'E3M3: Pandemonium'),
+('3', 'E3M4: House of Pain'),
+('3', 'E3M5: Unholy Cathedral'),
+('3', 'E3M6: Mt. Erebus'),
+('3', 'E3M7: Limbo'),
+('3', 'E3M8: Dis'),
+('3', 'E3M9: Warrens'),
+
+('4', 'E4M1: Hell Beneath'),
+('4', 'E4M2: Perfect Hatred'),
+('4', 'E4M3: Sever the Wicked'),
+('4', 'E4M4: Unruly Evil'),
+('4', 'E4M5: They Will Repent'),
+('4', 'E4M6: Against Thee Wickedly'),
+('4', 'E4M7: And Hell Followed'),
+('4', 'E4M8: Unto the Cruel'),
+('4', 'E4M9: Fear');
 
 INSERT INTO Sector (map_id, nombre_sector)
 VALUES (
@@ -35,7 +73,9 @@ VALUES
 INSERT INTO Player (user_id, alias)
 VALUES
 (1, 'monik23b'),
-(2, 'juanchiVJ');
+(2, 'juanchiVJ'),
+(3, 'mysticfriday'),
+(4, 'elito1322');
 
 INSERT INTO UXResponse (user_id, instrument_id, fecha_respuesta)
 VALUES
