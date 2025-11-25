@@ -9,6 +9,10 @@ DROP TABLE IF EXISTS Player CASCADE;
 DROP TABLE IF EXISTS Map CASCADE;
 DROP TABLE IF EXISTS "User" CASCADE;
 
+DROP INDEX IF EXISTS idx_telem_game_time;
+DROP INDEX IF EXISTS idx_telem_pos_gist;
+DROP INDEX IF EXISTS idx_game_player_game;
+
 CREATE TABLE "User" (
   user_id SERIAL PRIMARY KEY,
   nombre_completo TEXT NOT NULL,
