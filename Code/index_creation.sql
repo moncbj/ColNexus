@@ -9,7 +9,7 @@ DROP INDEX IF EXISTS idx_game_player_game;
 -- ÍNDICE 1: (game_id, marca_tiempo)
 -- ============================================================
 
--- Antes del índice:
+\echo 'Antes del índice:'
 EXPLAIN ANALYZE
 SELECT te.game_id, te.marca_tiempo, te.pos_x, te.pos_y
 FROM TelemetryEvent te
@@ -20,7 +20,7 @@ ORDER BY te.marca_tiempo;
 CREATE INDEX idx_telem_game_time
 ON TelemetryEvent (game_id, marca_tiempo);
 
--- Después del índice:
+\echo 'Después del índice:'
 EXPLAIN ANALYZE
 SELECT te.game_id, te.marca_tiempo, te.pos_x, te.pos_y
 FROM TelemetryEvent te
@@ -33,7 +33,7 @@ ORDER BY te.marca_tiempo;
 -- ÍNDICE 2: GiST espacial en pos_x y pos_y
 -- ============================================================
 
--- Antes del índice:
+\echo 'Antes del índice:'
 EXPLAIN ANALYZE
 SELECT game_id, pos_x, pos_y
 FROM TelemetryEvent
@@ -45,7 +45,7 @@ CREATE INDEX idx_telem_pos_gist
 ON TelemetryEvent
 USING gist (point(pos_x, pos_y));
 
--- Después del índice:
+\echo 'Después del índice:'
 EXPLAIN ANALYZE
 SELECT game_id, pos_x, pos_y
 FROM TelemetryEvent
@@ -58,7 +58,7 @@ WHERE pos_x BETWEEN 2000 AND 2600
 -- ÍNDICE 3: (player_id, game_id) en tabla Game
 -- ============================================================
 
--- Antes del índice:
+\echo 'Antes del índice:'
 EXPLAIN ANALYZE
 SELECT game_id, player_id
 FROM Game
@@ -68,7 +68,7 @@ WHERE player_id = 7;
 CREATE INDEX idx_game_player_game
 ON Game (player_id, game_id);
 
--- Después del índice:
+\echo 'Después del índice:'
 EXPLAIN ANALYZE
 SELECT game_id, player_id
 FROM Game

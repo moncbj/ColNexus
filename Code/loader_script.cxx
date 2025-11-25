@@ -184,7 +184,7 @@ int main() {
 
         out << "INSERT INTO Game (player_id, map_id, fecha_inicio, fecha_fin, duracion_seconds, episodio)\n";
         out << "VALUES (\n"
-               "  (SELECT player_id FROM Player WHERE alias = '" << alias << "'),\n"
+               "  (SELECT player_id FROM Player WHERE alias = '" << alias << "'),\n  "
             << mapa << ",\n"
             << "  '" << normalizeTimestampForSQL(when_ts) << "',\n"
             << "  '" << normalizeTimestampForSQL(last_ts) << "',\n"

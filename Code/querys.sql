@@ -135,7 +135,7 @@ ON a.sector_x = b.sector_x
 GROUP BY jugador_a, jugador_b, a.sector_x, a.sector_y
 ORDER BY coincidencias_sector DESC;
 
---Consulta 7 — Average UX score for players with the shortest trajectory per episode
+-- CONSULTA 7: Promedio UX para Jugadores con la Trayectoria Más Corta por Episodio.
 WITH eventos_ordenados AS (
     SELECT
         g.episodio,
@@ -162,6 +162,8 @@ distancias AS (
     GROUP BY episodio, player_id
 ),
 jugadores_validos AS (
+    -- player_id es el user_id en la tabla User, pero en este contexto se usa
+    -- para Player. Se asume que player_id es la FK a User.user_id.
     SELECT DISTINCT r.user_id
     FROM uxresponse r
     JOIN uxresponseitem ri ON ri.response_id = r.response_id
@@ -180,12 +182,15 @@ SELECT
     m.player_id,
     ROUND(AVG(ri.valor_likert),2) AS promedio_ux
 FROM minimos m
-JOIN uxresponse r ON r.user_id = m.player_id
+JOIN uxresponse r ON r.user_id = m.player_id -- Asumiendo que player_id = user_id en esta vinculación
 JOIN uxresponseitem ri ON ri.response_id = r.response_id
 GROUP BY m.episodio, m.player_id
 ORDER BY m.episodio;
 
---Consulta 8 — Total distance and average speed per player
+
+-----------------------------------------------------------------------------------------------------
+
+-- CONSULTA 8: Distancia Total Recorrida y Velocidad Promedio por Jugador, Analizando Todas las Partidas.
 WITH puntos AS (
     SELECT
         g.game_id,
@@ -230,44 +235,19 @@ SELECT
 FROM resumen
 ORDER BY episodio, velocidad_promedio DESC;
 
---INDICES:
-CREATE INDEX ON TelemetryEvent (game_id, player_id, tic);
---El índice sugerido originalmente (game_id, player_id, tic) no se pudo implementar directamente porque la tabla TelemetryEvent no contiene los campos player_id ni tic. En nuestra estructura, player_id reside en la tabla Game y el campo equivalente a tic es marca_tiempo. Por lo tanto, implementamos un índice alternativo funcionalmente equivalente, adaptado a nuestro diseño:
-	
+
+-----------------------------------------------------------------------------------------------------
+
+-- COMANDOS DE ÍNDICES CORREGIDOS
+
+-- 1. Índice para búsquedas por Partida y Tiempo (Corrige el error de 'player_id' y 'tic' en TelemetryEvent)
 CREATE INDEX idx_telem_game_time
 ON TelemetryEvent (game_id, marca_tiempo);
 
---Sin índice
---Con Índice (Bitmap Heap Scan)
---Tiempo de Ejecucion
---0.051 ms
---0.039 ms
+-- 2. Índice Geométrico GiST (Corrige el error de sintaxis al usar la función point())
+CREATE INDEX idx_telem_pos_gist 
+ON TelemetryEvent USING gist (point(pos_x, pos_y));
 
---El índice fue utilizado correctamente por PostgreSQL, reduciendo el costo estimado y el tiempo de ejecución. Se observa un cambio hacia un Bitmap Index Scan, lo que confirma que el optimizador aprovechó el índice.
-
-CREATE INDEX ON TelemetryEvent USING gist ((pos_x, pos_y));
---El índice propuesto originalmente (episode, map_code, sector_id) no pudo implementarse porque nuestra tabla TelemetryEvent no contiene esas columnas. En nuestro modelo de datos, la única información espacial disponible corresponde a las coordenadas pos_x y pos_y, por lo que continuamos con el siguiente índice espacial GiST:
-
-CREATE INDEX idx_telem_pos_gist ON TelemetryEvent USING gist (point(pos_x, pos_y));
-
-----Sin índice
-----Con índice (no fue utilizado)
-----Tiempo de Ejecucion
-----2.491 ms
-----2.406 ms
-
---Se intentó implementar un índice espacial GiST para optimizar consultas basadas en ubicaciones (pos_x, pos_y). Si bien el índice fue creado correctamente, el plan de ejecución mostró que PostgreSQL continuó utilizando Seq Scan, ignorando el índice. En consecuencia, el índice no mejoró el rendimiento de esta consulta, aunque podría ser útil para consultas espaciales más complejas.
-
-CREATE INDEX ON GameParticipant (player_id, game_id);
---Se implementó un índice compuesto en la tabla Game sobre las columnas (player_id, game_id) con el objetivo de acelerar consultas que filtran por player_id. 
-
+-- 3. Índice Compuesto de Participación de Jugadores (Corrige el error de tabla 'gameparticipant' inexistente)
 CREATE INDEX idx_game_player_game
 ON Game (player_id, game_id);
-
-----Sin índice
-----Con Índice (no fue utilizado)
-----Tiempo de Ejecucion
-----0.031 ms
-----0.026 ms
-
---Sin embargo, al comparar los planes de ejecución antes y después del índice, se observó que PostgreSQL continúa utilizando Seq Scan, con tiempos prácticamente iguales. Esto se debe al pequeño tamaño de la tabla, donde un escaneo secuencial sigue siendo más eficiente que acceder mediante índice. Aunque el índice no muestra mejoras visibles actualmente, sería útil en escenarios con mayor cantidad de datos o con consultas más complejas.

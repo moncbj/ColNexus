@@ -13,6 +13,10 @@ DROP INDEX IF EXISTS idx_telem_game_time;
 DROP INDEX IF EXISTS idx_telem_pos_gist;
 DROP INDEX IF EXISTS idx_game_player_game;
 
+DROP VIEW IF EXISTS View_Player_Demographics CASCADE;
+DROP VIEW IF EXISTS View_UX_Dimension_Scores CASCADE;
+DROP MATERIALIZED VIEW IF EXISTS MatView_Session_Stats CASCADE;
+
 CREATE TABLE "User" (
   user_id SERIAL PRIMARY KEY,
   nombre_completo TEXT NOT NULL,
