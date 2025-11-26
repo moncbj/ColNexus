@@ -13,111 +13,209 @@ El sistema debe soportar consultas exploratorias y análisis avanzados para dete
 
 ## Estructura del Repositorio
 
-Este repositorio está organizado en tres directorios principales, que contienen todos los artefactos del proyecto:
+El repositorio está organizado en tres directorios principales:
 
 | Directorio | Contenido Principal | Propósito |
 | :--- | :--- | :--- |
-| **`Code`** | Scripts SQL y documentos de creación y actualización de la DB. | **Implementación de la DB** (DDL, Vistas, Índices) y el **Scripts para Ingestión de Datos** |
-| **`Data`** | Archivos de telemetría sin procesar (`.txt`). | Almacenamiento de los **logs TSV** (Tab-Separated Values) originales de las sesiones de juego de los voluntarios. |
-| **`Documents`** | Documentos de la consultoría. | **Documentación de Análisis y Diseño** (Enunciado, Informe de Consultoría, Diagramas) |
+| **`Code`** | Scripts SQL del esquema, vistas, consultas, índices y el ETL en C++. | Implementación completa de la base de datos y transformación automática de telemetría. |
+| **`Data`** | Archivos `.txt` con telemetría cruda. | Materia prima recolectada desde Chocolate-Doom. |
+| **`Documents`** | Documentos de diseño e informe final. | Documentación formal del proyecto. |
+
+---
 
 ### Directorio `Code`
 
-Este directorio contiene los componentes para la creación del esquema y la carga de datos (ETL):
+Contiene todos los scripts relacionados con la creación, ingestión y análisis dentro de la base de datos:
 
-* **`db_struct.sql`**: Script **DDL (Data Definition Language)** para la limpieza y creación de todas las tablas, claves primarias, claves foráneas y restricciones.
-* **`loader_script.cxx`**: Script (C++) que implementa el proceso de **Transformación y Validación** de los logs TSV. Genera `data_loader.sql`.
-* **`data_loader.sql`**: Archivo SQL generado que contiene las sentencias `INSERT` para cargar los datos de telemetría transformados en las tablas *core* de la base de datos.
-* **`ux_instrument_pens.sql`**: Archivo SQL que inserta el instrumento PENS (Player Experiencie of Need Satisfaction) en la base de datos.
+* **`db_struct.sql`**  
+  Crea toda la estructura de la base de datos (User, Player, Game, Map, Sector, TelemetryEvent, UX…).
+
+* **`loader_script.cxx`**  
+  Script ETL en C++, encargado de:
+  - Procesar archivos siguiendo la convención:  
+    **`[Jugador]_partida[ID].txt`**
+  - Extraer episodio, mapa y telemetría tic a tic.
+  - Calcular duración de partida.
+  - Asignar nombres de sectores dinámicos (“Hangar – Sector A”, “Nuclear Plant – Sector 1”, etc.)
+  - Generar el archivo `data_loader.sql`.
+
+* **`data_loader.sql`**  
+  Archivo generado automáticamente por el ETL con todos los `INSERT` de Player, Game, Map, Sector y TelemetryEvent.
+
+* **`ux_instrument_pens.sql`**  
+  Inserta los 21 ítems del instrumento PENS en la base de datos.
+
+* **`index_creation.sql`**  
+  Contiene índices sugeridos para optimizar consultas:
+  - Índices sobre TelemetryEvent
+  - Índices relacionados con UX
+  - Optimización para consultas analíticas
+
+* **`Queries.sql`**  
+  Contiene consultas analíticas y exploratorias desarrolladas para el proyecto.
+
+* **`views.sql`**  
+  Crea vistas y vistas materializadas utilizadas posteriormente para análisis.
+
+* **`MakeFile.sql`**  
+  Archivo utilitario para ejecutar procesos SQL encadenados.
+
+---
 
 ### Directorio `Data`
 
-Almacena la materia prima de la investigación: los logs de las sesiones de juego.
+Contiene los archivos originales generados desde Chocolate-Doom.
 
-* **Convención de Nomenclatura:** `[Nombre_Jugador]_[ID_Partida].txt`
-* **Ejemplo de Contenido (por tic):** `Un ejemplo del documento esperado se puede encontrar en la carpeta de `Code` como `sample.txt``.
+**Formato obligatorio:**
+
+```
+[Jugador]_partida[ID].txt
+```
+
+Ejemplo real del repositorio:
+
+```
+danielDuarte_partida1.txt
+danielDuarte_partida2.txt
+...
+joseContreras_partida8.txt
+```
+
+También se incluye un archivo ejemplo:
+
+```
+sample.txt
+```
+
+Los archivos se generan mediante:
+
+```bash
+src/chocolate-doom -iwad /ruta/DOOM.WAD > [Jugador]_partidaX.txt
+```
+
+---
 
 ### Directorio `Documents`
 
-Contiene la documentación formal del proyecto:
+Incluye documentación clave:
 
-* **`project.pdf`**: Enunciado original del proyecto.
-* **`Analisis_y_Diseno_ColNexus.pdf`**: Informe de Consultoría que incluye:
-    * Diagrama **ER Conceptual** y **Esquema Relacional** (DDL).
-    * **Data Dictionary** y justificación de **Normalización a 3NF**.
-    * Descripción del **ETL** y evaluación de **Indexación**.
+* **`DBS_Chocolate_Doom_Final_Report.pdf`**  
+  Informe del proyecto con análisis, diseño y resultados.
+
+* **`project.pdf`**  
+  Enunciado oficial del proyecto.
 
 ---
 
 ## Guía de Ejecución y Despliegue
 
-Se recomienda utilizar **PostgreSQL** para la implementación.
+### 1. Generar archivos de telemetría `.txt`
 
-1. **Generación del archivo de telemetria.txt**
-   ```bash
-   # Ejecute este comando modificando la ruta a DOOM.WAD además de darle nombre correcto al documento de salida (Cambiando el nombre del jugador y ID de la partida):
-   src/chocolate-doom -iwad /ruta/a/DOOM.WAD > [Nombre_Jugador]_[ID_Partida].txt
-   ```
-2.  **Configurar la Base de Datos (Estructura)**
-    ```bash
-    # Ejecute este script para limpiar y recrear el esquema de la DB:
-    psql -U [su_usuario] -d [nombre_de_db] -f Code/db_struct.sql
-    ```
+```bash
+src/chocolate-doom -iwad /ruta/a/DOOM.WAD > [Jugador]_partidaX.txt
+```
 
-3.  **Preparar y Transformar los Datos (ETL)**
-    ```bash
-    # (Opcional) Coloque los logs TSV en la carpeta Data/
-    # Compile y ejecute el script de transformación sobre los datos:
-    ./Code/loader_script.cxx [Ruta_a_Log_TSV] > Code/data_loader.sql
-    ```
+---
 
-4.  **Cargar los Datos (Inserciones)**
-    ```bash
-    # Ejecute el script generado para insertar datos validados en las tablas core:
-    psql -U [su_usuario] -d [nombre_de_db] -f Code/data_loader.sql
-    ```
+### 2. Crear la Base de Datos (DDL)
 
-5.  **Cargar el Instrumento PENS**
-    ```bash
-    # Ejecute el script generado para insertar el instrumento PENS:
-    psql -U [su_usuario] -d [nombre_de_db] -f Code/ux_instrument_pens.sql
-    ```
+```bash
+psql -U usuario -d basedatos -f Code/db_struct.sql
+```
 
+---
+
+### 3. Ejecutar el ETL en C++ (Transformación de datos)
+
+Compilar:
+
+```bash
+g++ Code/loader_script.cxx -o loader
+```
+
+Ejecutar:
+
+```bash
+./loader
+```
+
+El script solicitará:
+
+- Ruta base  
+- Nombre del jugador  
+- Número total de partidas  
+
+Procesará automáticamente archivos tipo:
+
+```
+Data/danielDuarte_partida1.txt
+Data/danielDuarte_partida2.txt
+...
+```
+
+Generando:
+
+```
+Code/data_loader.sql
+```
+
+---
+
+### 4. Cargar la Telemetría Transformada
+
+```bash
+psql -U usuario -d basedatos -f Code/data_loader.sql
+```
+
+---
+
+### 5. Crear Índices de Optimización
+
+```bash
+psql -U usuario -d basedatos -f Code/index_creation.sql
+```
+
+---
+
+### 6. Cargar el Instrumento UX (PENS)
+
+```bash
+psql -U usuario -d basedatos -f Code/ux_instrument_pens.sql
+```
 
 ---
 
 ## Instrumento UX - PENS
 
-Este proyecto incorpora el instrumento PENS (Player Experience of Need Satisfacction) como instrumento de evaluación de la experiencia del usuario de los jugadores en Chocolate DooM.
-El cuestionario fue descargado desde su fuente original y posteriormente traducido y adaptado al español para el contexto de este proyecto.
+Este proyecto incorpora el instrumento **PENS (Player Experience of Need Satisfaction)**, traducido y adaptado al español.
 
-###Estructura 
+### Dimensiones del Instrumento
 
-El cuestionario se encuentra dividido en cinco dimensiones, cada una medida en ítems en escala de Likert de 1 a 7 (donde 1 = Totalmente en desacuerdo y 7 = Totalmente de acuerdo).
-
-| Dimensión | Descripción | Ejemplo de Ítem |
+| Dimensión | Descripción | Ejemplo |
 | :--- | :--- | :--- |
-| **Competencia** | Evalúa la percepción del jugador sobre su eficacia y dominio de los desafíos. | “Me siento competente en el juego.” |
-| **Autonomía** | Mide la sensación de libertad y control dentro del juego. | “Sentí mucha libertad dentro del juego.” |
-| **Relación (Relatedness)** | Evalúa el sentido de conexión con otros jugadores o personajes. | “Las relaciones que formo en el juego me resultan satisfactorias.” |
-| **Presencia / Inmersión** | Mide el grado de absorción emocional y cognitiva en el entorno virtual. | “Al jugar, siento que me transporto a otro tiempo y lugar.” |
+| **Competencia** | Dominio y eficacia percibidos. | “Me siento competente en el juego.” |
+| **Autonomía** | Libertad de acción y decisión. | “Sentí mucha libertad en el juego.” |
+| **Relación** | Conexión social o emocional. | “Las relaciones en el juego me resultan satisfactorias.” |
+| **Presencia / Inmersión** | Absorción cognitiva. | “Me transporta a otro lugar.” |
+| **Vitalidad** | Energía emocional. | “El juego me dejó energizado.” |
 
-En total, para el proyecto se implementan 21 ítems (preguntas) almacenados en UXItem.
+Total de ítems implementados: **21**, almacenados en `UXItem`.
 
 ---
 
 ## Tareas y Entregables Clave
 
-| Parte | Enfoque | Entregables del Repositorio |
+| Parte | Enfoque | Archivos Entregados |
 | :--- | :--- | :--- |
-| **A** (Conceptual y Lógico)  | Requisitos, ER, Normalización (3NF), Diccionario de Datos. | `Documents/Proyecto Bases de Datos.pdf` |
-| **B** (Implementación & Ingestión) | DDL, Creación de Tablas Staging, Ingestión ETL, Carga de datos de UX. | `Code/db_struct.sql`, `Code/loader_script.cxx`, `Code/data_loader.sql` |
-| **C** (Consultas y Optimización) | Implementación de 8+ Consultas Analíticas, 3+ Índices con evaluación `EXPLAIN (ANALYZE)`, Vistas y Vistas Materializadas. | Código SQL de las consultas (posiblemente en un archivo `analytics.sql`) y la evaluación en el informe. |
+| **A** – Conceptual & Lógico | ER, Normalización, Diccionario | `Documents/project.pdf`, `Documents/DBS_Chocolate_Doom_Final_Report.pdf` |
+| **B** – Implementación & ETL | DDL, ingestión y UX | `Code/db_struct.sql`, `Code/loader_script.cxx`, `Code/data_loader.sql` |
+| **C** – Analítica & Optimización | Consultas, vistas, índices | `Code/Queries.sql`, `Code/views.sql`, `Code/index_creation.sql` |
 
 ---
 
 ## Referencias
-- Ryan, R. M., Rigby, C. S., & Przybylski, A. K. (2006). *Motivational pull of video games: A self-determination theory approach*. Motivation and Emotion. Disponible en: [https://selfdeterminationtheory.org/player-experience-of-needs-satisfaction-pens/?utm_source=chatgpt.com](https://selfdeterminationtheory.org/player-experience-of-needs-satisfaction-pens/)
 
----
-
+- Ryan, R. M., Rigby, C. S., & Przybylski, A. K. (2006).  
+  *Motivational pull of video games: A self-determination theory approach*.  
+  Motivation and Emotion.  
+  https://selfdeterminationtheory.org/player-experience-of-needs-satisfaction-pens/
