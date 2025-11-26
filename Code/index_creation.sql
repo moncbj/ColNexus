@@ -602,9 +602,8 @@ SELECT
             ),
             0
         )::numeric,
-        2
+        2M
     ) AS velocidad_promedio
 
 FROM resumen
 ORDER BY episodio, velocidad_promedio DESC;
-
